@@ -43,9 +43,9 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute block w-full h-56 sm:h-full"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent z-10 flex flex-col justify-end pl-24 pb-20 text-white">
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent z-10 flex flex-col justify-end pl-10 pb-10 md:pl-24 md:pb-20 text-white">
               <h2 className="text-2xl font-bold mb-2">{slide.title}</h2>
               <p className="text-sm">{slide.description}</p>
             </div>
@@ -54,7 +54,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
       </div>
 
       {/* Slider indicators */}
-      <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+      <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 ">
         {slides.map((_, index) => (
           <button
             key={index}
