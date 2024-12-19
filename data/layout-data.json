@@ -1,0 +1,56 @@
+{
+  "navbar": {
+    "about": "About",
+    "services": "Services",
+    "news": "News",
+    "support": "Support",
+    "career": "Careers",
+    "partner": "Partners",
+    "downloadqr": "Download MyDigital ID"
+  },
+  "footer": { 
+    "pathlink": [
+      {
+        "name": "Whistleblower",
+        "href": "#"
+      },
+      {
+        "name": "Disclaimer",
+        "href": "#"
+      },
+      {
+        "name": "Privacy Statement",
+        "href": "#"
+      },
+      {
+        "name": "Important Notice",
+        "href": "#"
+      },
+      {
+        "name": "Contact Us",
+        "href": "#"
+      },
+      {
+        "name": "Contact",
+        "href": "#"
+      }
+    ],
+    "sociallinks": [
+      {
+        "name": "Facebook",
+        "href": "#",
+        "icon": "icons/facebook.svg"
+      },
+      {
+        "name": "Twitter",
+        "href": "#",
+        "icon": "icons/twitter.svg"
+      },
+      {
+        "name": "Youtube",
+        "href": "#",
+        "icon": "icons/youtube.svg"
+      }
+    ]
+  }
+}
