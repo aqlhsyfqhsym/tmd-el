@@ -2,12 +2,12 @@ import Link from "next/link";
 
 interface FooterData {
  
-  pathlink: Array<{ name: string; href: string }>;  // No 'icon' here
+  pathlink: Array<{ name: string; href: string }>;  
   sociallinks: Array<{ name: string; href: string; icon: string }>;
 }
 
 const Footer = ({
-  data: {   pathlink, sociallinks },
+  data: { pathlink, sociallinks },
 }: {
   data: FooterData;
 }) => {
