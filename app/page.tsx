@@ -5,6 +5,8 @@ import Vector from "@/components/atoms/Vector";
 import Heading from "@/components/atoms/Heading";
 import Subheading from "@/components/atoms/Subheading";
 import MissionVisson from "@/components/molecules/SubTitleParagraph";
+import Slider from "@/components/organisms/ImageSlider";
+
 import HomeData from "@/data/home.json";
 
 export default function Home() {
@@ -19,7 +21,7 @@ export default function Home() {
       <div className="container mx-auto p-10 lg:px-48">
 
         <section className="py-4 md:py-8"> 
-          <Heading heading= {HomeData.aboutus.title}/>
+          <Heading heading= {HomeData.aboutus.title} className="mb-11"/>
           <Subheading subheading= {HomeData.aboutus.description}/>
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <MissionVisson
@@ -51,15 +53,13 @@ export default function Home() {
             alt="Latest Insights stock"
             className="w-full object-cover"
           />
+          
         </section>
         <section className="py-4 md:py-8 bg-[##dff4f5]">
-            <Heading heading= {HomeData.highlight.title}/>
+          <Heading heading={HomeData.highlight.title} className="mb-4"/>
           <Subheading subheading= {HomeData.highlight.description}/>
-          <img
-            src="/images/stock-insight.png"
-            alt="Latest Insights stock"
-            className="w-full object-cover"
-          />
+          <Slider slides={HomeData.highlight.slides} />  
+
         </section>
       </div>
     </div>

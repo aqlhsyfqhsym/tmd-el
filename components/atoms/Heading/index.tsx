@@ -1,15 +1,14 @@
-import React from 'react';
-
-interface MainTitleProps {
+interface HeadingProps {
   heading: string;
- }
+  className?: string; // Optional className prop
+}
 
-const MainTitle: React.FC<MainTitleProps> = ({ heading }) => {
+const Heading: React.FC<HeadingProps> = ({ heading, className }) => {
   return (
-    <>
-      <h2 className="text-3xl font-extrabold text-[#1072BA]">{heading}</h2>
-     </>
+    <h2 className={`text-3xl font-extrabold text-[#1072BA] ${className}`}>
+      {heading}
+    </h2>
   );
 };
 
-export default MainTitle;
+export default Heading;

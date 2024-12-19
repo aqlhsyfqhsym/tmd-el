@@ -22,24 +22,38 @@
                 "image": "/images/hero/planta.png",
                 "text": "Service Location",
                 "link": "/service-location"
-
             },
             {
                 "image": "/images/hero/planta.png",
                 "text": "Our Customers",
                 "link": "/service-location"
-
             },
             {
                 "image": "/images/hero/planta.png",
                 "text": "Services Overview",
                 "link": "/service-location"
-
             }
         ]
     },
     "highlight": {
         "title": "Highlights",
-        "description": "Discover our latest projects, partnerships, and milestones as we drive forward in the energy industry."
-     }
+        "description": "Discover our latest projects, partnerships, and milestones as we drive forward in the energy industry.",
+        "slides": [
+            {
+                "title": "Slide 1",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "image": "/images/hero/planta.png"
+            },
+            {
+                "title": "Slide 2",
+                "description": "Aenean commodo ligula eget dolor.",
+                "image": "/images/hero/planta.png"
+            },
+            {
+                "title": "Slide 3",
+                "description": "Nulla consequat massa quis enim.",
+                "image": "/images/hero/planta.png"
+            }
+        ]
+    }
 }
