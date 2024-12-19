@@ -1,0 +1,40 @@
+{
+    "hero": {
+        "heading": "Media - Press Release",
+        "subheading": "Supporting maritime industries with world-class solutions and a network spanning 19 key ports in Malaysia",
+        "image": "/images/media/discussion.jpg"
+    },
+    "pressrelease": {
+        "title": "Press Release"
+    },
+    "presscards": {
+        "cards": [
+            {
+                "image": "/images/media/pressrelease1.png",
+                "title": "Lorem ipsum dolor sit amet",
+                "description": "consectetur. Aliquam bibendum porta tellus sit non mi. Cursus aliquam aliquet tortor felis felis erat non donec."
+            },
+            {
+                "image": "/images/media/pressrelease2.png",
+                "text": "Service Location",
+                "link": "/service-location",
+                "title": "Lorem ipsum dolor sit amet",
+                "description": "consectetur. Aliquam bibendum porta tellus sit non mi. Cursus aliquam aliquet tortor felis felis erat non donec."
+            },
+            {
+                "image": "/images/media/pressrelease3.png",
+                "text": "Service Location",
+                "link": "/service-location",
+                "title": "Lorem ipsum dolor sit amet",
+                "description": "consectetur. Aliquam bibendum porta tellus sit non mi. Cursus aliquam aliquet tortor felis felis erat non donec."
+            },
+            {
+                "image": "/images/media/pressrelease4.png",
+                "text": "Service Location",
+                "link": "/service-location",
+                "title": "Lorem ipsum dolor sit amet",
+                "description": "consectetur. Aliquam bibendum porta tellus sit non mi. Cursus aliquam aliquet tortor felis felis erat non donec."
+            }
+        ]
+    }
+}
