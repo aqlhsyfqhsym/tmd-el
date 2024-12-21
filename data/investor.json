@@ -1,0 +1,55 @@
+{
+    "hero": {
+        "heading": "Investor Relations",
+        "subheading": "Supporting maritime industries with world-class solutions and a network spanning 19 key ports in Malaysia",
+        "image": "/images/investor/floatel.png"
+    },
+    "aboutus": {
+        "title": "Governance Documents"
+    },
+    "codeofbusiness": {
+        "title": "Code of Business Conduct and Ethics",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus dignissim maecenas. Vivamus in nec malesuada vel. Nulla arcu praesent enim netus iaculis pharetra adipiscing risus semper. Pellentesque nunc nec sit pretium metus ipsum. Porttitor vivamus metus enim arcu libero a. Interdum tortor ac purus mauris sagittis porta."
+    },
+    "corporate": {
+        "title": "Corporate Governance Guidelines",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus dignissim maecenas.\nVivamus in nec malesuada vel. Nulla arcu praesent enim netus iaculis pharetra adipiscing risus semper. Pellentesque nunc nec sit pretium metus ipsum. Porttitor vivamus metus enim arcu libero a. Interdum tortor ac purus mauris sagittis porta.\nPosuere vitae et tortor eget aliquam volutpat nunc. Quis egestas faucibus vel aenean eget. Praesent vitae tristique netus diam est cras faucibus. Lacus maecenas aliquam fermentum suscipit eu cras ullamcorper. Massa iaculis quis vitae diam quis. Arcu est cras justo neque. Luctus sit maecenas nulla consectetur vitae. Nunc ridiculus sit pulvinar turpis venenatis blandit. Venenatis eu egestas sed consectetur ac. Leo lectus convallis eleifend fames. Morbi venenatis neque habitant pharetra magna."
+    },
+    "insidertraining": {
+        "title": "Insider Trading Policy",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis."
+    },
+    "whistle": {
+        "title": "Whistle Blowing Policy",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus  "
+    },
+    "board": {
+        "title": "Board Diversity Disclosure",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus "
+    },
+    "audit": {
+        "title": "Audit Committee Charter",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus "
+    },
+    "compensation": {
+        "title": "Compensation Committee Charter",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus "
+    },
+    "nominating": {
+        "title": "Nominating and Corporate Governance Committee Charter ",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus "
+    },
+    "financial": {
+        "title": "Financial Report"
+    },
+    "fillings": {
+        "title": "SEC Filings"
+    },
+    "lorep": {
+        "title": "Lorem ipsum dolor sit am",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus "
+    },
+    "stock": {
+        "title": "Stock Information"
+    }
+}
