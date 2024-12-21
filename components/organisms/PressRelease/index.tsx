@@ -14,7 +14,7 @@ const Hero: React.FC<PressReleaseProps> = ({ cards }) => {
             {cards.map((card, index) => (
                 <a
                     key={index}
-                    className="grid sm:grid-cols-[auto,1fr] items-center gap-6 overflow-hidden rounded-lg"
+                    className="grid sm:grid-cols-[auto,1fr] items-start gap-6 overflow-hidden rounded-lg"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
