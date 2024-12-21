@@ -1,0 +1,26 @@
+{
+    "hero": {
+        "heading": "Sustainability",
+        "subheading": "Supporting maritime industries with world-class solutions and a network spanning 19 key ports in Malaysia",
+        "image": "/images/sustainability/ship1.png"
+    },
+    "aboutus": {
+        "title": "Sustainability"
+    },
+    "creditrisk": {
+        "title": "Credit Risk",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus dignissim maecenas.\nVivamus in nec malesuada vel. Nulla arcu praesent enim netus iaculis pharetra adipiscing risus semper. Pellentesque nunc nec sit pretium metus ipsum. Porttitor vivamus metus enim arcu libero a. Interdum tortor ac purus mauris sagittis porta.\nPosuere vitae et tortor eget aliquam volutpat nunc. Quis egestas faucibus vel aenean eget. Praesent vitae tristique netus diam est cras faucibus. Lacus maecenas aliquam fermentum suscipit eu cras ullamcorper. Massa iaculis quis vitae diam quis. Arcu est cras justo neque. Luctus sit maecenas nulla consectetur vitae. Nunc ridiculus sit pulvinar turpis venenatis blandit. Venenatis eu egestas sed consectetur ac. Leo lectus convallis eleifend fames. Morbi venenatis neque habitant pharetra magna."
+    },
+    "internalcontrol": {
+        "title": "Internal Control",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus dignissim maecenas.\nVivamus in nec malesuada vel. Nulla arcu praesent enim netus iaculis pharetra adipiscing risus semper. Pellentesque nunc nec sit pretium metus ipsum. Porttitor vivamus metus enim arcu libero a. Interdum tortor ac purus mauris sagittis porta.\nPosuere vitae et tortor eget aliquam volutpat nunc. Quis egestas faucibus vel aenean eget. Praesent vitae tristique netus diam est cras faucibus. Lacus maecenas aliquam fermentum suscipit eu cras ullamcorper. Massa iaculis quis vitae diam quis. Arcu est cras justo neque. Luctus sit maecenas nulla consectetur vitae. Nunc ridiculus sit pulvinar turpis venenatis blandit. Venenatis eu egestas sed consectetur ac. Leo lectus convallis eleifend fames. Morbi venenatis neque habitant pharetra magna."
+    },
+    "environmental": {
+        "title": "Environmental, Social and Governance",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis."
+    },
+    "compliance": {
+        "title": "Compliance and Risk Management",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus "
+    }
+}
