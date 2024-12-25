@@ -1,0 +1,83 @@
+{
+    "hero": {
+        "heading": "Industry Expertise",
+        "subheading": "Supporting maritime industries with world-class solutions and a network spanning 19 key ports in Malaysia",
+        "image": "/images/business/business.png"
+    },
+    "aboutus": {
+        "title": "Service Locations"
+    },
+    "malaysia": {
+        "description": "Our main service location is in the Malaysian waters. Our Group possesses over 73 licenses under the 1974 Petroleum Development Act issued by the Malaysian government through our Operating Subsidiaries in Malaysia for us to act as a physical supplier of marine fuel products in Malaysia. We operate and provide bunkering services through our bunkering vessels in 19 ports throughout Malaysia, including Lumut Port, Penang Port, Port Klang, Malacca Port, Linggi Port, Johor Port, Port of Tanjung Pelepas, Tok Bali Port, Kuala Terengganu Port, Dungun Port, Kemaman Port, Kuantan Port, Pulau Tioman Port, Desaru Port, Bintulu Port, Miri Port, Labuan Port, Kota Kinabalu Port and Sapangar Bay Oil Terminal. We lease and maintain an administrative office in Johor Bahru, Malaysia, which is responsible for, among other things, our bunkering operations, daily business administration and invoicing functions of our Bunkering Subsidiary.Additionally, our vessel chartering services are solely provided to Tumpuan Megah Development Sdn. Bhd. through an administrative office in Labuan which we lease."
+    },
+    "singapore": {
+        "description": "Our ship management services are mainly provided to our customers in Singapore and Malaysia. We provide the services from our administrative office in Singapore which is based out from a property we acquired in August 2022.Our ship management services are mainly provided to our customers in Singapore and Malaysia. We provide the services from our administrative office in Singapore which is based out from a property we acquired in August 2022."
+    },
+    "facilities": {
+        "title": "Facilities",
+        "description": "Our corporate office is located in Kuala Lumpur, Malaysia which is shared with Straits Energy Resources Berhad."
+    },
+    "sales": {
+        "title": "Sales and Marketing",
+        "description": "Most of our sales and marketing functions are performed at our Johor Bahru office. We mainly market our marine fuel products and services through our internal dedicated sales team that directly engages with potential customers and provides customized solutions. We believe our level of customer service, years of experience in the industry and reputation for reliability are significant factors in retaining our customers and attracting new customers. We also market our marine fuel products and services through business-to-business (B2B) platforms such as the company’s website that cater to the maritime industry. Additionally, we participate in Singapore International Bunkering Conference and Exhibition (“SIBCON”) on yearly basis."
+    },
+    "ourservice": {
+        "title": "Our Customers"
+    },
+    "ourservicedesc": {
+        "description": "We market marine fuel and related services to a broad and diversified base of customers, which include:"
+    },
+    "service": {
+        "title": "Service Overview"
+    },
+    "servicedesc": {
+        "description": "Delivering quality fuel solutions and reliable operations for ships and vessels across Malaysia."
+    },
+    "key": {
+        "title": "Key Statistics Section",
+        "description": "Most of our sales and marketing functions are performed at our Johor Bahru office. We mainly market our marine fuel products and services through our internal dedicated sales team that directly engages with potential customers and provides customized solutions. We believe our level of customer service, years of experience in the industry and reputation for reliability are significant factors in retaining our customers and attracting new customers. We also market our marine fuel products and services through business-to-business (B2B) platforms such as the company’s website that cater to the maritime industry. Additionally, we participate in Singapore International Bunkering Conference and Exhibition (“SIBCON”) on yearly basis."
+    },
+    "coreService": {
+        "title": "Core Services Section",
+        "services": [
+            { "heading": "Offshore Bunkering Services", "description": "STS transfer of marine fuels." },
+            { "heading": "Ship Management Services", "description": "In-house and external vessel management." },
+            { "heading": "Fueling Solutions", "description": "High-quality fuel products for oil, gas, and logistics companies." }
+        ],
+        "details": [
+            "Our customer base is diverse and includes oil and gas companies, shipping companies, maritime transport and logistics companies, charterers, fishing vessels, naval and military vessels, as well as passenger transport vehicles such as cruise ships. We are committed to delivering high-quality marine fuel products and reliable bunkering services to meet the specific requirements of our valued customers in the maritime industry.",
+            "Our supporting services include ship management services for in-house and external vessels whereby we will undertake operational management, technical management, and crewing for the vessel. Additionally, we also carry out vessel chartering services in-house and provide the services to external parties. We will also charter our vessels to our subsidiaries based on its requirements.",
+            "To ensure reliable and timely fuel delivery, we utilize our fleet of bunkering vessels exclusively for our own physical delivery operations. We do not typically charter them out to external parties. This level of control allows us to maintain a high degree of oversight and optimize our operations to meet the specific demands of our customers. The management of our technical ship operations is conducted in-house, which enables us to uphold our standards of customer service. By managing these operations internally, we can ensure that our vessels are well-maintained and operated to the highest standards."
+        ]
+    },
+    "ourservicecard": [
+        {
+          "icon": "🚢",
+          "title": "Ship owners and operators",
+          "description": "Companies that own and operate ships and vessels requiring bunkering and ship management services.",
+          "backgroundImage": "/images/business/card1.jpg",
+          "gradient": "linear-gradient(rgba(217, 217, 217, 0.5), rgba(217, 217, 217, 0.5))"
+        },
+        {
+          "icon": "⚓",
+          "title": "Oil and Gas Traders or Brokers",
+          "description": "Companies engaged in shipping goods internationally, which require bunkering services.",
+          "backgroundImage": "/images/business/card2.jpg",
+          "gradient": "linear-gradient(rgba(217, 217, 217, 0.5), rgba(217, 217, 217, 0.5))"
+        },
+        {
+          "icon": "📦",
+          "title": "Shipping lines",
+          "description": "Companies engaged in shipping goods internationally, which require bunkering services.",
+          "backgroundImage": "/images/business/card3.jpg",
+          "gradient": "linear-gradient(rgba(217, 217, 217, 0.5), rgba(217, 217, 217, 0.5))"
+        },
+        {
+          "icon": "🚚",
+          "title": "Logistics and Freight Companies",
+          "description": "Companies engaged in shipping goods internationally, which require bunkering services.",
+          "backgroundImage": "/images/business/card4.jpg",
+          "gradient": "linear-gradient(rgba(217, 217, 217, 0.5), rgba(217, 217, 217, 0.5))"
+        }
+      ]
+}
