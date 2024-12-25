@@ -3,7 +3,7 @@ import React from "react";
 interface HeroProps {
   heading: string;
   subheading: string;
-  subheadingleft: string;
+  subheadingleft?: string;
   image: string;
 }
 

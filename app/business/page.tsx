@@ -20,6 +20,7 @@ export default function Businesss() {
             <Hero
                 heading={BusinessData.hero.heading}
                 subheading={BusinessData.hero.subheading}
+                subheadingleft={BusinessData.hero.subheadingleft}
                 image={BusinessData.hero.image}
             />
             <Vector />
