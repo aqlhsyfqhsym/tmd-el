@@ -15,13 +15,14 @@ export default function Home() {
       <Hero
         heading={HomeData.hero.heading}
         subheading={HomeData.hero.subheading}
-        image={HomeData.hero.image} // Pass the image from JSON
+        subheadingleft={HomeData.hero.subheadingleft}
+        image={HomeData.hero.image} 
       />
       <Vector />
       <div className="container mx-auto p-10 lg:px-48">
 
         <section className="py-4 md:py-8"> 
-          <Heading heading= {HomeData.aboutus.title} className="mb-11"/>
+          <Heading heading="About Us" className="mb-11"/>
           <Subheading subheading= {HomeData.aboutus.description}/>
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <MissionVisson
@@ -49,7 +50,7 @@ export default function Home() {
             Stay Updated on TMD Energy’s Market Performance . (Stock Quote)
           </p>
           <img
-            src="/images/stock-insight.png"
+            src="/images/home/stock-insight.png"
             alt="Latest Insights stock"
             className="w-full object-cover"
           />
