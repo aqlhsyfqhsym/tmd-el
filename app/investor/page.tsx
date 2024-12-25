@@ -75,7 +75,7 @@ export default function Sustainability() {
                     <img
                         src="/images/investor/dashboard.png"
                         alt="Financial Report"
-                        className="w-full object-cover"
+                        className="w-auto object-cover"
                     />
 
                     <Heading heading={InvestorData.fillings.title} className="mb-7 mt-12" />
