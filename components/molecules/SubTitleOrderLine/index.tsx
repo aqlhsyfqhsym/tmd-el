@@ -6,7 +6,7 @@ interface SubTitleOrderLineProps {
     details: string[];
 }
 
-const SubTitle: React.FC<SubTitleOrderLineProps> = ({ title, services, details }) => {
+const SubTitleOrderLine: React.FC<SubTitleOrderLineProps> = ({ title, services, details }) => {
     return (
         <section className="py-8">
             <h2 className="text-2xl font-bold text-[#2F2A64] mb-6">{title}</h2>
@@ -27,4 +27,4 @@ const SubTitle: React.FC<SubTitleOrderLineProps> = ({ title, services, details }
     );
 };
 
-export default SubTitle;
+export default SubTitleOrderLine;

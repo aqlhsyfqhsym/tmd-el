@@ -8,7 +8,7 @@ interface PressReleaseProps {
     }[];
 }
 
-const Hero: React.FC<PressReleaseProps> = ({ cards }) => {
+const PressRelease: React.FC<PressReleaseProps> = ({ cards }) => {
     return (
         <div className="grid grid-cols-1 gap-6 pb-10">
             {cards.map((card, index) => (
@@ -43,4 +43,4 @@ const Hero: React.FC<PressReleaseProps> = ({ cards }) => {
     );
 };
 
-export default Hero;
+export default PressRelease;
