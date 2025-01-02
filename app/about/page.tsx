@@ -8,7 +8,6 @@ import Subheading from "@/components/atoms/Subheading";
 
 import CorporateProfileFeature from "@/components/molecules/SubTitleParagraph";
 
- 
 export default function Sustainability() {
   return (
     <div className="max-w-none bg-[#FBFBFB]">
@@ -37,6 +36,28 @@ export default function Sustainability() {
             />
           ))}
         </section>
+      </div>
+      <div
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(0, 169, 157, 0.12) 1.66%, rgba(17, 114, 186, 0.12) 98.86%)",
+        }}
+      >
+        <div className="container mx-auto p-10 lg:px-48">
+          <section className="py-4 md:py-8">
+            <h2 className="text-3xl font-extrabold text-[#272361] mb-4">
+              Latest Insights
+            </h2>
+            <p className="text-gray-700 text-base">
+              Stay Updated on TMD Energy’s Market Performance . (Stock Quote)
+            </p>
+            <img
+              src="/images/about/corporate-structure.png"
+              alt="Latest Insights stock"
+              className="w-full object-cover"
+            />
+          </section>
+        </div>
       </div>
     </div>
   );
