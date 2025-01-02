@@ -11,6 +11,7 @@ return (
     <Hero
         heading={MediaData.hero.heading}
         subheading={MediaData.hero.subheading}
+        subheadingleft={MediaData.hero.subheading}
         image={MediaData.hero.image}
       />
       <Vector />

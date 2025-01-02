@@ -11,6 +11,7 @@ export default function Career() {
             <Hero
                 heading={CareerData.hero.heading}
                 subheading={CareerData.hero.subheading}
+                subheadingleft={CareerData.hero.subheadingleft}
                 image={CareerData.hero.image}
             />
             <Vector />

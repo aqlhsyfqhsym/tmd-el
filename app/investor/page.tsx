@@ -19,6 +19,7 @@ export default function Sustainability() {
             <Hero
                 heading={InvestorData.hero.heading}
                 subheading={InvestorData.hero.subheading}
+                subheadingleft={InvestorData.hero.subheadingleft}
                 image={InvestorData.hero.image}
             />
             <Vector />
