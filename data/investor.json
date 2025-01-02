@@ -2,6 +2,7 @@
     "hero": {
         "heading": "Investor Relations",
         "subheading": "Supporting maritime industries with world-class solutions and a network spanning 19 key ports in Malaysia",
+        "subheadingleft": "lorem ipsum",
         "image": "/images/investor/floatel.png"
     },
     "aboutus": {
