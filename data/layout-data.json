@@ -1,14 +1,35 @@
 {
   "navbar": {
-    "about": "About",
-    "services": "Services",
-    "news": "News",
-    "support": "Support",
-    "career": "Careers",
-    "partner": "Partners",
-    "downloadqr": "Download MyDigital ID"
+    "about": {
+      "label": "About",
+      "href": "/about"
+    },
+    "business": {
+      "label": "Business",
+      "href": "/business"
+    },
+    "investor": {
+      "label": "Investor Relation",
+      "href": "/investor-relation"
+    },
+    "media": {
+      "label": "Media",
+      "href": "/media"
+    },
+    "sustainability": {
+      "label": "Sustainability",
+      "href": "/sustainability"
+    },
+    "career": {
+      "label": "Careers",
+      "href": "/career"
+    },
+    "contactus": {
+      "label": "Contact Us",
+      "href": "/contactus"
+    }
   },
-  "footer": { 
+  "footer": {
     "pathlink": [
       {
         "name": "Whistleblower",
