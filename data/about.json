@@ -6,6 +6,18 @@
         "image": "/images/hero/platform.png"
     } ,
     "ourpurpose": {
-        "title": "Our Purpose & Values"
+        "title": "Our Purpose & Values",
+        "image": [
+            {
+                "image": "/images/hero/planta.png",
+                "text": "Misson",
+                "link": "#"
+            },
+            {
+                "image": "/images/hero/planta.png",
+                "text": "Visson",
+                "link": "#"
+            }
+        ]
      }
 }
