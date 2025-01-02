@@ -1,54 +1,84 @@
 {
-  "navbar": {
-    "about": "About",
-    "services": "Services",
-    "news": "News",
-    "support": "Support",
-    "career": "Careers",
-    "partner": "Partners",
-    "downloadqr": "Download MyDigital ID"
+  "links": {
+    "home": "/",
+    "career": "/careers",
+    "support": "/support"
   },
-  "footer": { 
+  "dropdowns": [
+    {
+      "name": "About Us",
+      "items": [
+        { "label": "Our Story", "href": "/about/our-story" },
+        { "label": "Leadership", "href": "/about/leadership" },
+        { "label": "Careers", "href": "/about/careers" }
+      ]
+    },
+    {
+      "name": "Business",
+      "items": [
+        { "label": "Energy Solutions", "href": "/business/energy-solutions" },
+        { "label": "Projects", "href": "/business/projects" }
+      ]
+    },
+    {
+      "name": "Investor Relations",
+      "items": [
+        { "label": "Reports", "href": "/investor/reports" },
+        { "label": "Shareholders", "href": "/investor/shareholders" }
+      ]
+    },
+    {
+      "name": "Media",
+      "items": [
+        { "label": "News", "href": "/media/news" },
+        { "label": "Gallery", "href": "/media/gallery" }
+      ]
+    },
+    {
+      "name": "Sustainability",
+      "items": [
+        { "label": "Policies", "href": "/sustainability/policies" },
+        { "label": "Initiatives", "href": "/sustainability/initiatives" }
+      ]
+    }
+  ],
+  "footer": {
     "pathlink": [
       {
         "name": "Whistleblower",
-        "href": "#"
+        "href": "/whistleblower"
       },
       {
         "name": "Disclaimer",
-        "href": "#"
+        "href": "/disclaimer"
       },
       {
         "name": "Privacy Statement",
-        "href": "#"
+        "href": "/privacy-statement"
       },
       {
         "name": "Important Notice",
-        "href": "#"
+        "href": "/important-notice"
       },
       {
         "name": "Contact Us",
-        "href": "#"
-      },
-      {
-        "name": "Contact",
-        "href": "#"
+        "href": "/contact-us"
       }
     ],
     "sociallinks": [
       {
         "name": "Facebook",
-        "href": "#",
+        "href": "https://facebook.com",
         "icon": "icons/facebook.svg"
       },
       {
         "name": "Twitter",
-        "href": "#",
+        "href": "https://twitter.com",
         "icon": "icons/twitter.svg"
       },
       {
-        "name": "Youtube",
-        "href": "#",
+        "name": "YouTube",
+        "href": "https://youtube.com",
         "icon": "icons/youtube.svg"
       }
     ]

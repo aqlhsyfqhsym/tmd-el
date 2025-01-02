@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import layoutData from "@/data/layout-data.json";
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -10,24 +11,18 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-sm hidden md:block">
-      <div className="container mx-auto  py-3 flex flex-col items-center gap-3">
-        <img src="/images/tmd-logo-colored.png" alt="TMD Energy Logo" className="w-24" />  
+      <div className="container mx-auto py-3 flex flex-col items-center gap-3">
+        <img src="/images/tmd-logo-colored.png" alt="TMD Energy Logo" className="w-24" />
         <div className="w-full">
-      <hr className="border-t border-gray-300" />
-     </div>
-        <ul className="flex items-center text-xs text-[#000] gap-6 lg:gap-8">
+          <hr className="border-t border-gray-300" />
+        </div>
+        <ul className="flex items-center text-xs text-[#000] gap-6 lg:gap-8"> 
           <li>
-            <a href="#" className="hover:text-blue-600">
+            <a href={layoutData.links.home} className="hover:text-blue-600">
               Home
             </a>
-          </li>
-          {[
-            { name: "About Us", items: ["Our Story", "Leadership", "Careers"] },
-            { name: "Business", items: ["Energy Solutions", "Projects"] },
-            { name: "Investor Relations", items: ["Reports", "Shareholders"] },
-            { name: "Media", items: ["News", "Gallery"] },
-            { name: "Sustainability", items: ["Policies", "Initiatives"] },
-          ].map((menu) => (
+          </li> 
+          {layoutData.dropdowns.map((menu) => (
             <li className="relative group" key={menu.name}>
               <button
                 onClick={() => toggleDropdown(menu.name)}
@@ -50,17 +45,16 @@ const Navbar = () => {
                     d="M6 9l6 6 6-6"
                   />
                 </svg>
-              </button>
-              {/* Dropdown */}
+              </button> 
               {openDropdown === menu.name && (
-                <ul className="absolute left-0 mt-2 w-48 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-10">
+                <ul className="absolute left-0 mt-2 w-48 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-50">
                   {menu.items.map((item) => (
-                    <li key={item}>
+                    <li key={item.label}>
                       <a
-                        href="#"
+                        href={item.href}
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                       >
-                        {item}
+                        {item.label}
                       </a>
                     </li>
                   ))}
@@ -68,14 +62,16 @@ const Navbar = () => {
               )}
             </li>
           ))}
+
+          {/* Additional Static Links */}
           <li>
-            <a href="#" className="hover:text-blue-600">
+            <a href={layoutData.links.career} className="hover:text-blue-600">
               Careers
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-blue-600">
-              Contact Us
+            <a href={layoutData.links.support} className="hover:text-blue-600">
+              Support
             </a>
           </li>
         </ul>
