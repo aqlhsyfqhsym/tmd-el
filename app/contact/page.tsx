@@ -16,7 +16,7 @@ export default function Contact() {
                 image={ContactData.hero.image}
             />
             <Vector />
-            <div className="container pb-20 mx-auto p-10 lg:px-48">
+            <div className="container pb-40 mx-auto p-10 lg:px-48">
                 <section className="py-4 md:py-8">
                     <Heading heading={ContactData.aboutus.title} />
                     <CardDescription
