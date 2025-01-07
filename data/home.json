@@ -1,0 +1,60 @@
+{
+    "hero": {
+        "heading": "Emphasize Commitment",
+        "subheading": "Committed to Supporting the Maritime Industry with Integrity and Expertise",
+        "subheadingleft": "Supporting maritime industries with reliable energy solutions and operational expertise",
+        "image": "/images/hero/planta.png"
+    },
+    "aboutus": {
+        "title": "About Us",
+        "description": "TMD Energy Limited. Founded in the Cayman Islands, TMD Energy Limited is a key player in marine fuel bunkering, ship management, and vessel chartering. Specializing in providing high-quality marine fuels, our company serves numerous ports across Malaysia and Southeast Asia. With a fleet of well-maintained vessels and a commitment to exceptional service and sustainability, TMD Energy is dedicated to supporting the maritime industry with reliable and efficient solutions."
+    },
+    "vission": {
+        "title": "Vission",
+        "description": "To drive, to excel, and to participate in all industry related business with passion, focus and professionalism."
+    },
+    "mission": {
+        "title": "Mission",
+        "description": "Dedicated to deliver uncompromising and services par excellence in every endeavor and task with the utmost integrity and full accountability."
+    },
+    "expertise": {
+        "image": [
+            {
+                "image": "/images/hero/planta.png",
+                "text": "Service Location",
+                "link": "/service-location"
+            },
+            {
+                "image": "/images/hero/planta.png",
+                "text": "Our Customers",
+                "link": "/service-location"
+            },
+            {
+                "image": "/images/hero/planta.png",
+                "text": "Services Overview",
+                "link": "/service-location"
+            }
+        ]
+    },
+    "highlight": {
+        "title": "Highlights",
+        "description": "Discover our latest projects, partnerships, and milestones as we drive forward in the energy industry.",
+        "slides": [
+            {
+                "title": "Slide 1",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "image": "/images/hero/planta.png"
+            },
+            {
+                "title": "Slide 2",
+                "description": "Aenean commodo ligula eget dolor.",
+                "image": "/images/hero/planta.png"
+            },
+            {
+                "title": "Slide 3",
+                "description": "Nulla consequat massa quis enim.",
+                "image": "/images/hero/planta.png"
+            }
+        ]
+    }
+}
