@@ -49,12 +49,11 @@ export default function Home() {
           <p className="text-gray-700 text-base">
             Stay Updated on TMD Energy’s Market Performance . (Stock Quote)
           </p>
-          <img
-            src="/images/home/stock-insight.png"
-            alt="Latest Insights stock"
-            className="w-full object-cover"
-          />
-          
+         
+
+        <Image src="/images/home/stock-insight.png" width={400} height={400}  alt="Latest Insights stock"  className="w-full object-cover" />
+
+
         </section>
         <section className="py-4 md:py-8 bg-[##dff4f5]">
           <Heading heading={HomeData.highlight.title} className="mb-4"/>

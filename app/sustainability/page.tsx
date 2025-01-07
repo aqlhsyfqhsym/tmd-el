@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Hero from "@/components/organisms/Hero";
 import Vector from "@/components/atoms/Vector";
 import Heading from "@/components/atoms/Heading";
@@ -30,10 +31,15 @@ export default function Sustainability() {
             title={SustainData.internalcontrol.title}
             description={SustainData.internalcontrol.description}
           />
-          <img
+     
+
+          <Image
             src="/images/sustainability/ship2.png"
-            alt="Latest Insights stock"
-            className="w-full object-cover"
+            width={800}
+            height={610}
+            priority
+            alt="Internal Control"
+            className="object-cover w-full xl:px-28 my-12  pb-12"
           />
 
           <InternalControl
