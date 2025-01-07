@@ -1,7 +1,6 @@
 import Hero from "@/components/organisms/Hero";
 import Vector from "@/components/atoms/Vector";
 import Heading from "@/components/atoms/Heading";
-import JoinUs from "@/components/molecules/SubTitleParagraph";
 import ContactData from "@/data/contact.json";
 import CardDescription from "@/components/atoms/Paragraph";
 import ContactCard from "@/components/organisms/ContactCard";
