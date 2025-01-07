@@ -1,5 +1,6 @@
-'use client'
+"use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 interface Slide {
   title: string;
@@ -40,11 +41,16 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
             } duration-700 ease-in-out`}
             data-carousel-item
           >
-            <img
+          
+            <Image
               src={slide.image}
               alt={slide.title}
+              width={800}
+              height={610}
+              priority
               className="absolute block w-full h-56 sm:h-full"
             />
+
             <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent z-10 flex flex-col justify-end pl-10 pb-10 md:pl-24 md:pb-20 text-white">
               <h2 className="text-2xl font-bold mb-2">{slide.title}</h2>
               <p className="text-sm">{slide.description}</p>

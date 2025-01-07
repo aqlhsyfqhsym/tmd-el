@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface CardProps {
   cards: {
@@ -19,11 +20,16 @@ const DynamicImageCard: React.FC<CardProps> = ({ cards }) => {
           target="_blank"
           rel="noopener noreferrer" // Open links in a new tab safely
         >
-          <img
+     
+          <Image
             src={card.image}
             alt={card.text}
+            width={800}
+            height={610}
+            priority
             className="w-full h-80 object-cover"
           />
+
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent p-4">
             <p className="text-white text-base font-medium">{card.text}</p>
           </div>

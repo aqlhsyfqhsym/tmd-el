@@ -1,5 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
+import Image from "next/image";
+
 import Link from "next/link"; // Import Link for navigation
 
 interface NavbarProps {
@@ -23,9 +25,12 @@ interface NavbarProps {
       label: string;
       href: string;
       links: { title: string; href: string }[];
-    };   
-    sustainability: { label: string; href: string; links: { title: string; href: string }[];
-  };
+    };
+    sustainability: {
+      label: string;
+      href: string;
+      links: { title: string; href: string }[];
+    };
     career: { label: string; href: string };
     contactus: { label: string; href: string };
   };
@@ -35,11 +40,17 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
   return (
     <nav className="bg-white shadow-sm hidden md:block">
       <div className="container mx-auto py-3 flex flex-col items-center gap-3">
-        <img
+     
+
+        <Image
           src="/images/tmd-logo-colored.png"
           alt="TMD Energy Logo"
+          width={800}
+          height={610}
+          priority
           className="w-24"
         />
+
         <div className="w-full">
           <hr className="border-t border-gray-300" />
         </div>

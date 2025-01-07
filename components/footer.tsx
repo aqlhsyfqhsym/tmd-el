@@ -1,16 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface FooterData {
- 
-  pathlink: Array<{ name: string; href: string }>;  
+  pathlink: Array<{ name: string; href: string }>;
   sociallinks: Array<{ name: string; href: string; icon: string }>;
 }
 
-const Footer = ({
-  data: { pathlink, sociallinks },
-}: {
-  data: FooterData;
-}) => {
+const Footer = ({ data: { pathlink, sociallinks } }: { data: FooterData }) => {
   return (
     <footer>
       <div className="bg-[#3d3b3c] flex flex-col md:flex-row items-center justify-center py-5 md:py-12">
@@ -51,7 +47,14 @@ const Footer = ({
       </div>
 
       <div className="w-full bg-[#231F20] p-10 justify-center items-center flex flex-col gap-7">
-        <img src="/images/tmd-logo.png" alt="TMD-EL Logo" className="w-28" />
+        <Image
+          src="/images/tmd-logo.png"
+          width={800}
+          height={610}
+          priority
+          alt="TMD-EL Logo"
+          className="w-28"
+        />
         <div className="flex flex-col items-center md:flex-row gap-5">
           {pathlink.map((link, index) => (
             <Link
@@ -60,7 +63,7 @@ const Footer = ({
               aria-label={link.name}
               className="social-link"
             >
-              <p>{link.name}</p> 
+              <p>{link.name}</p>
             </Link>
           ))}
         </div>
@@ -72,14 +75,18 @@ const Footer = ({
               aria-label={link.name}
               className="social-link flex items-center justify-center transition-all"
             >
-               <img
-                src={link.icon}  
+ 
+              <Image
+                src={link.icon}
                 alt={link.name}
-                className="w-6 h-6" 
+                width={800}
+                height={610}
+                priority
+                className="w-6 h-6"
               />
-              </Link>
+            </Link>
           ))}
-        </div> 
+        </div>
         <h6 className="font-normal text-xs">© Copyright 2024 TMD EL</h6>
       </div>
     </footer>
