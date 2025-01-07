@@ -1,6 +1,6 @@
 import Vector from "@/components/atoms/Vector";
 import Heading from "@/components/atoms/Heading";
-
+import Image from "next/image";
 import Hero from "@/components/organisms/Hero";
 import About from "@/data/about.json";
 import CardImage from "@/components/organisms/CardImage";
@@ -51,11 +51,17 @@ export default function Sustainability() {
             <p className="text-gray-700 text-base">
               Stay Updated on TMD Energy’s Market Performance . (Stock Quote)
             </p>
-            <img
-              src="/images/about/corporate-structure.png"
-              alt="Latest Insights stock"
+       
+<Image
+            src="/images/about/corporate-structure.png"
+          alt="Latest Insights stock"
+              width={800}
+              height={610}
+              priority
               className="w-full object-cover"
             />
+
+
           </section>
         </div>
       </div>
