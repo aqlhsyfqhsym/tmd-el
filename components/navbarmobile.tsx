@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const MobileNavbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -13,9 +14,13 @@ const MobileNavbar = () => {
     <nav className="bg-white shadow-sm block md:hidden">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <img
+
+        <Image
           src="/images/tmd-logo-colored.png"
-          alt="TMD Energy Logo"
+          alt="TMD Energy Logo Mobile"
+          width={800}
+          height={610}
+          priority
           className="w-20"
         />
 
@@ -52,7 +57,10 @@ const MobileNavbar = () => {
             </li>
 
             {[
-              { name: "About Us", items: ["Our Story", "Leadership", "Careers"] },
+              {
+                name: "About Us",
+                items: ["Our Story", "Leadership", "Careers"],
+              },
               { name: "Business", items: ["Energy Solutions", "Projects"] },
               {
                 name: "Investor Relations",
@@ -64,10 +72,7 @@ const MobileNavbar = () => {
                 items: ["Policies", "Initiatives"],
               },
             ].map((menu) => (
-              <li
-                key={menu.name}
-                className="border-b border-gray-200"
-              >
+              <li key={menu.name} className="border-b border-gray-200">
                 <button
                   onClick={() => toggleDropdown(menu.name)}
                   className="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-blue-50 focus:outline-none"

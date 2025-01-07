@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}  >
-        <Navbar />
+        <Navbar data={layoutData.navbar} />
         <NavbarMobile />
         <main className="bg-[#fff]"> 
         {children}
