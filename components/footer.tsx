@@ -56,7 +56,7 @@ const Footer = ({ data: { pathlink, sociallinks } }: { data: FooterData }) => {
           className="w-28"
         />
         <div className="flex flex-col items-center md:flex-row gap-5">
-          {pathlink.map((link, index) => (
+          {pathlink.map((link) => (
             <Link
               key={link.name}
               href={link.href}
@@ -68,7 +68,7 @@ const Footer = ({ data: { pathlink, sociallinks } }: { data: FooterData }) => {
           ))}
         </div>
         <div className="flex flex-row gap-5">
-          {sociallinks.map((link, index) => (
+          {sociallinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
