@@ -51,14 +51,14 @@ export default function Sustainability() {
             <p className="text-gray-700 text-base">
               Stay Updated on TMD Energy’s Market Performance . (Stock Quote)
             </p>
-       
-<Image
-            src="/images/about/corporate-structure.png"
-          alt="Latest Insights stock"
+
+            <Image
+              src="/images/about/corporate-structure.png"
+              alt="Latest Insights stock"
               width={800}
               height={610}
               priority
-              className="w-full object-cover"
+              className="w-auto mx-auto my-auto object-cover"
             />
 
 
