@@ -4,8 +4,46 @@
         "subheading": "Empowering the Maritime Industry with Reliable and Sustainable Solutions.",
         "subheadingleft": "A leader in marine energy solutions, delivering innovation and sustainability to the maritime industry",
         "image": "/images/hero/platform.png"
-    } ,
+    },
     "ourpurpose": {
-        "title": "Our Purpose & Values"
-     }
+        "title": "Our Purpose & Values",
+        "image": [
+            {
+                "image": "/images/hero/planta.png",
+                "text": "Misson",
+                "link": "#"
+            },
+            {
+                "image": "/images/hero/planta.png",
+                "text": "Visson",
+                "link": "#"
+            }
+        ]
+    },
+    "aboutus": {
+        "title": "Corporate Profile ",
+        "description": "TMD Energy Limited (“TMDEL”) was incorporated in the Cayman Islands on 17 October 2023 as a private company limited by shares. TMDEL is principally involved in investment holding whereas its subsidiaries are principally involved in marine fuel bunkering services specializing in the supply and marketing of marine gas oil and marine fuel oil (including high sulfur fuel oil, low sulfur fuel oil and very low sulfur fuel oil), to ships and vessels at sea.<br><br> Additionally, TMDEL Group, via its subsidiaries are also involved in the provision of ship management services for in-house and external vessels, as well as vessel chartering.",
+        "features": [
+            {
+                "title": "Bunkering & Shipping-Related Services",
+                "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus dignissim maecenas. Vivamus in nec malesuada vel. Nulla arcu praesent enim netus iaculis pharetra adipiscing risus semper. Pellentesque nunc nec sit pretium metus ipsum. Porttitor vivamus metus enim arcu libero a. Interdum tortor ac purus mauris sagittis porta."
+            },
+            {
+                "title": "Our Fleet",
+                "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus dignissim maecenas.\nVivamus in nec malesuada vel. Nulla arcu praesent enim netus iaculis pharetra adipiscing risus semper. Pellentesque nunc nec sit pretium metus ipsum. Porttitor vivamus metus enim arcu libero a. Interdum tortor ac purus mauris sagittis porta.\nPosuere vitae et tortor eget aliquam volutpat nunc. Quis egestas faucibus vel aenean eget. Praesent vitae tristique netus diam est cras faucibus. Lacus maecenas aliquam fermentum suscipit eu cras ullamcorper. Massa iaculis quis vitae diam quis. Arcu est cras justo neque. Luctus sit maecenas nulla consectetur vitae. Nunc ridiculus sit pulvinar turpis venenatis blandit. Venenatis eu egestas sed consectetur ac. Leo lectus convallis eleifend fames. Morbi venenatis neque habitant pharetra magna."
+            },
+            {
+                "title": "Comprehensive Service Overview",
+                "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis."
+            },
+            {
+                "title": "Ship Management Services",
+                "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus  "
+            },
+            {
+                "title": "Service Overview",
+                "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus "
+            }
+        ]
+    }
 }
