@@ -5,7 +5,7 @@ interface CardProps {
   cards: {
     image: string;
     text: string;
-    link: string; // Add a link property
+    link: string; 
   }[];
 }
 
@@ -24,10 +24,10 @@ const DynamicImageCard: React.FC<CardProps> = ({ cards }) => {
 {cards.map((card, index) => (
         <a
           key={index}
-          href={card.link} // Use the dynamic link
+          href={card.link} 
           className="relative overflow-hidden rounded-lg shadow-lg"
           target="_blank"
-          rel="noopener noreferrer" // Open links in a new tab safely
+          rel="noopener noreferrer" 
         >
      
           <Image
