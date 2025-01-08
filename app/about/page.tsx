@@ -1,20 +1,16 @@
-import Image from "next/image";
-import About from "@/data/about.json";
-
 import Vector from "@/components/atoms/Vector";
 import Heading from "@/components/atoms/Heading";
 import Image from "next/image";
-import Hero from "@/components/organisms/Hero";
 import About from "@/data/about.json";
 import Subheading from "@/components/atoms/Subheading";
 import EndOfMilestone from "@/components/atoms/Paragraph";
 import EndOfMilestone2 from "@/components/atoms/Paragraph";
+import Milestone from "@/components/atoms/Paragraph";
 
 import CorporateProfileFeature from "@/components/molecules/SubTitleParagraph";
 
 import Hero from "@/components/organisms/Hero";
 import Accordion from "@/components/organisms/Accordion";
-import CardImage from "@/components/organisms/CardImage";
 import DirectorCard from "@/components/organisms/DirectorCard";
 import TableDirector from "@/components/organisms/TableComponent";
 import TableComitte from "@/components/organisms/TableComponent/comitte";
