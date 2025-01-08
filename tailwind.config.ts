@@ -9,6 +9,9 @@ export default {
   theme: {
     extend: {
       colors: {
+        backgroundImage: {
+          'tmd-gradient-1': "var(--TMD-Gradient-1, linear-gradient(90deg, #00A99D 0%, #1172BA 100%))",
+        },
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

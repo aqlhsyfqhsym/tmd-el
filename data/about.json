@@ -46,7 +46,6 @@
             }
         ]
     },
-
     "milestone": {
         "description": "The history of our Groups involvement in the OGSE industry can be traced back to 2016, when its ultimate holding company, Straits energy Resources Berhad (“Straits”) then known as Raya International Berhad (“RIB”) ventured into the provision of oil bunkering services. Since then, RIB had on June 20, 2017 changed its name to Straits Inter Logistics Berhad and subsequently to its current name, Straits Energy Resources Berhad, on August 19, 2021."
     },
@@ -145,5 +144,92 @@
     },
     "milestone4": {
         "description": "Our Company and its subsidiaries are the subsidiaries of Straits under the latter’s bunkering and shipping related services segment. Straits is a Malaysia company whose shares are listed on the ACE Market of Bursa Malaysia (stock code: 0080) and is subject to the ACE Market Listing Requirements issued by Bursa Malaysia which includes but not limited to requirements governing corporate governance and transfer of shares by Straits and its subsidiaries. Certain of these requirements may extend to the subsidiaries of Straits, including our Group. In contemplation of Straits’ intention to reorganize its oil bunkering and shipping related services segment for listing on NYSE American via common control transactions, Straits had on November 21, 2023 acquired our Company to initiate its restructuring exercise which involve the acquisition of oil bunkering, vessels chartering and vessels management subsidiaries from the Straits Group."
+    },
+    "directors": {
+        "title": "Board of Director"
+    },
+    "director": [
+        {
+            "name": "Dato’ Sri Kam Choy Ho",
+            "title": "Chairman, <br> Chief Executive Officer",
+            "imageSrc": "/images/bod/image-1.png"
+        },
+        {
+            "name": "Dato’ Leong Yan Yoong",
+            "title": "Director",
+            "imageSrc": "/images/bod/image-2.png"
+        },
+        {
+            "name": "Datin Fong Shiang Ng",
+            "title": "Independent Director,  <br> Chairman of Audit Committee",
+            "imageSrc": "/images/bod/image-3.png"
+        },
+        {
+            "name": "Mr. Kok Chaw Leong",
+            "title": "Independent Director, <br> Chairman of Compensation Committee",
+            "imageSrc": "/images/bod/image-4.png"
+        },
+        {
+            "name": "Mr. Yick Fabian Shin",
+            "title": "Independent Director, <br> Chairman of Nominating & CGC",
+            "imageSrc": "/images/bod/image-5.png"
+        },
+        {
+            "name": "Mr. Chee Mun Hoh",
+            "title": "Director",
+            "imageSrc": "/images/bod/image-6.png"
+        }
+    ],
+    "directortable": {
+        "left": "Directors and Executive officers",
+        "right": "Position",
+        "table": [
+            {
+                "name": "Dato’ Sri Kam Choy, Ho",
+                "position": "Chairman of the Board and Chief Executive Officer"
+            },
+            {
+                "name": "Dato’ Leong Yan, Yoong",
+                "position": "Executive Director Nominee*"
+            },
+            {
+                "name": "Datin Fong Shiang, Ng",
+                "position": "Independent Director Nominee*"
+            },
+            {
+                "name": "Mr. Kok Chaw, Leong",
+                "position": "Independent Director Nominee*"
+            },
+            {
+                "name": "Mr. Yick Fabian, Shin",
+                "position": "Independent Director Nominee*"
+            },
+            {
+                "name": "Mr. Chee Mun, Hoh",
+                "position": "Chief Financial Officer"
+            }
+        ]
+    },
+    "CommitteesTable": {
+        "left": "Committees",
+        "center" : "Chairman",
+        "right": "Member",
+        "table": [
+            {
+                "Committees": "Audit committee",
+                "Chairman": "Datin Fong Shiang Ng",
+                "Member": "Datin Fong Shiang Ng, Mr. Kok Chaw Leong and Mr. Yick Fabian Shin"
+            },
+            {
+                "Committees": "Compensation committee",
+                "Chairman": "Mr. Kok Chaw Leong",
+                "Member": "Mr. Kok Chaw Leong, Mr. Yick Fabian Shin and Datin Fong Shiang Ng"
+            },
+            {
+                "Committees": "Nominating and corporate governance committee",
+                "Chairman": "Mr. Yick Fabian Shin",
+                "Member": "Mr. Kok Chaw Leong, Datin Fong Shiang Ng and Mr. Yick Fabian Shin"
+            }
+        ]
     }
 }
