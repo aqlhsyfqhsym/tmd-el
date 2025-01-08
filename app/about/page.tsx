@@ -12,7 +12,7 @@ import CorporateProfileFeature from "@/components/molecules/SubTitleParagraph";
 
 import Hero from "@/components/organisms/Hero";
 import Accordion from "@/components/organisms/Accordion";
-import CardImage from "@/components/organisms/CardImage";
+// import CardImage from "@/components/organisms/CardImage";
 import DirectorCard from "@/components/organisms/DirectorCard";
 import TableDirector from "@/components/organisms/TableComponent";
 import TableComitte from "@/components/organisms/TableComponent/comitte";
@@ -30,7 +30,7 @@ export default function AboutUs() {
       <div className="container mx-auto p-10 lg:px-48">
         <section className="py-4 md:py-8">
           <Heading heading={About.ourpurpose.title} className="mb-11" />
-          <CardImage cards={About.ourpurpose.image} />
+          {/* <CardImage cards={About.ourpurpose.image} /> */}
         </section>
 
         <section className="py-4 md:py-8">
