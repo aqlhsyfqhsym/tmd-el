@@ -1,14 +1,23 @@
+import Image from "next/image";
+import About from "@/data/about.json";
+
 import Vector from "@/components/atoms/Vector";
 import Heading from "@/components/atoms/Heading";
-import Image from "next/image";
-import Hero from "@/components/organisms/Hero";
-import About from "@/data/about.json";
-import CardImage from "@/components/organisms/CardImage";
+import Milestone from "@/components/atoms/Paragraph";
 import Subheading from "@/components/atoms/Subheading";
+import EndOfMilestone from "@/components/atoms/Paragraph";
+import EndOfMilestone2 from "@/components/atoms/Paragraph";
 
 import CorporateProfileFeature from "@/components/molecules/SubTitleParagraph";
 
-export default function Sustainability() {
+import Hero from "@/components/organisms/Hero";
+import Accordion from "@/components/organisms/Accordion";
+import CardImage from "@/components/organisms/CardImage";
+import DirectorCard from "@/components/organisms/DirectorCard";
+import TableDirector from "@/components/organisms/TableComponent";
+import TableComitte from "@/components/organisms/TableComponent/comitte";
+
+export default function AboutUs() {
   return (
     <div className="max-w-none bg-[#FBFBFB]">
       <Hero
@@ -60,9 +69,51 @@ export default function Sustainability() {
               priority
               className="w-auto mx-auto my-auto object-cover"
             />
-
-
           </section>
+        </div>
+      </div>
+      <div className="container mx-auto p-10 lg:px-48">
+        <Heading heading={About.directors.title} className="mb-11" />
+        <div className="grid grid-cols-3 gap-4 mb-11">
+          {About.director.map((director, index) => (
+            <DirectorCard
+              key={index}
+              name={director.name}
+              title={director.title}
+              imageSrc={director.imageSrc}
+            />
+          ))}
+        </div>
+        <TableDirector
+          left={About.directortable.left}
+          right={About.directortable.right}
+          data={About.directortable.table}
+        />
+
+        <TableComitte
+          left={About.CommitteesTable.left} 
+          center={About.CommitteesTable.center} 
+           right={About.CommitteesTable.right}
+           data={About.CommitteesTable.table}
+        />
+      </div>
+
+      <div className="container mx-auto p-10 lg:px-48">
+        <Heading heading="Milestone" className="mb-11 text-4xl text-black" />
+        <Subheading subheading={About.milestone.description} />
+
+        <div className="pb-5">
+          <Milestone description={About.milestone2.description} />
+        </div>
+
+        <div className="mt-8">
+          <Accordion items={About.timeline} />
+        </div>
+        <div className="mt-8">
+          <EndOfMilestone description={About.milestone3.description} />
+        </div>
+        <div className="mt-0">
+          <EndOfMilestone2 description={About.milestone4.description} />
         </div>
       </div>
     </div>
