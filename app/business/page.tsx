@@ -35,7 +35,7 @@ export default function Businesss() {
             height={400}
             alt="Malaysia"
             priority
-            className="object-cover w-full mx-auto pb-5"
+            className="object-cover w-auto mx-auto pb-5"
           />
 
           <Malaysia description={BusinessData.malaysia.description} />
@@ -46,7 +46,7 @@ export default function Businesss() {
             height={610}
             priority
             alt="Malaysia"
-            className="object-contain w-full xl:px-20  my-12  pb-12"
+            className="object-contain mx-auto w-auto xl:px-20  my-12  pb-12"
           />
           <Image
             src="/images/business/singapore.png"
@@ -54,7 +54,7 @@ export default function Businesss() {
             height={610}
             priority
             alt="Singapore"
-            className="object-cover w-full mx-auto pb-5"
+            className="object-cover w-auto mx-auto pb-5"
           />
 
           <div className="pb-5">
@@ -105,7 +105,7 @@ export default function Businesss() {
             height={610}
             priority
             alt="Singapore"
-            className="object-contain w-full xl:px-40  my-12  pb-12"
+            className="object-contain w-auto xl:px-40  my-12  pb-12"
           />
 
           <CoreService

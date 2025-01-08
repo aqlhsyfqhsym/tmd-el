@@ -86,7 +86,7 @@ export default function Sustainability() {
             height={610}
             priority
             alt="Financial Report"
-            className="object-cover w-full xl:px-24 my-12  pb-12"
+            className="object-cover w-auto mx-auto xl:px-24 my-12  pb-12"
           />
 
           <Heading

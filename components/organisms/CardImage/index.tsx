@@ -5,20 +5,29 @@ interface CardProps {
   cards: {
     image: string;
     text: string;
-    link: string; // Add a link property
+    link: string; 
   }[];
 }
 
 const DynamicImageCard: React.FC<CardProps> = ({ cards }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pb-10">
-      {cards.map((card, index) => (
+<div  className={`grid gap-6 pb-10 ${
+    cards.length === 1
+      ? "grid-cols-1"
+      : cards.length === 2
+      ? "grid-cols-2"
+      : cards.length === 3
+      ? "grid-cols-3"
+      : "grid-cols-4" // Default to 4 cards per row for 4 or more cards
+  }`}
+>
+{cards.map((card, index) => (
         <a
           key={index}
-          href={card.link} // Use the dynamic link
+          href={card.link} 
           className="relative overflow-hidden rounded-lg shadow-lg"
           target="_blank"
-          rel="noopener noreferrer" // Open links in a new tab safely
+          rel="noopener noreferrer" 
         >
      
           <Image

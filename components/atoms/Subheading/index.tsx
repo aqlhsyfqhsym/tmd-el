@@ -7,8 +7,8 @@ interface MainTitleProps {
 const MainTitle: React.FC<MainTitleProps> = ({ subheading }) => {
   return (
     <>
-      <p className="text-gray-700 text-base">{subheading}</p>
-      </>
+    <p className="text-gray-700 text-base" dangerouslySetInnerHTML={{ __html: subheading }} />
+    </>
   );
 };
 

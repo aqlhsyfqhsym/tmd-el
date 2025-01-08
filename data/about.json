@@ -4,8 +4,232 @@
         "subheading": "Empowering the Maritime Industry with Reliable and Sustainable Solutions.",
         "subheadingleft": "A leader in marine energy solutions, delivering innovation and sustainability to the maritime industry",
         "image": "/images/hero/platform.png"
-    } ,
+    },
     "ourpurpose": {
-        "title": "Our Purpose & Values"
-     }
+        "title": "Our Purpose & Values",
+        "image": [
+            {
+                "image": "/images/hero/planta.png",
+                "text": "Misson",
+                "link": "#"
+            },
+            {
+                "image": "/images/hero/planta.png",
+                "text": "Visson",
+                "link": "#"
+            }
+        ]
+    },
+    "aboutus": {
+        "title": "Corporate Profile ",
+        "description": "TMD Energy Limited (“TMDEL”) was incorporated in the Cayman Islands on 17 October 2023 as a private company limited by shares. TMDEL is principally involved in investment holding whereas its subsidiaries are principally involved in marine fuel bunkering services specializing in the supply and marketing of marine gas oil and marine fuel oil (including high sulfur fuel oil, low sulfur fuel oil and very low sulfur fuel oil), to ships and vessels at sea.<br><br> Additionally, TMDEL Group, via its subsidiaries are also involved in the provision of ship management services for in-house and external vessels, as well as vessel chartering.",
+        "features": [
+            {
+                "title": "Bunkering & Shipping-Related Services",
+                "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus dignissim maecenas. Vivamus in nec malesuada vel. Nulla arcu praesent enim netus iaculis pharetra adipiscing risus semper. Pellentesque nunc nec sit pretium metus ipsum. Porttitor vivamus metus enim arcu libero a. Interdum tortor ac purus mauris sagittis porta."
+            },
+            {
+                "title": "Our Fleet",
+                "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus dignissim maecenas.\nVivamus in nec malesuada vel. Nulla arcu praesent enim netus iaculis pharetra adipiscing risus semper. Pellentesque nunc nec sit pretium metus ipsum. Porttitor vivamus metus enim arcu libero a. Interdum tortor ac purus mauris sagittis porta.\nPosuere vitae et tortor eget aliquam volutpat nunc. Quis egestas faucibus vel aenean eget. Praesent vitae tristique netus diam est cras faucibus. Lacus maecenas aliquam fermentum suscipit eu cras ullamcorper. Massa iaculis quis vitae diam quis. Arcu est cras justo neque. Luctus sit maecenas nulla consectetur vitae. Nunc ridiculus sit pulvinar turpis venenatis blandit. Venenatis eu egestas sed consectetur ac. Leo lectus convallis eleifend fames. Morbi venenatis neque habitant pharetra magna."
+            },
+            {
+                "title": "Comprehensive Service Overview",
+                "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis."
+            },
+            {
+                "title": "Ship Management Services",
+                "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus  "
+            },
+            {
+                "title": "Service Overview",
+                "description": "Lorem ipsum dolor sit amet consectetur. Sit congue feugiat interdum cum. Aliquam faucibus ultrices lobortis est eget ut vivamus. Risus erat aliquet egestas ullamcorper commodo adipiscing. Eget interdum faucibus "
+            }
+        ]
+    },
+    "milestone": {
+        "description": "The history of our Groups involvement in the OGSE industry can be traced back to 2016, when its ultimate holding company, Straits energy Resources Berhad (“Straits”) then known as Raya International Berhad (“RIB”) ventured into the provision of oil bunkering services. Since then, RIB had on June 20, 2017 changed its name to Straits Inter Logistics Berhad and subsequently to its current name, Straits Energy Resources Berhad, on August 19, 2021."
+    },
+    "milestone2": {
+        "description": "The table below sets out the key events and milestones in the bunkering and oil trading history and development of Straits:"
+    },
+    "timeline": [
+        {
+            "year": "2015",
+            "events": [
+                "Straits' subsidiary, Selatan Bunker (M) Sdn. Bhd. entered into a collaboration agreement with Tumpuan Megah Development Sdn. Bhd. ('Tumpuan Megah') to jointly operate oil bunkering services at the Pasir Gudang Port and Tanjung Pelepas Port (in the state of Johor)."
+            ]
+        },
+        {
+            "year": "2016",
+            "events": [
+                "Diversification into oil bunkering and oil trading through Straits' subsidiary, Selatan Bunker (M) Sdn. Bhd.",
+                "Straits established two (2) companies, namely TMD Straits and TMD Sturgeon in Labuan in preparation for the acquisition of Straits' first 2 vessels (i.e., M.T. Sturgeon and M.T. Straits 1)."
+            ]
+        },
+        {
+            "year": "2017",
+            "events": [
+                "Straits acquired the first and second vessels, \"M.T. Sturgeon\" and \"M.T. Straits 1\" via its subsidiaries TMD Straits and TMD Sturgeon.",
+                "Straits expanded the oil bunkering services to Kemaman Port (in the state of Terengganu), Kuantan Port (in the state of Pahang), and Labuan Port (in the Federal territory of Labuan)."
+            ]
+        },
+        {
+            "year": "2018",
+            "events": [
+                "Tumpuan Megah established six (6) companies in Labuan namely, Cavalla Asia Ltd, Dolphin Asia Ltd, Escolar Asia Ltd, Oscar Asia Ltd, Phoenix Asia Ltd and SMF S3 Asia Ltd.",
+                "Straits acquired six (6) vessels from Tumpuan Megah's subsidiaries in Labuan, namely \"M.T. Cavalla\", \"M.T. Dolphin 1\", \"M.T. Escolar\", \"M.T. Oscar\", \"M.T. Omura\", \"M.T. Phoenix\" and \"M.T. SMF 3\" to expand Straits' existing oil bunkering and oil trading business.",
+                "Straits increased its fleet size to 9 vessels.",
+                "Straits established SMF Marine Fuels & Energy Sdn. Bhd. (\"SMF\") to acquire and hold the marine fuel oil vessels to expand Straits' bunkering services to include marine fuel oil and very low sulfur fuel oil.",
+                "Straits expanded its oil bunkering services to Tanjung Pelepas Port (in the state of Johor), Johor Bahru Port (in the state of Johor), Kuala Terengganu Port (in the state of Terengganu), and Miri Port (in the state of Sarawak) to service a total of 8 ports."
+            ]
+        },
+        {
+            "year": "2019",
+            "events": [
+                "Straits expanded its product line from bunkering marine gas oil to include marine fuel oil.",
+                "Straits established Straits Marine Services Pte Ltd (“SMS 1”) in Singapore to provide in-house ship management services for its fleet of vessels.",
+                "SMF established two (2) companies in Labuan, namely SMF Begonia Ltd and SMF Ixora Ltd in preparation for the acquisition of two (2) additional vessels, namely “M.T. SMF Begonia” and “M.T. SMF Ixora” to increase the fleet size to 11 vessels.",
+                "Straits expanded its oil bunkering services to Bintulu Port (in the state of Sarawak) and Lumut Port (in the state of Perak) to service a total of 10 ports."
+            ]
+        },
+        {
+            "year": "2020",
+            "events": [
+                "With the implementation on all seafaring vessels using low sulfur fuel oil by January 1, 2020 by the IMO under IMO 2020, Tumpuan Megah has further extended its product line to include low sulfur fuel oil.",
+                "Tumpuan Megah established SMF Beluga to acquire additional vessel",
+                "SMF established SMF Omura",
+                "Straits established SMF Eden to acquire additional vessel."
+            ]
+        },
+        {
+            "year": "2021",
+            "events": [
+                "SMS 1 established Straits Maritime Services Pte. Ltd. (“SMS 2”) in Singapore to provide ship management services to external parties.",
+                "Straits acquired an additional 15% equity interest in Tumpuan Megah. Consequently, Tumpuan Megah became a 70%-owned subsidiary of Straits.",
+                "SMF established Sierra Pioneer Ltd and Katsu Pioneer Ltd to acquire additional vessels.",
+                "SMF Omura Ltd acquired M.T. Omura from Tumpuan Megah."
+            ]
+        },
+        {
+            "year": "2022",
+            "events": [
+                "Increased the fleet of bunkering vessels to include “M.T. Sierra Pioneer”, “M.T. Katsu Pioneer” and “M.T. Empower” and as such, Tumpuan Megah is operating with a fleet size of 15 bunkering vessels."
+            ]
+        },
+        {
+            "year": "2023",
+            "events": [
+                "Tumpuan Megah invested 20% in Horizon Shipyard Inter Globe (M) Sdn Bhd.",
+                "Straits acquired our Company as part of the intention of reorganizing its oil bunkering and shipping related services segment through common control transactions for listing on the stock exchange in the United States by way of a registered public offering.",
+                "As part of the common control transactions, Straits acquired 33% equity interest in SMF from Tumpuan Megah. Consequently, SMF became a wholly-owned subsidiary of Straits.",
+                "As part of the common control transactions, our Company acquired 100% equity interest in SMF from Straits.",
+                "Tumpuan Megah has been successfully certified by the ISCC EU as Malaysia first supplier and trader of biofuel. This accomplishment will allow Tumpuan Megah to expand into the marine biofuel trading and bunkering business, in line with the industry’s efforts to reduce shipping’s carbon footprint."
+            ]
+        },
+        {
+            "year": "2024",
+            "events": [
+                "Tumpuan Megah acquired 30% equity interest in TMD Marine Fuels Sdn. Bhd.",
+                "As part of the common control transactions, SMF acquired 100% equity interest in TMD Sturgeon and TMD Straits from Straits.",
+                "As part of the common control transactions, SMF acquired 51% equity interest in SMS 1 from Straits.",
+                "As part of the common control transactions, SMF acquired 70% equity interest in Tumpuan Megah from Straits.",
+                "As part of the common control transactions, SMF acquired remaining 30% equity interest in Tumpuan Megah from Dato Mohd Suhaimi Bin Hashim and Mr Yong Sing Goo. Tumpuan Megah became a wholly-owned subsidiary of SMF.",
+                "As part of the common control transactions, SMF acquired remaining 49% equity interest in SMS 1 from Platinum Gate Capital Pte Ltd. SMS 1 became a wholly-owned subsidiary of SMF.",
+                "SMF has acquired 100% equity interest in Cavalla Asia Ltd, Dolphin Asia Ltd, Escolar Asia Ltd, Oscar Asia Ltd, Phoenix Asia Ltd and S3 Asia Ltd from Tumpuan Megah, marking the completion of the restructuring exercise."
+            ]
+        }
+    ],
+    "milestone3": {
+        "description": "Currently, our Group is operating with 15 well-maintained bunkering vessels and is currently providing bunkering services in 19 ports in Malaysia, including Lumut Port, Penang Port, Port Klang, Malacca Port, Linggi Port, Johor Port, Port of Tanjung Pelepas, Tok Bali Port, Kuala Terengganu Port, Dungun Port, Kemaman Port, Kuantan Port, Pulau Tioman Port, Desaru Port, Bintulu Port, Miri Port, Labuan Port, Kota Kinabalu Port and Sapangar Bay Oil Terminal."
+    },
+    "milestone4": {
+        "description": "Our Company and its subsidiaries are the subsidiaries of Straits under the latter’s bunkering and shipping related services segment. Straits is a Malaysia company whose shares are listed on the ACE Market of Bursa Malaysia (stock code: 0080) and is subject to the ACE Market Listing Requirements issued by Bursa Malaysia which includes but not limited to requirements governing corporate governance and transfer of shares by Straits and its subsidiaries. Certain of these requirements may extend to the subsidiaries of Straits, including our Group. In contemplation of Straits’ intention to reorganize its oil bunkering and shipping related services segment for listing on NYSE American via common control transactions, Straits had on November 21, 2023 acquired our Company to initiate its restructuring exercise which involve the acquisition of oil bunkering, vessels chartering and vessels management subsidiaries from the Straits Group."
+    },
+    "directors": {
+        "title": "Board of Director"
+    },
+    "director": [
+        {
+            "name": "Dato’ Sri Kam Choy Ho",
+            "title": "Chairman, <br> Chief Executive Officer",
+            "imageSrc": "/images/bod/image-1.png"
+        },
+        {
+            "name": "Dato’ Leong Yan Yoong",
+            "title": "Director",
+            "imageSrc": "/images/bod/image-2.png"
+        },
+        {
+            "name": "Datin Fong Shiang Ng",
+            "title": "Independent Director,  <br> Chairman of Audit Committee",
+            "imageSrc": "/images/bod/image-3.png"
+        },
+        {
+            "name": "Mr. Kok Chaw Leong",
+            "title": "Independent Director, <br> Chairman of Compensation Committee",
+            "imageSrc": "/images/bod/image-4.png"
+        },
+        {
+            "name": "Mr. Yick Fabian Shin",
+            "title": "Independent Director, <br> Chairman of Nominating & CGC",
+            "imageSrc": "/images/bod/image-5.png"
+        },
+        {
+            "name": "Mr. Chee Mun Hoh",
+            "title": "Director",
+            "imageSrc": "/images/bod/image-6.png"
+        }
+    ],
+    "directortable": {
+        "left": "Directors and Executive officers",
+        "right": "Position",
+        "table": [
+            {
+                "name": "Dato’ Sri Kam Choy, Ho",
+                "position": "Chairman of the Board and Chief Executive Officer"
+            },
+            {
+                "name": "Dato’ Leong Yan, Yoong",
+                "position": "Executive Director Nominee*"
+            },
+            {
+                "name": "Datin Fong Shiang, Ng",
+                "position": "Independent Director Nominee*"
+            },
+            {
+                "name": "Mr. Kok Chaw, Leong",
+                "position": "Independent Director Nominee*"
+            },
+            {
+                "name": "Mr. Yick Fabian, Shin",
+                "position": "Independent Director Nominee*"
+            },
+            {
+                "name": "Mr. Chee Mun, Hoh",
+                "position": "Chief Financial Officer"
+            }
+        ]
+    },
+    "CommitteesTable": {
+        "left": "Committees",
+        "center" : "Chairman",
+        "right": "Member",
+        "table": [
+            {
+                "Committees": "Audit committee",
+                "Chairman": "Datin Fong Shiang Ng",
+                "Member": "Datin Fong Shiang Ng, Mr. Kok Chaw Leong and Mr. Yick Fabian Shin"
+            },
+            {
+                "Committees": "Compensation committee",
+                "Chairman": "Mr. Kok Chaw Leong",
+                "Member": "Mr. Kok Chaw Leong, Mr. Yick Fabian Shin and Datin Fong Shiang Ng"
+            },
+            {
+                "Committees": "Nominating and corporate governance committee",
+                "Chairman": "Mr. Yick Fabian Shin",
+                "Member": "Mr. Kok Chaw Leong, Datin Fong Shiang Ng and Mr. Yick Fabian Shin"
+            }
+        ]
+    }
 }

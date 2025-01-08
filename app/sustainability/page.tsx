@@ -39,7 +39,7 @@ export default function Sustainability() {
             height={610}
             priority
             alt="Internal Control"
-            className="object-cover w-full xl:px-28 my-12  pb-12"
+            className="object-cover w-auto mx-auto xl:px-28 my-12  pb-12"
           />
 
           <InternalControl
