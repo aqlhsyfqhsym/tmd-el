@@ -75,9 +75,17 @@ export default function Businesss() {
 
           <OurCustomers description={BusinessData.ourservicedesc.description} />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8">
             {BusinessData.ourservicecard.map((item, index) => (
-              <div className="w-full" key={index}>
+              <div
+                className={`${
+                  index === 0 ||
+                  index === BusinessData.ourservicecard.length - 1
+                    ? "col-span-4 md:col-span-2"
+                    : "col-span-1 "
+                } w-full`}
+                key={index}
+              >
                 <Card
                   icon={item.icon}
                   title={item.title}
@@ -98,7 +106,7 @@ export default function Businesss() {
           <KeyStatistics
             title={BusinessData.key.title}
             description={BusinessData.key.description}
-          /> 
+          />
           <Image
             src="/images/business/key.png"
             width={800}
