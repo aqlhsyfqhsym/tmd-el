@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "@/components/organisms/Hero";
 import Vector from "@/components/atoms/Vector";
 import Heading from "@/components/atoms/Heading";
@@ -7,6 +6,7 @@ import InternalControl from "@/components/molecules/SubTitleParagraph";
 import SustainData from "@/data/sustainability.json";
 import Environmental from "@/components/molecules/SubTitleParagraph";
 import Compliance from "@/components/molecules/SubTitleParagraph";
+import Image from "next/image";
 
 export default function Sustainability() {
   return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Hero from "@/components/organisms/Hero";
 import Vector from "@/components/atoms/Vector";
-import Heading from "@/components/atoms/Heading";
+import Heading from "@/components/atoms/Heading"
 import Malaysia from "@/components/atoms/Paragraph";
 import Singapore from "@/components/atoms/Paragraph";
 import Facilities from "@/components/molecules/SubTitleParagraph";
@@ -12,6 +12,8 @@ import OurCustomers from "@/components/atoms/Paragraph";
 import ServiceDescription from "@/components/atoms/Paragraph";
 import CoreService from "@/components/molecules/SubTitleOrderLine";
 import Card from "@/components/atoms/CardDescription";
+import Bunkering from "@/components/molecules/SubTitleOrderLine2";
+import BunkeringTitle from "@/components/atoms/HeadingSmall"
 
 export default function Businesss() {
   // const specificCard = BusinessData.ourservicecard.find(card => card.title === "Ship owners and operators");
@@ -57,9 +59,35 @@ export default function Businesss() {
             className="object-cover w-auto mx-auto pb-5"
           />
 
-          <div className="pb-5">
-            <Singapore description={BusinessData.singapore.description} />
-          </div>
+                    <div className="pb-5">
+                        <Singapore
+                            description={BusinessData.singapore.description}
+                        />
+                    </div>
+
+                    <BunkeringTitle
+                        title={BusinessData.bunkeringtitle.title}
+                    />
+
+                    <Bunkering
+                        title={BusinessData.bunkering.title}
+                        description={BusinessData.bunkering.mainDescription}
+                        bulletPoints={BusinessData.bunkering.fuelTypes}
+                        subsidiaryIntro={BusinessData.bunkering.subsidiaryIntro}
+                        subsidiaries={BusinessData.bunkering.subsidiaries}
+                        additionalInfo={BusinessData.bunkering.additionalInfo}
+                    />
+
+                    <Bunkering
+                        title={BusinessData.shipManagement.title}
+                        description={BusinessData.shipManagement.description}
+                    />
+
+                    <Bunkering
+                        title={BusinessData.vesselChartering.title}
+                        description={BusinessData.vesselChartering.description}
+                        additionalInfo={BusinessData.vesselChartering.additionalInfo}
+                    />
 
           <Facilities
             title={BusinessData.facilities.title}

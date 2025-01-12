@@ -38,6 +38,47 @@
         "title": "Key Statistics Section",
         "description": "Most of our sales and marketing functions are performed at our Johor Bahru office. We mainly market our marine fuel products and services through our internal dedicated sales team that directly engages with potential customers and provides customized solutions. We believe our level of customer service, years of experience in the industry and reputation for reliability are significant factors in retaining our customers and attracting new customers. We also market our marine fuel products and services through business-to-business (B2B) platforms such as the company’s website that cater to the maritime industry. Additionally, we participate in Singapore International Bunkering Conference and Exhibition (“SIBCON”) on yearly basis."
     },
+    "bunkeringtitle": {
+        "title": "Bunkering & Shipping-Related Services"
+    },
+    "bunkering": {
+        "title": "1. Bunkering Services",
+        "mainDescription": "Tumpuan Megah Development Sdn Bhd (TMD) specializes in marine fuel bunkering services, focusing on the supply and marketing of various types of marine fuel oils, including:",
+        "fuelTypes": [
+            "Marine Gas Oil (MGO)",
+            "High Sulfur Fuel Oil (HSFO)",
+            "Low Sulfur Fuel Oil (LSFO)",
+            "Very Low Sulfur Fuel Oil (VLSFO)"
+        ],
+        "subsidiaryIntro": "The company provides offshore bunkering services, particularly through ship-to-ship (STS) transfer of marine fuels. TMD operates a fleet of subsidiaries that each own a bunkering vessel, which is internally chartered to TMD for these STS operations. The subsidiaries include:",
+        "subsidiaries": [
+            "Cavalla Asia Ltd.",
+            "Dolphin Asia Ltd.",
+            "Escolar Asia Ltd.",
+            "Oscar Asia Ltd.",
+            "Phoenix Asia Ltd.",
+            "S3 Asia Ltd.",
+            "TMD Straits Ltd.",
+            "TMD Sturgeon Ltd.",
+            "SMF Begonia Ltd.",
+            "SMF Ixora Ltd.",
+            "SMF Omura Ltd.",
+            "SMF Eden Maritime Ltd.",
+            "SMF Beluga Ltd.",
+            "Sierra Pioneer Marine Ltd.",
+            "Ketsu Pioneer Marine Ltd."
+        ],
+        "additionalInfo": "Recently, TMD signed an exclusive agreement with Lumut Maritime Terminal Sdn Bhd to operate and manage bunkering services at Lumut Port. This includes the establishment of the Pit-Stop Bunker Hub @ Lumut, which allows for efficient bunkering operations and provides a dedicated bunkering vessel, Escolar, for low sulfur marine gas oil deliveries. This service aims to reduce congestion and improve turnaround times for vessels seeking refueling at Lumut compared to other regional ports."
+    },
+    "shipManagement": {
+        "title": "2. Ship Management Services",
+        "description": "TMD also offers ship management services for both in-house and external vessels. This includes overseeing the operational aspects of the vessels, ensuring compliance with safety and regulatory standards, and maintaining the vessels to ensure they are ready for service. The company emphasizes maintaining up-to-date licenses under Malaysia's Control Supply Act and holds necessary PETRONAS licenses to serve the oil and gas industry."
+    },
+    "vesselChartering": {
+        "title": "3. Vessel Chartering Services",
+        "description": "In addition to its primary services, TMD engages in vessel chartering. This involves leasing out its vessels to other companies or clients for various maritime operations, including transportation and logistics support within the marine industry. Currently, TMD operates in eight ports across Malaysia, enhancing its capacity to provide chartering services along with its bunkering operations.",
+        "additionalInfo": "Overall, TMD is committed to expanding its operations and has plans to enter the marine biofuel trading sector while also considering a spin-off of its oil bunkering and shipping-related services segment for listing on NASDAQ, indicating significant growth potential in the coming years."
+    },
     "coreService": {
         "title": "Core Services Section",
         "services": [
