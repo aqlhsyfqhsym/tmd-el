@@ -2,6 +2,7 @@
     "hero": {
         "heading": "Emphasize Commitment",
         "subheading": "Committed to Supporting the Maritime Industry with Integrity and Expertise",
+        "subheadingleft": "Supporting maritime industries with reliable energy solutions and operational expertise",
         "image": "/images/hero/planta.png"
     },
     "aboutus": {
@@ -19,19 +20,22 @@
     "expertise": {
         "image": [
             {
-                "image": "/images/hero/planta.png",
-                "text": "Service Location",
-                "link": "/service-location"
+                "id": 1,
+                "title": "Service Location",
+                "image": "/images/home/servicelocation.jpg",
+                "description": "Strategic locations across key maritime regions to serve our clients efficiently and effectively."
             },
             {
-                "image": "/images/hero/planta.png",
-                "text": "Our Customers",
-                "link": "/service-location"
+                "id": 2,
+                "title": "Our Customers",
+                "image": "/images/home/ourcustomers.png",
+                "description": "Serving leading companies in offshore drilling and maritime operations with dedication and excellence."
             },
             {
-                "image": "/images/hero/planta.png",
-                "text": "Services Overview",
-                "link": "/service-location"
+                "id": 3,
+                "title": "Services Overview",
+                "image": "/images/home/serviceoverview.png",
+                "description": "Comprehensive range of maritime and offshore support services tailored to meet industry demands."
             }
         ]
     },

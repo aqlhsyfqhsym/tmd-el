@@ -8,52 +8,55 @@ import Environmental from "@/components/molecules/SubTitleParagraph";
 import Compliance from "@/components/molecules/SubTitleParagraph";
 
 export default function Sustainability() {
-    return (
-        <div className="max-w-none bg-[#FBFBFB]">
-            <Hero
-                heading={SustainData.hero.heading}
-                subheading={SustainData.hero.subheading}
-                image={SustainData.hero.image}
-            />
-            <Vector />
+  return (
+    <div className="max-w-none bg-[#FBFBFB]">
+      <Hero
+        heading={SustainData.hero.heading}
+        subheading={SustainData.hero.subheading}
+        subheadingleft={SustainData.hero.subheading}
+        image={SustainData.hero.image}
+      />
+      <Vector />
 
-            <div className="container mx-auto p-10 lg:px-48">
-                <section className="py-4 md:py-8">
-                    <Heading heading={SustainData.aboutus.title} className="mb-11" />
-                    <CreditRisk
-                        title={SustainData.creditrisk.title}
-                        description={SustainData.creditrisk.description}
-                    />
+      <div className="container mx-auto p-10 lg:px-48">
+        <section className="py-4 md:py-8">
+          <Heading heading={SustainData.aboutus.title} className="mb-11" />
+          <CreditRisk
+            title={SustainData.creditrisk.title}
+            description={SustainData.creditrisk.description}
+          />
 
-                    <InternalControl
-                        title={SustainData.internalcontrol.title}
-                        description={SustainData.internalcontrol.description}
-                    />
-                    <img
-                        src="/images/sustainability/ship2.png"
-                        alt="Latest Insights stock"
-                        className="w-full object-cover"
-                    />
+          <InternalControl
+            title={SustainData.internalcontrol.title}
+            description={SustainData.internalcontrol.description}
+          />
+     
 
-                    <InternalControl
-                        title={SustainData.internalcontrol.title}
-                        description={SustainData.internalcontrol.description}
-                    />
+          <Image
+            src="/images/sustainability/ship2.png"
+            width={800}
+            height={610}
+            priority
+            alt="Internal Control"
+            className="object-cover w-auto mx-auto xl:px-28 my-12  pb-12"
+          />
 
-                    <Environmental
-                        title={SustainData.environmental.title}
-                        description={SustainData.environmental.description}
-                    />
+          <InternalControl
+            title={SustainData.internalcontrol.title}
+            description={SustainData.internalcontrol.description}
+          />
 
-                    <Compliance
-                        title={SustainData.compliance.title}
-                        description={SustainData.compliance.description}
-                    />
+          <Environmental
+            title={SustainData.environmental.title}
+            description={SustainData.environmental.description}
+          />
 
-                </section>
-            </div>
-
-
-        </div>
-    );
+          <Compliance
+            title={SustainData.compliance.title}
+            description={SustainData.compliance.description}
+          />
+        </section>
+      </div>
+    </div>
+  );
 }

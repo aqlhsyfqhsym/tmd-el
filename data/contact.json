@@ -1,0 +1,16 @@
+{
+    "hero": {
+        "heading": "Contact",
+        "subheadingleft": "Supporting maritime industries with reliable energy solutions and operational expertise",
+        "subheading": "Lorem ipsum dolor sit amet consectetur. Interdum enim sollicitudina",
+        "image": "/images/contact/hero.png"
+    },
+    "aboutus": {
+        "title": "Contact Us"
+    },
+    "contact": {
+        "description": "Any question or remarks? Just write us a message!",
+        "phone": "(+603) 6419 1266",
+        "email": "corporate@tmdel.com"
+    }
+}

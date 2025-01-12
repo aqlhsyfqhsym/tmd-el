@@ -1,14 +1,57 @@
 {
   "navbar": {
-    "about": "About",
-    "services": "Services",
-    "news": "News",
-    "support": "Support",
-    "career": "Careers",
-    "partner": "Partners",
-    "downloadqr": "Download MyDigital ID"
+    "about": {
+      "label": "About Us",
+      "href": "/about",
+      "links": [
+        { "title": "Vision & Mission", "href": "/about/vision" },
+        { "title": "Corporate Profile", "href": "/about/profile" },
+        { "title": "Corporate Structure", "href": "/about/structure" },
+        { "title": "Board of Directors", "href": "/about/board" },
+        { "title": "Senior Management", "href": "/about/management" },
+        { "title": "Milestone", "href": "/about/milestone" },
+        { "title": "Corporate Information", "href": "/about/info" },
+        { "title": "Other Details", "href": "/about/details" }
+      ]
+    },
+    "business": {
+      "label": "Business",
+      "href": "/business",
+      "links": [
+        { "title": "Business", "href": "/business/apt" } 
+      ] 
+    },
+    "investor": {
+      "label": "Investor Relation",
+      "href": "/investor-relation",
+      "links": [
+        { "title": "investor123", "href": "/investor/apt" } 
+      ] 
+    },
+    "media": {
+      "label": "Media",
+      "href": "/media",
+      "links": [
+        { "title": "mediaaa", "href": "/investor/apt" } 
+      ] 
+    },
+    "sustainability": {
+      "label": "Sustainability",
+      "href": "/sustainability",
+      "links": [
+        { "title": "sustain", "href": "/investor/apt" } 
+      ] 
+    },
+    "career": {
+      "label": "Careers",
+      "href": "/career"
+    },
+    "contactus": {
+      "label": "Contact Us",
+      "href": "/contact"
+    }
   },
-  "footer": { 
+  "footer": {
     "pathlink": [
       {
         "name": "Whistleblower",

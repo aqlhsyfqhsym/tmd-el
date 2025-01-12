@@ -15,14 +15,16 @@ export default function Home() {
       <Hero
         heading={HomeData.hero.heading}
         subheading={HomeData.hero.subheading}
-        image={HomeData.hero.image} // Pass the image from JSON
+        subheadingleft={HomeData.hero.subheadingleft}
+        image={HomeData.hero.image} 
       />
       <Vector />
+      
       <div className="container mx-auto p-10 lg:px-48">
 
-        <section className="py-4 md:py-8"> 
-          <Heading heading= {HomeData.aboutus.title} className="mb-11"/>
-          <Subheading subheading= {HomeData.aboutus.description}/>
+        <section className="py-4 md:py-8">
+          <Heading heading="About Us" className="mb-11" />
+          <Subheading subheading={HomeData.aboutus.description} />
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <MissionVisson
               title={HomeData.vission.title}
@@ -41,27 +43,41 @@ export default function Home() {
           </h2>
           <Expertise cards={HomeData.expertise.image} />
         </section>
+
+      </div>
+
+      <div style={{
+        background:
+          "linear-gradient(180deg, rgba(0, 169, 157, 0.12) 1.66%, rgba(17, 114, 186, 0.12) 98.86%)",
+      }}>
+        <div className="container mx-auto p-10 lg:px-48">
+
+          <section className="py-4 md:py-8">
+            <h2 className="text-3xl font-extrabold text-[#272361] mb-4">
+              Latest Insights
+            </h2>
+            <p className="text-gray-700 text-base">
+              Stay Updated on TMD Energy’s Market Performance . (Stock Quote)
+            </p>
+
+
+            <Image src="/images/home/stock-insight.png" width={400} height={400} alt="Latest Insights stock" className="w-10/12 mx-auto object-cover" />
+
+
+          </section>
+
+        </div>
+      </div>
+
+      <div className="container mx-auto p-10 lg:px-48">
         <section className="py-4 md:py-8 bg-[##dff4f5]">
-          <h2 className="text-3xl font-extrabold text-[#272361] mb-4">
-            Latest Insights
-          </h2>
-          <p className="text-gray-700 text-base">
-            Stay Updated on TMD Energy’s Market Performance . (Stock Quote)
-          </p>
-          <img
-            src="/images/stock-insight.png"
-            alt="Latest Insights stock"
-            className="w-full object-cover"
-          />
-          
-        </section>
-        <section className="py-4 md:py-8 bg-[##dff4f5]">
-          <Heading heading={HomeData.highlight.title} className="mb-4"/>
-          <Subheading subheading= {HomeData.highlight.description}/>
-          <Slider slides={HomeData.highlight.slides} />  
+          <Heading heading={HomeData.highlight.title} className="mb-4" />
+          <Subheading subheading={HomeData.highlight.description} />
+          <Slider slides={HomeData.highlight.slides} />
 
         </section>
       </div>
+
     </div>
   );
 }
