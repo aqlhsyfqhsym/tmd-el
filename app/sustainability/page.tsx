@@ -31,10 +31,8 @@ export default function Sustainability() {
             title={SustainData.internalcontrol.title}
             description={SustainData.internalcontrol.description}
           />
-     
-
           <Image
-            src="/images/sustainability/ship2.png"
+            src="/images/sustainability/shipped2.png"
             width={800}
             height={610}
             priority
