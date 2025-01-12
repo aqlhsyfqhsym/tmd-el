@@ -12,11 +12,9 @@ import ServiceDescription from "@/components/atoms/Paragraph";
 import CoreService from "@/components/molecules/SubTitleOrderLine";
 import Card from "@/components/atoms/CardDescription";
 import Bunkering from "@/components/molecules/SubTitleOrderLine2";
-import BunkeringTitle from "@/components/molecules/SubTitleParagraph";
+import BunkeringTitle from "@/components/atoms/HeadingSmall"
 
 export default function Businesss() {
-    const specificCard = BusinessData.ourservicecard.find(card => card.title === "Ship owners and operators");
-
     return (
         <div className="max-w-none bg-[#FBFBFB]">
             <Hero
@@ -61,7 +59,6 @@ export default function Businesss() {
 
                     <BunkeringTitle
                         title={BusinessData.bunkeringtitle.title}
-                        description={BusinessData.bunkeringtitle.description}
                     />
 
                     <Bunkering
