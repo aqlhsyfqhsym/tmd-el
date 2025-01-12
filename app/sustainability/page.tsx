@@ -6,6 +6,7 @@ import InternalControl from "@/components/molecules/SubTitleParagraph";
 import SustainData from "@/data/sustainability.json";
 import Environmental from "@/components/molecules/SubTitleParagraph";
 import Compliance from "@/components/molecules/SubTitleParagraph";
+import Image from "next/image";
 
 export default function Sustainability() {
   return (
