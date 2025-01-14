@@ -71,7 +71,7 @@ export default function AboutUs() {
       </div>
       <div className="container mx-auto p-10 lg:px-48">
         <Heading heading={About.directors.title} className="mb-11" />
-        <div className="grid grid-cols-3 gap-4 mb-11">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-11">
           {About.director.map((director, index) => (
             <DirectorCard
               key={index}
