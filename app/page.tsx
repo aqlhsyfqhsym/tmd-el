@@ -16,7 +16,7 @@ export default function Home() {
         heading={HomeData.hero.heading}
         subheading={HomeData.hero.subheading}
         subheadingleft={HomeData.hero.subheadingleft}
-        image={HomeData.hero.image}
+        image={HomeData.hero.image} 
       />
       <Vector />
       

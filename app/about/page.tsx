@@ -1,21 +1,18 @@
 import Image from "next/image";
 import About from "@/data/about.json";
-
 import Vector from "@/components/atoms/Vector";
 import Heading from "@/components/atoms/Heading";
 import Milestone from "@/components/atoms/Paragraph";
 import Subheading from "@/components/atoms/Subheading";
 import EndOfMilestone from "@/components/atoms/Paragraph";
 import EndOfMilestone2 from "@/components/atoms/Paragraph";
-
 import CorporateProfileFeature from "@/components/molecules/SubTitleParagraph";
-
 import Hero from "@/components/organisms/Hero";
 import Accordion from "@/components/organisms/Accordion";
-import CardImage from "@/components/organisms/CardImage";
 import DirectorCard from "@/components/organisms/DirectorCard";
 import TableDirector from "@/components/organisms/TableComponent";
 import TableComitte from "@/components/organisms/TableComponent/comitte";
+import CardAbout from "@/components/organisms/CardAbout";
 
 export default function AboutUs() {
   return (
@@ -30,7 +27,7 @@ export default function AboutUs() {
       <div className="container mx-auto p-10 lg:px-48">
         <section className="py-4 md:py-8">
           <Heading heading={About.ourpurpose.title} className="mb-11" />
-          <CardImage cards={About.ourpurpose.image} />
+          <CardAbout cards={About.ourpurpose.image} />
         </section>
 
         <section className="py-4 md:py-8">
