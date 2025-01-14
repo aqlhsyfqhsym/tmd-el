@@ -152,12 +152,12 @@
     },
     "upperdirector": [
         {
-            "name": "Dato’ Sri Kam Choy Ho",
+            "name": "Dato' Sri Kam Choy Ho",
             "title": "Chairman, <br> Chief Executive Officer",
             "imageSrc": "/images/bod/image-3.png"
         },
         {
-            "name": "Dato’ Leong Yan Yoong",
+            "name": "Dato' Leong Yan Yoong",
             "title": "Director",
             "imageSrc": "/images/bod/image.png"
         } 
@@ -184,11 +184,11 @@
         "right": "Position",
         "table": [
             {
-                "name": "Dato’ Sri Kam Choy, Ho",
+                "name": "Dato' Sri Kam Choy, Ho",
                 "position": "Chairman of the Board and Chief Executive Officer"
             },
             {
-                "name": "Dato’ Leong Yan, Yoong",
+                "name": "Dato' Leong Yan, Yoong",
                 "position": "Executive Director Nominee*"
             },
             {
@@ -210,24 +210,57 @@
         ]
     },
     "CommitteesTable": {
-        "left": "Committees",
-        "center" : "Chairman",
-        "right": "Member",
-        "table": [
+        "headers": [
+            "",
+            "Audit Committee",
+            "Compensation Committee",
+            "Nominating and Corporate Governance Committee"
+        ],
+        "members": [
             {
-                "Committees": "Audit committee",
-                "Chairman": "Datin Fong Shiang Ng",
-                "Member": "Datin Fong Shiang Ng, Mr. Kok Chaw Leong and Mr. Yick Fabian Shin"
+                "name": "Datin Fong Shiang Ng",
+                "auditCommittee": {
+                    "isChairman": true,
+                    "isMember": true
+                },
+                "compensationCommittee": {
+                    "isChairman": false,
+                    "isMember": true
+                },
+                "nominatingCommittee": {
+                    "isChairman": false,
+                    "isMember": true
+                }
             },
             {
-                "Committees": "Compensation committee",
-                "Chairman": "Mr. Kok Chaw Leong",
-                "Member": "Mr. Kok Chaw Leong, Mr. Yick Fabian Shin and Datin Fong Shiang Ng"
+                "name": "Mr. Kok Chaw Leong",
+                "auditCommittee": {
+                    "isChairman": false,
+                    "isMember": true
+                },
+                "compensationCommittee": {
+                    "isChairman": true,
+                    "isMember": true
+                },
+                "nominatingCommittee": {
+                    "isChairman": false,
+                    "isMember": true
+                }
             },
             {
-                "Committees": "Nominating and corporate governance committee",
-                "Chairman": "Mr. Yick Fabian Shin",
-                "Member": "Mr. Kok Chaw Leong, Datin Fong Shiang Ng and Mr. Yick Fabian Shin"
+                "name": "Mr. Yick Fabian Shin",
+                "auditCommittee": {
+                    "isChairman": false,
+                    "isMember": true
+                },
+                "compensationCommittee": {
+                    "isChairman": false,
+                    "isMember": true
+                },
+                "nominatingCommittee": {
+                    "isChairman": true,
+                    "isMember": true
+                }
             }
         ]
     }
