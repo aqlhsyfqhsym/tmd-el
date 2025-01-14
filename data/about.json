@@ -150,36 +150,33 @@
     "directors": {
         "title": "Board of Director"
     },
-    "director": [
+    "upperdirector": [
         {
             "name": "Dato’ Sri Kam Choy Ho",
             "title": "Chairman, <br> Chief Executive Officer",
-            "imageSrc": "/images/bod/image-1.png"
+            "imageSrc": "/images/bod/image-3.png"
         },
         {
             "name": "Dato’ Leong Yan Yoong",
             "title": "Director",
-            "imageSrc": "/images/bod/image-2.png"
-        },
+            "imageSrc": "/images/bod/image.png"
+        } 
+    ],
+    "lowerdirector": [
         {
             "name": "Datin Fong Shiang Ng",
             "title": "Independent Director,  <br> Chairman of Audit Committee",
-            "imageSrc": "/images/bod/image-3.png"
-        },
-        {
-            "name": "Mr. Kok Chaw Leong",
-            "title": "Independent Director, <br> Chairman of Compensation Committee",
-            "imageSrc": "/images/bod/image-4.png"
+            "imageSrc": "/images/bod/image-2.png"
         },
         {
             "name": "Mr. Yick Fabian Shin",
             "title": "Independent Director, <br> Chairman of Nominating & CGC",
-            "imageSrc": "/images/bod/image-5.png"
+            "imageSrc": "/images/bod/image-1.png"
         },
         {
             "name": "Mr. Chee Mun Hoh",
             "title": "Director",
-            "imageSrc": "/images/bod/image-6.png"
+            "imageSrc": "/images/bod/image-5.png"
         }
     ],
     "directortable": {

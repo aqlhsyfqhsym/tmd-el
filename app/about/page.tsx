@@ -71,15 +71,29 @@ export default function AboutUs() {
       </div>
       <div className="container mx-auto p-10 lg:px-48">
         <Heading heading={About.directors.title} className="mb-11" />
-        <div className="grid grid-cols-3 gap-4 mb-11">
-          {About.director.map((director, index) => (
+      <div className="flex flex-col items-center">
+
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-4 mb-11" 
+        >
+          {About.upperdirector.map((upperdirector, index) => (
             <DirectorCard
               key={index}
-              name={director.name}
-              title={director.title}
-              imageSrc={director.imageSrc}
+              name={upperdirector.name}
+              title={upperdirector.title}
+              imageSrc={upperdirector.imageSrc}
             />
           ))}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-11">
+          {About.lowerdirector.map((lowerdirector, index) => (
+            <DirectorCard
+              key={index}
+              name={lowerdirector.name}
+              title={lowerdirector.title}
+              imageSrc={lowerdirector.imageSrc}
+            />
+          ))}
+        </div>
         </div>
         <TableDirector
           left={About.directortable.left}
