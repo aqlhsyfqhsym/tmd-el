@@ -13,8 +13,8 @@ const DirectorCard: React.FC<DirectorCardProps> = ({
   imageSrc,
 }) => {
   return (
-    <div className="relative group w-full lg:w-60 h-80">
-      <div className="absolute -top-1 -left-1 z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+    <div className="relative group h-80 ">
+      <div className="absolute -top-1 -left-1  z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-500">
         <Image
           src="/images/vector/vector-card.svg"
           width={800}
@@ -24,7 +24,7 @@ const DirectorCard: React.FC<DirectorCardProps> = ({
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="relative border-solid border border-black group w-full lg:w-60  h-80 rounded-lg overflow-hidden  bg-white">
+      <div className="relative w-60 border-solid border border-black group h-80 rounded-lg overflow-hidden  bg-white">
         {/* Image */}
         <Image
           src={imageSrc}
@@ -32,7 +32,7 @@ const DirectorCard: React.FC<DirectorCardProps> = ({
           height={610}
           priority
           alt="Director"
-          className="w-full h-full lg:object-cover group-hover:scale-105 transition-transform duration-300 object-contain"
+          className="w-full h-full group-hover:scale-105 transition-transform duration-300 object-contain"
         />
 
         {/* Content */}
