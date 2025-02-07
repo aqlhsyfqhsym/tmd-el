@@ -13,7 +13,7 @@ import Compensation from "@/components/molecules/SubTitleParagraph";
 import Nominating from "@/components/molecules/SubTitleParagraph";
 import Lorep from "@/components/molecules/SubTitleParagraph";
 
-export default function Sustainability() {
+export default function InvestorRelation() {
   return (
     <div className="max-w-none bg-[#FBFBFB]">
       <Hero
