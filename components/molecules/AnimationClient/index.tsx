@@ -5,7 +5,6 @@ import { useEffect, useState, useRef } from 'react';
 
 export default function AnimationClient({
   children,
-  useScrollVal = false,
   props,
 }: {
   children: React.ReactNode;
@@ -13,8 +12,8 @@ export default function AnimationClient({
   props: MotionProps;
 }) {
   const ref = useRef<HTMLDivElement | null>(null);
-  const [isInView, setIsInView] = useState(false);
-  const { scrollYProgress } = useScroll();
+  const [, setIsInView] = useState(false);
+  const {  } = useScroll();
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
