@@ -101,12 +101,7 @@ export default function AboutUs() {
           data={About.directortable.table}
         />
 
-        <TableComitte
-          left={About.CommitteesTable.left} 
-          center={About.CommitteesTable.center} 
-           right={About.CommitteesTable.right}
-           data={About.CommitteesTable.table}
-        />
+        <TableComitte data={About.CommitteesTable} />
       </div>
 
       <div className="container mx-auto p-10 lg:px-48">
