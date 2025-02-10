@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Select from '@/components/atoms/Select';
-import Pagination from '@/components/atoms/FillingsPagination'; 
+import Pagination from '@/components/atoms/FillingsPagination';
 import FileDownload from '@/components/molecules/FileDownload';
 import { Filing, FilingFilters } from '@/types/filing';
 
@@ -35,6 +35,11 @@ const FilingsTable = ({ filings, filingTypes, years }: FilingsTableProps) => {
     }, [filteredFilings, currentPage, itemsPerPage]);
 
     const totalPages = Math.ceil(filteredFilings.length / itemsPerPage);
+
+    const handleItemsPerPageChange = (value: number) => {
+        setItemsPerPage(value);
+        setCurrentPage(1); 
+    };
 
     return (
         <div className="w-full sec-filings">
@@ -93,6 +98,8 @@ const FilingsTable = ({ filings, filingTypes, years }: FilingsTableProps) => {
                     currentPage={currentPage}
                     totalPages={totalPages}
                     onPageChange={setCurrentPage}
+                    itemsPerPage={itemsPerPage}
+                    onItemsPerPageChange={handleItemsPerPageChange}
                 />
             </div>
         </div>
