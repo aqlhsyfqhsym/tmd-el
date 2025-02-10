@@ -3,9 +3,9 @@ interface HeadingProps {
   className?: string; // Optional className prop
 }
 
-const Heading: React.FC<HeadingProps> = ({ heading, className }) => {
+const Heading = ({ heading, className = '' }: HeadingProps) => {
   return (
-    <h2 className={`text-3xl font-extrabold text-[#1072BA] ${className}`}>
+    <h2 className={`text-3xl font-inter font-extrabold text-[#1072BA] ${className}`}>
       {heading}
     </h2>
   );
