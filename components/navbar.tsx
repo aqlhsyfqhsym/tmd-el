@@ -9,27 +9,27 @@ interface NavbarProps {
     about: {
       label: string;
       href: string;
-      links: { title: string; href: string }[];
+      links: { image: string; title: string; desc: string; href: string }[];
     };
     business: {
       label: string;
       href: string;
-      links: { title: string; href: string }[];
+      links: { image: string; title: string; href: string }[];
     };
     investor: {
       label: string;
       href: string;
-      links: { title: string; href: string }[];
+      links: { image: string; title: string;  desc: string; href: string }[];
     };
     media: {
       label: string;
       href: string;
-      links: { title: string; href: string }[];
+      links: { image: string; title: string; href: string }[];
     };
     sustainability: {
       label: string;
       href: string;
-      links: { title: string; href: string }[];
+      links: { image: string; title: string; desc: string;  href: string }[];
     };
     career: { label: string; href: string };
     contactus: { label: string; href: string };
@@ -40,8 +40,6 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
   return (
     <nav className="bg-white shadow-sm hidden md:block">
       <div className="container mx-auto py-3 flex flex-col items-center gap-3">
-     
-
         <Image
           src="/images/tmd-logo-colored.png"
           alt="TMD Energy Logo"
@@ -86,34 +84,71 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 {data.about.links.map((item, index) => (
                   <div
                     key={index}
-                    className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition"
+                    className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8"
                   >
-                    <div className="flex items-center mb-2">
-                      <div className="h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          className="h-4 w-4 text-blue-600"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M6 9l6 6 6-6"
-                          />
-                        </svg>
+                    <div className="flex">
+                      <div className="h-10 w-12 rounded-full bg-blue-100 flex items-center justify-center">
+                        <Image
+                          src={item.image}
+                          width={800}
+                          height={610}
+                          priority
+                          alt="vector"
+                          className="w-full h-full object-cover"
+                        />
                       </div>
-                      <h3 className="ml-2 font-semibold text-sm">
-                        {item.title}
-                      </h3>
+                      <div className="flex flex-col ml-2 ">
+                        <h3 className="font-semibold text-sm">{item.title}</h3>
+                        <p className="text-gray-600 mt-1">{item.desc}</p>
+                      </div>
                     </div>
-                    <Link href={item.href} className="text-xs text-gray-600">
+                    <Link
+                      href={item.href}
+                      className="text-xs text-gray-600 text-right"
+                    >
                       Learn more
                     </Link>
                   </div>
                 ))}
+                <div className="flex flex-col gap-2 justify-between ">
+                  <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition ">
+                    <div className="flex">
+                      <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                        <Image
+                          src="/images/vector/navbar/navbar.svg"
+                          width={800}
+                          height={610}
+                          priority
+                          alt="vector"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+
+                      <div className="flex flex-col ml-2">
+                        <h3 className="font-semibold text-sm">Milestone </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition">
+                    <div className="flex ">
+                      <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                        <Image
+                          src="/images/vector/navbar/navbar.svg"
+                          width={800}
+                          height={610}
+                          priority
+                          alt="vector"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="flex flex-col ml-4">
+                        <h3 className="font-semibold text-sm">
+                          Corporate Information
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </li>
@@ -141,37 +176,36 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
 
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
               <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
-                {data.business.links.map((item, index) => (
-                  <div
-                    key={index}
-                    className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition"
-                  >
-                    <div className="flex items-center mb-2">
-                      <div className="h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          className="h-4 w-4 text-blue-600"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M6 9l6 6 6-6"
-                          />
-                        </svg>
-                      </div>
-                      <h3 className="ml-2 font-semibold text-sm">
-                        {item.title}
-                      </h3>
+                <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8">
+                  <div className="flex">
+                    <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                      <Image
+                        src="/images/vector/navbar/navbar.svg"
+                        width={800}
+                        height={610}
+                        priority
+                        alt="vector"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <Link href={item.href} className="text-xs text-gray-600">
-                      Learn more
-                    </Link>
+                    <div className="flex flex-col ml-2 ">
+                      <h3 className="font-semibold text-sm">
+                        Oil Bunkering, Vessel Management and Vessel Chartering
+                      </h3>
+                      <ul className="text-gray-600 mt-1 list-disc ml-3">
+                        <li>Service Location</li>
+                        <li>Our Customer</li>
+                        <li>Services Overview</li>
+                      </ul>
+                    </div>
                   </div>
-                ))}
+                  <Link
+                    href="/about/management"
+                    className="text-xs text-gray-600 text-right"
+                  >
+                    Learn more
+                  </Link>
+                </div>
               </div>
             </div>
           </li>
@@ -199,38 +233,78 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
             </Link>
 
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
-              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
-                {data.investor.links.map((item, index) => (
-                  <div
-                    key={index}
-                    className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition"
+              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 gap-4">
+              <div
+                     className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8"
                   >
-                    <div className="flex items-center mb-2">
-                      <div className="h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          className="h-4 w-4 text-blue-600"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M6 9l6 6 6-6"
-                          />
-                        </svg>
+                    <div className="flex">
+                      <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                        <Image
+                          src="/images/vector/navbar/navbar.svg"
+                          width={800}
+                          height={610}
+                          priority
+                          alt="vector"
+                          className="w-full h-full object-cover"
+                        />
                       </div>
-                      <h3 className="ml-2 font-semibold text-sm">
-                        {item.title}
-                      </h3>
+                      <div className="flex flex-col ml-2 ">
+                        <h3 className="font-semibold text-sm">
+                        Governance Documents
+                        </h3>
+                        <ul className="text-gray-600 mt-1 list-disc ml-3">
+                          <li>Code of Business Conduct and Ethics</li>
+                          <li>Corporate Governance Guidelines</li>
+                          <li>Insider Trading Policy</li>
+                          <li>Whistle Blowing Policy</li>
+                          <li>Board Diversity Disclosure</li>
+                          <li>Audit Committee Charter</li>
+                          <li>Compensation Committee Charter</li>
+                          <li>
+                            Nominating and Corporate Governance Committee
+                            Charter
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <Link href={item.href} className="text-xs text-gray-600">
+                    <Link
+                      href="/about/management"
+                      className="text-xs text-gray-600 text-right"
+                    >
                       Learn more
                     </Link>
-                  </div>
+             </div> 
+             <div className="max-w-screen-xl w-full mx-auto  grid grid-cols-2 gap-4">
+                {data.investor.links.map((item, index) => (
+                   <div
+                   key={index}
+                   className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8"
+                 >
+                   <div className="flex">
+                     <div className="h-10 w-20 rounded-full bg-blue-100 flex items-center justify-center">
+                       <Image
+                         src={item.image}
+                         width={800}
+                         height={610}
+                         priority
+                         alt="vector"
+                         className="w-full h-full object-cover"
+                       />
+                     </div>
+                     <div className="flex flex-col ml-2 ">
+                       <h3 className="font-semibold text-sm">{item.title}</h3>
+                       <p className="text-gray-600 mt-1">{item.desc}</p>
+                     </div>
+                   </div>
+                   <Link
+                     href={item.href}
+                     className="text-xs text-gray-600 text-right"
+                   >
+                     Learn more
+                   </Link>
+                 </div>
                 ))}
+              </div>
               </div>
             </div>
           </li>
@@ -258,7 +332,34 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
 
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
               <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
-                {data.media.links.map((item, index) => (
+              <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8">
+                  <div className="flex">
+                    <div className="h-10 w-12 rounded-full bg-blue-100 flex items-center justify-center">
+                      <Image
+                        src="/images/vector/navbar/navbar.svg"
+                        width={800}
+                        height={610}
+                        priority
+                        alt="vector"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="flex flex-col ml-2 ">
+                      <h3 className="font-semibold text-sm">
+                      Press Release
+                      </h3> 
+                      <p className="text-gray-600 mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                    </div>
+                  </div>
+                  <Link
+                    href="/about/management"
+                    className="text-xs text-gray-600 text-right"
+                  >
+                    Learn more
+                  </Link>
+                </div>
+                {/* {data.media.links.map((item, index) => (
                   <div
                     key={index}
                     className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition"
@@ -288,7 +389,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                       Learn more
                     </Link>
                   </div>
-                ))}
+                ))} */}
               </div>
             </div>
           </li>
@@ -317,32 +418,30 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
               <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 {data.sustainability.links.map((item, index) => (
-                  <div
+                    <div
                     key={index}
-                    className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition"
+                    className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8"
                   >
-                    <div className="flex items-center mb-2">
-                      <div className="h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          className="h-4 w-4 text-blue-600"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M6 9l6 6 6-6"
-                          />
-                        </svg>
+                    <div className="flex">
+                      <div className="h-10 w-12 rounded-full bg-blue-100 flex items-center justify-center">
+                        <Image
+                          src={item.image}
+                          width={800}
+                          height={610}
+                          priority
+                          alt="vector"
+                          className="w-full h-full object-cover"
+                        />
                       </div>
-                      <h3 className="ml-2 font-semibold text-sm">
-                        {item.title}
-                      </h3>
+                      <div className="flex flex-col ml-2 ">
+                        <h3 className="font-semibold text-sm">{item.title}</h3>
+                        <p className="text-gray-600 mt-1">{item.desc}</p>
+                      </div>
                     </div>
-                    <Link href={item.href} className="text-xs text-gray-600">
+                    <Link
+                      href={item.href}
+                      className="text-xs text-gray-600 text-right"
+                    >
                       Learn more
                     </Link>
                   </div>
