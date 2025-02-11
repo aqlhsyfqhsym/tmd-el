@@ -7,7 +7,7 @@
         { "image": "/images/vector/navbar/navbar.svg", "title": "Vision & Mission", "desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/vision" },
         { "image": "/images/vector/navbar/navbar.svg", "title": "Corporate Profile", "desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/profile" },
         { "image": "/images/vector/navbar/navbar.svg", "title": "Corporate Structure","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/structure" },
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Board of Directors","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/board" },
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Board of Directors","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/bod" },
         { "image": "/images/vector/navbar/navbar.svg", "title": "Senior Management","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/management" }
         ]
     },
@@ -15,15 +15,15 @@
       "label": "Business",
       "href": "/business",
       "links": [
-        { "title": "Business", "href": "/business/apt" } 
-      ] 
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Business", "href": "/business/apt" }
+      ]
     },
     "investor": {
       "label": "Investor Relation",
       "href": "/investor-relation",
       "links": [
         { "image": "/images/vector/navbar/navbar.svg",  "title": "Financial Report","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/investor/apt" } ,
-        { "image": "/images/vector/navbar/navbar.svg",  "title": "SEC Filings","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/investor/apt" } ,
+        { "image": "/images/vector/navbar/navbar.svg",  "title": "SEC Filings","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/investor-relation/sec-filings" } ,
         { "image": "/images/vector/navbar/navbar.svg",  "title": "Stock Information","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/investor/apt" } 
 
 
@@ -33,8 +33,8 @@
       "label": "Media",
       "href": "/media",
       "links": [
-        { "title": "mediaaa", "href": "/investor/apt" } 
-      ] 
+        { "image": "/images/vector/navbar/navbar.svg", "title": "mediaaa", "href": "/investor/apt" }
+      ]
     },
     "sustainability": {
       "label": "Sustainability",
