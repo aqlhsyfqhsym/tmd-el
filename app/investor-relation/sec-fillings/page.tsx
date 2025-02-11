@@ -6,7 +6,7 @@ import FillingsData from "@/data/fillings.json";
 import AnimationClient from "@/components/molecules/AnimationClient";
 
 
-export default function InvestorRelation() {
+export default function SECFilings() {
   return (
     <div className="max-w-none bg-[#FBFBFB]">
       <Hero
