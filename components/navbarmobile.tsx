@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";  
+
 import Image from "next/image";
 
 const MobileNavbar = () => {
@@ -51,9 +53,9 @@ const MobileNavbar = () => {
         <div className="bg-gray-50 shadow-md">
           <ul className="flex flex-col text-sm text-gray-800">
             <li className="border-b border-gray-200">
-              <a href="/" className="block px-4 py-2 hover:bg-blue-50">
+              <Link href="/" className="block px-4 py-2 hover:bg-blue-50">
                 Home
-              </a>
+              </Link>
             </li>
             {[
               {
@@ -73,7 +75,7 @@ const MobileNavbar = () => {
                 name: "Business",
                 link: "/business",
                 items: [
-                  { name: " Oil Bunkering, Vessel Management and Vessel Chartering", link: "/business" },
+                  { name: " Oil Bunkering, Vessel Management and Vessel Chartering", link: "/business" }
                  ],
               },
               {
@@ -110,12 +112,12 @@ const MobileNavbar = () => {
                   onClick={() => toggleDropdown(menu.name)}
                   className="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-blue-50 focus:outline-none"
                 >
-                  <a
+                  <Link
                     href={menu.link}
                     className="block py-2 hover:bg-blue-50"
                   >
                     {menu.name}
-                  </a>{" "}
+                  </Link>{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -139,12 +141,12 @@ const MobileNavbar = () => {
                   <ul className="pl-6 py-2 bg-gray-100">
                     {menu.items.map((item) => (
                       <li key={item.name}>
-                        <a
+                        <Link
                           href={item.link}
                           className="block py-1 text-gray-700 hover:text-blue-600"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -153,14 +155,14 @@ const MobileNavbar = () => {
             ))}
 
             <li className="border-b border-gray-200">
-              <a href="/career" className="block px-4 py-2 hover:bg-blue-50">
+              <Link href="/career" className="block px-4 py-2 hover:bg-blue-50">
                 Careers
-              </a>
+              </Link>
             </li>
             <li className="border-b border-gray-200">
-              <a href="/contact" className="block px-4 py-2 hover:bg-blue-50">
+              <Link href="/contact" className="block px-4 py-2 hover:bg-blue-50">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
