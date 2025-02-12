@@ -51,33 +51,71 @@ const MobileNavbar = () => {
         <div className="bg-gray-50 shadow-md">
           <ul className="flex flex-col text-sm text-gray-800">
             <li className="border-b border-gray-200">
-              <a href="#" className="block px-4 py-2 hover:bg-blue-50">
+              <a href="/" className="block px-4 py-2 hover:bg-blue-50">
                 Home
               </a>
             </li>
-
             {[
               {
                 name: "About Us",
-                items: ["Our Story", "Leadership", "Careers"],
+                link: "/about",
+                items: [
+                  { name: "Vision & Mission", link: "/about/#visionmission" },
+                  { name: "Corporate Profile", link: "/about/#corporateprofile" },
+                  { name: "Corporate Structure", link: "/about/#corporatestructure" },
+                  { name: "Board of Directors", link: "/about/#bod" },
+                  { name: "Senior Management", link: "/about/bod/#seniormanagement" },
+                  { name: "Milestone", link: "/about/#milestone" },
+                  { name: "Corporate Information", link: "/about/#corporateinformation" },
+                ],
               },
-              { name: "Business", items: ["Energy Solutions", "Projects"] },
+              {
+                name: "Business",
+                link: "/business",
+                items: [
+                  { name: " Oil Bunkering, Vessel Management and Vessel Chartering", link: "/business" },
+                 ],
+              },
               {
                 name: "Investor Relations",
-                items: ["Reports", "Shareholders"],
+                link: "/investor-relation",
+                items: [
+                  { name: "Governance Documents", link: "/investor-relation/governance-documents"},
+                  { name: "Financial Report", link: "/investor/shareholders" },
+                  { name: "SEC Filings", link: "/investor-relation/sec-filings"  },
+                  { name: "Stock Information", link: "/investor-relation/stock-information"  }
+                ],
               },
-              { name: "Media", items: ["News", "Gallery"] },
+              {
+                name: "Media",
+                link: "/media",
+                items: [
+                  { name: "Press Release", link:"/media/#pressrelease" },
+                 ],
+              },
               {
                 name: "Sustainability",
-                items: ["Policies", "Initiatives"],
+                link: "/sustainability",
+                items: [
+                  { name: "Credit Risk", link:  "/sustainability/#creditrisk"},
+                  { name: "Internal Control", link:  "/sustainability/#internalcontrol"},
+                  { name: "Environmental, Social and Governance", link:  "/sustainability/#environmentalsocialandgovernance"},
+                  { name: "Compliance and Risk Management", link:  "/sustainability/#complianceandriskmanagement"}
+                 ],
               },
             ].map((menu) => (
               <li key={menu.name} className="border-b border-gray-200">
+            
                 <button
                   onClick={() => toggleDropdown(menu.name)}
                   className="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-blue-50 focus:outline-none"
                 >
-                  <span>{menu.name}</span>
+                  <a
+                    href={menu.link}
+                    className="block py-2 hover:bg-blue-50"
+                  >
+                    {menu.name}
+                  </a>{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -100,12 +138,12 @@ const MobileNavbar = () => {
                 {openDropdown === menu.name && (
                   <ul className="pl-6 py-2 bg-gray-100">
                     {menu.items.map((item) => (
-                      <li key={item}>
+                      <li key={item.name}>
                         <a
-                          href="#"
+                          href={item.link}
                           className="block py-1 text-gray-700 hover:text-blue-600"
                         >
-                          {item}
+                          {item.name}
                         </a>
                       </li>
                     ))}
@@ -115,12 +153,12 @@ const MobileNavbar = () => {
             ))}
 
             <li className="border-b border-gray-200">
-              <a href="#" className="block px-4 py-2 hover:bg-blue-50">
+              <a href="/career" className="block px-4 py-2 hover:bg-blue-50">
                 Careers
               </a>
             </li>
             <li className="border-b border-gray-200">
-              <a href="#" className="block px-4 py-2 hover:bg-blue-50">
+              <a href="/contact" className="block px-4 py-2 hover:bg-blue-50">
                 Contact Us
               </a>
             </li>

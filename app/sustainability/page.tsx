@@ -23,11 +23,13 @@ export default function Sustainability() {
         <section className="py-4 md:py-8">
           <Heading heading={SustainData.aboutus.title} className="mb-11" />
           <CreditRisk
+            sectionId="creditrisk"
             title={SustainData.creditrisk.title}
             description={SustainData.creditrisk.description}
           />
 
           <InternalControl
+          sectionId="internalcontrol"
             title={SustainData.internalcontrol.title}
             description={SustainData.internalcontrol.description}
           />
@@ -39,18 +41,15 @@ export default function Sustainability() {
             alt="Internal Control"
             className="object-cover w-auto mx-auto xl:px-28 my-12  pb-12"
           />
-
-          <InternalControl
-            title={SustainData.internalcontrol.title}
-            description={SustainData.internalcontrol.description}
-          />
-
+ 
           <Environmental
+          sectionId="environmentalsocialandgovernance"
             title={SustainData.environmental.title}
             description={SustainData.environmental.description}
           />
 
           <Compliance
+          sectionId="complianceandriskmanagement"
             title={SustainData.compliance.title}
             description={SustainData.compliance.description}
           />
