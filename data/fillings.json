@@ -1,0 +1,83 @@
+{
+    "hero": {
+        "heading": "Investor Relations",
+        "subheading": "Fueling the Future of Maritime Operations",
+        "subheadingleft": "Supporting maritime industries with world-class solutions and a network spanning 19 key ports in Malaysia",
+        "image": "/images/investor/floatel.png"
+    },
+    "aboutus": {
+        "title": "SEC Filings"
+    },
+    "filingTypes": [
+        "All Filing Type",
+        "FWP",
+        "F-1/A",
+        "F-1",
+        "DRS/A",
+        "DRS"
+    ],
+    "years": [
+        "All Years",
+        "2025",
+        "2024",
+        "2023"
+    ],
+    "filings": [
+        {
+            "filingDate": "02/06/2025",
+            "filingType": "FWP",
+            "description": "Filing under Securities Act Rules 163/433 of free writing prospectuses",
+            "pdfUrl": "/docs/filing1.pdf",
+            "wordUrl": "/docs/filing1.docx",
+            "htmlUrl": "/docs/filing1.html"
+        },
+        {
+            "filingDate": "02/06/2025",
+            "filingType": "F-1/A",
+            "description": "Pre-effective amendment",
+            "pdfUrl": "/docs/filing1.pdf",
+            "wordUrl": "/docs/filing1.docx",
+            "htmlUrl": "/docs/filing1.html"
+        },
+        {
+            "filingDate": "02/06/2025",
+            "filingType": "F-1",
+            "description": "Pre-effective amendment",
+            "pdfUrl": "/docs/filing1.pdf",
+            "wordUrl": "/docs/filing1.docx",
+            "htmlUrl": "/docs/filing1.html"
+        },
+        {
+            "filingDate": "02/06/2025",
+            "filingType": "DRS/A",
+            "description": "Amended Draft Registration Statement",
+            "pdfUrl": "/docs/filing1.pdf",
+            "wordUrl": "/docs/filing1.docx",
+            "htmlUrl": "/docs/filing1.html"
+        },
+        {
+            "filingDate": "02/06/2025",
+            "filingType": "DRS/A",
+            "description": "Amended Draft Registration Statement",
+            "pdfUrl": "/docs/filing1.pdf",
+            "wordUrl": "/docs/filing1.docx",
+            "htmlUrl": "/docs/filing1.html"
+        },
+        {
+            "filingDate": "02/06/2025",
+            "filingType": "DRS/A",
+            "description": "Amended Draft Registration Statement",
+            "pdfUrl": "/docs/filing1.pdf",
+            "wordUrl": "/docs/filing1.docx",
+            "htmlUrl": "/docs/filing1.html"
+        },
+        {
+            "filingDate": "02/06/2025",
+            "filingType": "DRS",
+            "description": "Draft registration statement submitted by Emerging Growth Company under Securities Act Section 6(e) or by Foreign Private Issuer under Division of Corporation Finance policy",
+            "pdfUrl": "/docs/filing1.pdf",
+            "wordUrl": "/docs/filing1.docx",
+            "htmlUrl": "/docs/filing1.html"
+        }
+    ]
+}

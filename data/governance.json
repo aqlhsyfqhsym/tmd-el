@@ -1,0 +1,84 @@
+{
+    "hero": {
+        "heading": "Investor Relations",
+        "subheading": "Fueling the Future of Maritime Operations",
+        "subheadingleft": "Supporting maritime industries with world-class solutions and a network spanning 19 key ports in Malaysia",
+        "image": "/images/investor/floatel.png"
+    },
+    "aboutus": {
+        "title": "Governance Documents"
+    },
+   "CommitteesTable": {
+        "headers": [
+            "",
+            "Audit Committee",
+            "Compensation Committee",
+            "Nominating and Corporate Governance Committee"
+        ],
+        "members": [
+            {
+                "name": "Datin Fong Shiang Ng",
+                "auditCommittee": {
+                    "isChairman": true,
+                    "isMember": false
+                },
+                "compensationCommittee": {
+                    "isChairman": false,
+                    "isMember": true
+                },
+                "nominatingCommittee": {
+                    "isChairman": false,
+                    "isMember": true
+                }
+            },
+            {
+                "name": "Mr. Kok Chaw Leong",
+                "auditCommittee": {
+                    "isChairman": false,
+                    "isMember": true
+                },
+                "compensationCommittee": {
+                    "isChairman": true,
+                    "isMember": false
+                },
+                "nominatingCommittee": {
+                    "isChairman": false,
+                    "isMember": true
+                }
+            },
+            {
+                "name": "Mr. Yick Fabian Shin",
+                "auditCommittee": {
+                    "isChairman": false,
+                    "isMember": true
+                },
+                "compensationCommittee": {
+                    "isChairman": false,
+                    "isMember": true
+                },
+                "nominatingCommittee": {
+                    "isChairman": true,
+                    "isMember": false
+                }
+            }
+        ]
+    },
+    "governanceDocuments": [
+        {
+            "title": "Code of Business Conduct and Ethics",
+            "downloadUrl": "/file/governance/code-of-conduct.pdf"
+        },
+        {
+            "title": "Audit Committee Charter",
+            "downloadUrl": "/file/governance/audit-committee.pdf"
+        },
+        {
+            "title": "Compensation Committee Charter",
+            "downloadUrl": "/file/governance/compensation-committee.pdf"
+        },
+        {
+            "title": "Nominating and Corporate Governance Committee Charter",
+            "downloadUrl": "/file/governance/nominating.pdf"
+        }
+    ]
+}

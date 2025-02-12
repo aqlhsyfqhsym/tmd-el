@@ -1,47 +1,98 @@
 import React from "react";
+import Image from "next/image";
 
-interface Committees {
-  Committees: string; // Match property name from JSON
-  Chairman: string;  // Match property name from JSON
-  Member: string;    // Match property name from JSON
+interface CommitteeMember {
+  name: string;
+  auditCommittee: {
+    isChairman: boolean;
+    isMember: boolean;
+  };
+  compensationCommittee: {
+    isChairman: boolean;
+    isMember: boolean;
+  };
+  nominatingCommittee: {
+    isChairman: boolean;
+    isMember: boolean;
+  };
 }
 
-interface TableCommitteeProps {
-  data: Committees[];
-  left: string;
-  center: string;
-  right: string;
+interface TableCommitteProps {
+  data: {
+    headers: string[];
+    members: CommitteeMember[];
+  };
 }
 
-const TableCommittee: React.FC<TableCommitteeProps> = ({ data, left, center, right }) => {
+export default function TableComitte({ data }: TableCommitteProps) {
+  const { headers, members } = data;
+
+  const renderIcons = (committee: { isChairman: boolean; isMember: boolean }) => (
+    <div className="flex justify-center items-center gap-2">
+      {committee.isChairman && (
+        <Image 
+          src="/images/about/chairman.svg" 
+          alt="Chairman"
+          width={24}
+          height={24}
+        />
+      )}
+      {committee.isMember && (
+        <Image 
+          src="/images/about/member.svg" 
+          alt="Member"
+          width={33}
+          height={33}
+        />
+      )}
+    </div>
+  );
+
   return (
-    <div className="overflow-x-auto ">
-      <table className="table-auto w-full overflow-hidden border-gray-900 rounded-xl">
-        <thead className="bg-gradient-to-r from-teal-400 to-blue-500 text-white">
-          <tr>
-            <th className="px-4 py-2 text-left rounded-tl-xl">{left}</th>
-            <th className="px-4 py-2 text-left">{center}</th>
-            <th className="px-4 py-2 text-left rounded-tr-xl">{right}</th>
+    <div className="overflow-x-auto">
+      <table className="table-auto w-full overflow-hidden border border-gray-300 rounded-xl">
+        <thead>
+          <tr className="bg-gradient-to-r from-teal-400 to-blue-500 text-white border-b border-gray-300">
+            {headers.map((header, index) => (
+              <th key={index} className="px-4 py-3 text-center">
+                {header}
+              </th>
+            ))}
           </tr>
         </thead>
-        <tbody className="bg-[#FEF8F8] border-l border-r border-gray-900">
-          {data.map((committeesTable, index) => (
-            <tr key={index} className="bg-[#FEF8F8] border-gray-900 border-b">
-              <td className="px-4 py-2 text-sm text-black border-l border-gray-900 rounded-bl-xl">
-                {committeesTable.Committees}
-              </td>
-              <td className="px-4 py-2 text-sm text-black border-gray-900">
-                {committeesTable.Chairman}
-              </td>
-              <td className="px-4 py-2 text-sm text-black border-r border-gray-900 rounded-br-xl">
-                {committeesTable.Member}
-              </td>
+        <tbody className="bg-white">
+          {members.map((member, index) => (
+            <tr key={index} className="border-b border-gray-300 last:border-b-0">
+              <td className="px-4 py-4 font-medium text-black">{member.name}</td>
+              <td className="px-4 py-4">{renderIcons(member.auditCommittee)}</td>
+              <td className="px-4 py-4">{renderIcons(member.compensationCommittee)}</td>
+              <td className="px-4 py-4">{renderIcons(member.nominatingCommittee)}</td>
             </tr>
           ))}
         </tbody>
       </table>
+      
+      {/* Legend */}
+      <div className="mt-4 flex items-center gap-8">
+        <div className="flex items-center gap-2">
+          <Image 
+            src="/images/about/chairman.svg" 
+            alt="Chairperson"
+            width={24}
+            height={24}
+          />
+          <span className="text-sm ms-4 text-black font-semibold">Chairperson</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <Image 
+            src="/images/about/member.svg" 
+            alt="Member"
+            width={33}
+            height={33}
+          />
+          <span className="text-sm ms-4 text-black font-semibold">Member</span>
+        </div>
+      </div>
     </div>
   );
-};
-
-export default TableCommittee;
+}

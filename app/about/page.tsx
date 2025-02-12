@@ -24,13 +24,13 @@ export default function AboutUs() {
         image={About.hero.image}
       />
       <Vector />
-      <div className="container mx-auto p-10 lg:px-48">
+      <div className="container mx-auto p-10 lg:px-48" id="visionmission">
         <section className="py-4 md:py-8">
           <Heading heading={About.ourpurpose.title} className="mb-11" />
           <CardAbout cards={About.ourpurpose.image} />
         </section>
 
-        <section className="py-4 md:py-8">
+        <section className="py-4 md:py-8" id="corporateprofile">
           <Heading heading={About.aboutus.title} className="mb-11" />
           <Subheading subheading={About.aboutus.description} />
 
@@ -49,32 +49,30 @@ export default function AboutUs() {
             "linear-gradient(180deg, rgba(0, 169, 157, 0.12) 1.66%, rgba(17, 114, 186, 0.12) 98.86%)",
         }}
       >
-        <div className="container mx-auto p-10 lg:px-48">
-          <section className="py-4 md:py-8">
-            <h2 className="text-3xl font-extrabold text-[#272361] mb-4">
-              Latest Insights
+        <div className="container mx-auto p-10 lg:px-48" id="corporatestructure">
+          <section className="py-4 md:py-8 bg-white rounded-3xl p-10 custom-shadow">
+            <a href="https://tmd-sb.com/" target="_blank">
+            <h2 className="text-3xl text-center font-extrabold text-[#272361] mb-4">
+            Corporate Structure
             </h2>
-            <p className="text-gray-700 text-base">
-              Stay Updated on TMD Energy’s Market Performance . (Stock Quote)
-            </p>
-
+         
             <Image
               src="/images/about/corporate-structure.png"
               alt="Latest Insights stock"
               width={800}
               height={610}
               priority
-              className="w-auto mx-auto my-auto object-cover"
+              className="w-full mx-auto my-auto object-cover mt-5"
             />
+            </a>
           </section>
         </div>
       </div>
-      <div className="container mx-auto p-10 lg:px-48">
+      <div className="container mx-auto p-10 lg:px-48" id="bod">
         <Heading heading={About.directors.title} className="mb-11" />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center" >
 
-        <div className="grid grid-cols-1 md:grid-cols-2  gap-4 mb-11" 
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-4 mb-11"   >
           {About.upperdirector.map((upperdirector, index) => (
             <DirectorCard
               key={index}
@@ -101,12 +99,7 @@ export default function AboutUs() {
           data={About.directortable.table}
         />
 
-        <TableComitte
-          left={About.CommitteesTable.left} 
-          center={About.CommitteesTable.center} 
-           right={About.CommitteesTable.right}
-           data={About.CommitteesTable.table}
-        />
+        <TableComitte data={About.CommitteesTable} />
       </div>
 
       <div className="container mx-auto p-10 lg:px-48">
