@@ -19,7 +19,7 @@ interface NavbarProps {
     investor: {
       label: string;
       href: string;
-      links: { image: string; title: string;  desc: string; href: string }[];
+      links: { image: string; title: string; desc: string; href: string }[];
     };
     media: {
       label: string;
@@ -29,7 +29,7 @@ interface NavbarProps {
     sustainability: {
       label: string;
       href: string;
-      links: { image: string; title: string; desc: string;  href: string }[];
+      links: { image: string; title: string; desc: string; href: string }[];
     };
     career: { label: string; href: string };
     contactus: { label: string; href: string };
@@ -83,38 +83,43 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
               <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 {data.about.links.map((item, index) => (
                   <Link href={item.href} key={index}>
-                    <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8 cursor-pointer">
-                      <div className="flex">
-                        <div className="h-10 w-12 rounded-full bg-blue-100 flex items-center justify-center">
+                    <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
+                      <div className="flex items-start">
+                        <div className="w-12">
                           <Image
                             src={item.image}
                             width={800}
-                            height={610}
+                            height={800}
                             priority
                             alt="vector"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                           />
                         </div>
-                        <div className="flex flex-col ml-2">
-                          <h3 className="font-semibold text-sm">{item.title}</h3>
+                        <div className="flex flex-col px-2 w-full">
+                          <h3 className="font-semibold text-sm">
+                            {item.title}
+                          </h3>
                           <p className="text-gray-600 mt-1">{item.desc}</p>
                         </div>
                       </div>
-                      <span className="text-xs text-gray-600 text-right">Learn more</span>
+                      <span className="text-xs text-gray-600 text-right">
+                        Learn more
+                      </span>
                     </div>
                   </Link>
                 ))}
-                <div className="flex flex-col gap-2 justify-between ">
+                <div className="flex flex-col gap-2">
+                <Link href="/about/#milestone">
                   <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition ">
-                    <div className="flex">
-                      <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                    <div className="flex items-center justify-start">
+                      <div className="w-10">
                         <Image
-                          src="/images/vector/navbar/navbar.svg"
+                          src="/images/vector/navbar/milestone.svg"
                           width={800}
                           height={610}
                           priority
                           alt="vector"
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                         />
                       </div>
 
@@ -123,16 +128,19 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                       </div>
                     </div>
                   </div>
+                  </Link>
+                <Link href="/about/#corporateinformation">
+
                   <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition">
-                    <div className="flex ">
-                      <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                    <div className="flex items-center justify-start">
+                      <div className="w-10 ">
                         <Image
-                          src="/images/vector/navbar/navbar.svg"
+                          src="/images/vector/navbar/corp-profile.svg"
                           width={800}
                           height={610}
                           priority
                           alt="vector"
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                         />
                       </div>
                       <div className="flex flex-col ml-4">
@@ -142,14 +150,13 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                       </div>
                     </div>
                   </div>
+                </Link>
                 </div>
               </div>
             </div>
           </li>
           <li className="group">
-            <Link
-              href={data.business.href}
-              className="hover:text-blue-600 flex items-center space-x-1"
+            <Link   href={data.business.href}  className="hover:text-blue-600 flex items-center space-x-1"
             >
               <span>{data.business.label}</span>
               <svg
@@ -170,20 +177,20 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
 
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
               <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
-                <Link href="/about/management">
-                  <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8 cursor-pointer">
-                    <div className="flex">
-                      <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                <Link href="/business">
+                  <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
+                    <div className="flex items-start">
+                      <div className="w-12">
                         <Image
-                          src="/images/vector/navbar/navbar.svg"
+                          src="/images/vector/navbar/oil.svg"
                           width={800}
-                          height={610}
+                          height={800}
                           priority
                           alt="vector"
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                         />
                       </div>
-                      <div className="flex flex-col ml-2 ">
+                      <div className="flex flex-col ml-2">
                         <h3 className="font-semibold text-sm">
                           Oil Bunkering, Vessel Management and Vessel Chartering
                         </h3>
@@ -194,6 +201,9 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                         </ul>
                       </div>
                     </div>
+                    <span className="text-xs text-gray-600 text-right">
+                      Learn more
+                    </span>
                   </div>
                 </Link>
               </div>
@@ -223,49 +233,14 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
             </Link>
 
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
-              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 gap-4">
-              <Link href="/investor-relation/governance-documents">
-                <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8 cursor-pointer">
-                  <div className="flex">
-                    <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
-                      <Image
-                        src="/images/vector/navbar/navbar.svg"
-                        width={800}
-                        height={610}
-                        priority
-                        alt="vector"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="flex flex-col ml-2 ">
-                      <h3 className="font-semibold text-sm">
-                        Governance Documents
-                      </h3>
-                      <ul className="text-gray-600 mt-1 list-disc ml-3">
-                        <li>Code of Business Conduct and Ethics</li>
-                        <li>Corporate Governance Guidelines</li>
-                        <li>Insider Trading Policy</li>
-                        <li>Whistle Blowing Policy</li>
-                        <li>Board Diversity Disclosure</li>
-                        <li>Audit Committee Charter</li>
-                        <li>Compensation Committee Charter</li>
-                        <li>
-                          Nominating and Corporate Governance Committee
-                          Charter
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-              <div className="max-w-screen-xl w-full mx-auto  grid grid-cols-2 gap-4">
-                {data.investor.links.map((item, index) => (
-                  <Link href={item.href} key={index}>
-                    <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8 cursor-pointer">
+              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+                <div className="row-span-2">
+                  <Link href="/investor-relation/governance">
+                    <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8 cursor-pointer ">
                       <div className="flex">
-                        <div className="h-10 w-20 rounded-full bg-blue-100 flex items-center justify-center">
+                        <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
                           <Image
-                            src={item.image}
+                            src="/images/vector/navbar/gov-doc.svg"
                             width={800}
                             height={610}
                             priority
@@ -273,16 +248,58 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                             className="w-full h-full object-cover"
                           />
                         </div>
+                        <div className="flex flex-col ml-2 ">
+                          <h3 className="font-semibold text-sm">
+                            Governance Documents
+                          </h3>
+                          <ul className="text-gray-600 mt-1 list-disc ml-3">
+                            <li>Code of Business Conduct and Ethics</li>
+                            <li>Corporate Governance Guidelines</li>
+                            <li>Insider Trading Policy</li>
+                            <li>Whistle Blowing Policy</li>
+                            <li>Board Diversity Disclosure</li>
+                            <li>Audit Committee Charter</li>
+                            <li>Compensation Committee Charter</li>
+                            <li>
+                              Nominating and Corporate Governance Committee
+                              Charter
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <span className="text-xs text-gray-600 text-right">
+                        Learn more
+                      </span>
+                    </div>
+                  </Link>
+                </div>
+                {data.investor.links.map((item, index) => (
+                  <Link href={item.href} key={index}>
+                    <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
+                      <div className="flex items-start">
+                        <div className=" w-12">
+                          <Image
+                            src={item.image}
+                            width={800}
+                            height={610}
+                            priority
+                            alt="vector"
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
                         <div className="flex flex-col ml-2">
-                          <h3 className="font-semibold text-sm">{item.title}</h3>
+                          <h3 className="font-semibold text-sm">
+                            {item.title}
+                          </h3>
                           <p className="text-gray-600 mt-1">{item.desc}</p>
                         </div>
                       </div>
-                      <span className="text-xs text-gray-600 text-right">Learn more</span>
+                      <span className="text-xs text-gray-600 text-right">
+                        Learn more
+                      </span>
                     </div>
                   </Link>
                 ))}
-              </div>
               </div>
             </div>
           </li>
@@ -310,28 +327,33 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
 
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
               <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
-              <Link href="/about/management">
-                <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8 cursor-pointer">
-                  <div className="flex">
-                    <div className="h-10 w-12 rounded-full bg-blue-100 flex items-center justify-center">
-                      <Image
-                        src="/images/vector/navbar/navbar.svg"
-                        width={800}
-                        height={610}
-                        priority
-                        alt="vector"
-                        className="w-full h-full object-cover"
-                      />
+                <Link href="/media/#pressrelease">
+                  <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
+                    <div className="flex items-start">
+                      <div className="w-12">
+                        {" "}
+                        <Image
+                          src="/images/vector/navbar/press.svg"
+                          width={800}
+                          height={610}
+                          priority
+                          alt="vector"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <div className="flex flex-col ml-2 ">
+                        <h3 className="font-semibold text-sm">Press Release</h3>
+                        <p className="text-gray-600 mt-1">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                      </div>
                     </div>
-                    <div className="flex flex-col ml-2 ">
-                      <h3 className="font-semibold text-sm">
-                        Press Release
-                      </h3> 
-                      <p className="text-gray-600 mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
+                    <span className="text-xs text-gray-600 text-right">
+                      Learn more
+                    </span>
                   </div>
-                </div>
-              </Link>
+                </Link>
               </div>
             </div>
           </li>
@@ -361,24 +383,28 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
               <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 {data.sustainability.links.map((item, index) => (
                   <Link href={item.href} key={index}>
-                    <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8 cursor-pointer">
-                      <div className="flex">
-                        <div className="h-10 w-12 rounded-full bg-blue-100 flex items-center justify-center">
+                    <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
+                      <div className="flex items-start">
+                        <div className="w-12">
                           <Image
                             src={item.image}
                             width={800}
-                            height={610}
+                            height={800}
                             priority
                             alt="vector"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                           />
                         </div>
-                        <div className="flex flex-col ml-2">
-                          <h3 className="font-semibold text-sm">{item.title}</h3>
+                        <div className="flex flex-col px-2 w-full">
+                          <h3 className="font-semibold text-sm">
+                            {item.title}
+                          </h3>
                           <p className="text-gray-600 mt-1">{item.desc}</p>
                         </div>
                       </div>
-                      <span className="text-xs text-gray-600 text-right">Learn more</span>
+                      <span className="text-xs text-gray-600 text-right">
+                        Learn more
+                      </span>
                     </div>
                   </Link>
                 ))}

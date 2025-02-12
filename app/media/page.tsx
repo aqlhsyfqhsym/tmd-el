@@ -26,7 +26,7 @@ export default function Media() {
       <Vector />
 
       <div className="container mx-auto p-10 lg:px-48">
-        <section className="py-4 md:py-8">
+        <section className="py-4 md:py-8" id="pressrelease">
           <Heading heading={MediaData.pressrelease.title} />
         </section>
 

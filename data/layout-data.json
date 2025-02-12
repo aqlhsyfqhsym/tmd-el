@@ -4,11 +4,11 @@
       "label": "About Us",
       "href": "/about",
       "links": [
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Vision & Mission", "desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/#visionmission" },
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Corporate Profile", "desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/#corporateprofile" },
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Corporate Structure","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/#corporatestructure" },
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Board of Directors","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/bod" },
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Senior Management","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/management" }
+        { "image": "/images/vector/navbar/vissionmission.svg", "title": "Vision & Mission", "desc" : "Navigating Towards a Sustainable Future in Marine Fuel Solutions. ", "href": "/about/#visionmission" },
+        { "image": "/images/vector/navbar/corp-profile.svg", "title": "Corporate Profile", "desc" : "Discover the essence of TMDEL's corporate identity.", "href": "/about/#corporateprofile" },
+        { "image": "/images/vector/navbar/corp-struct.svg", "title": "Corporate Structure","desc" : "Understanding the Corporate Structure of TMDEL: A Comprehensive Overview",  "href": "/about/#corporatestructure" },
+        { "image": "/images/vector/navbar/bod.svg", "title": "Board of Directors","desc" : "Navigate the Board of Directors section, where visionary strategies and groundbreaking ideas converge.", "href": "/about/bod" },
+        { "image": "/images/vector/navbar/senior-mgt.svg", "title": "Senior Management","desc" : "Leading the way to strategic success.",  "href": "/about/bod/#seniormanagement" }
         ]
     },
     "business": {
@@ -22,9 +22,9 @@
       "label": "Investor Relation",
       "href": "/investor-relation",
       "links": [
-        { "image": "/images/vector/navbar/navbar.svg",  "title": "Financial Report","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/investor/apt" } ,
-        { "image": "/images/vector/navbar/navbar.svg",  "title": "SEC Filings","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/investor-relation/sec-filings" } ,
-        { "image": "/images/vector/navbar/navbar.svg",  "title": "Stock Information","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/investor/apt" } 
+        { "image": "/images/vector/navbar/financial-report.svg",  "title": "Financial Report","desc" : "Key Insights from Our Financial Report",  "href": "/investor/apt" } ,
+        { "image": "/images/vector/navbar/stock-info.svg",  "title": "Stock Information","desc" : "Stay updated with the latest stock market trends and insights.",  "href": "/investor/apt" } ,
+        { "image": "/images/vector/navbar/sec.svg",  "title": "SEC Filings","desc" : "Essential information for SEC filings at your fingertips.",  "href": "/investor-relation/sec-fillings" } 
 
 
       ] 
@@ -40,10 +40,10 @@
       "label": "Sustainability",
       "href": "/sustainability",
       "links": [
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Credit Risk","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/management" },
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Internal Control","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/management" },
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Environmental, Social and Governance","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/management" },
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Compliance and Risk Management","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/management" }
+        { "image": "/images/vector/navbar/credit-risk.svg", "title": "Credit Risk","desc" : "Assessing potential financial risks to ensure smarter lending decisions.",  "href": "/sustainability/#creditrisk" },
+        { "image": "/images/vector/navbar/internal-control.svg", "title": "Internal Control","desc" : "Manage Your Internal Controls",  "href": "/sustainability/#internalcontrol" },
+        { "image": "/images/vector/navbar/env.svg", "title": "Environmental, Social and Governance","desc" : "Explore our commitment to sustainability, community engagement, and ethical governance.",  "href": "/sustainability/#environmentalsocialandgovernance" },
+        { "image": "/images/vector/navbar/compliance.svg", "title": "Compliance and Risk Management","desc" : "Stay informed and compliant with our comprehensive risk management solutions.",  "href": "/sustainability/#complianceandriskmanagement" }
 
       ] 
     },
