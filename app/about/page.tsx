@@ -102,7 +102,7 @@ export default function AboutUs() {
         <TableComitte data={About.CommitteesTable} />
       </div>
 
-      <div className="container mx-auto p-10 lg:px-48">
+      <div className="container mx-auto p-10 lg:px-48" id="milestone">
         <Heading heading="Milestone" className="mb-11 text-4xl text-black" />
         <Subheading subheading={About.milestone.description} />
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Hero from "@/components/organisms/Hero";
 import Vector from "@/components/atoms/Vector";
-import Heading from "@/components/atoms/Heading"
+import Heading from "@/components/atoms/Heading";
 import Malaysia from "@/components/atoms/Paragraph";
 import Singapore from "@/components/atoms/Paragraph";
 import Facilities from "@/components/molecules/SubTitleParagraph";
@@ -13,7 +13,7 @@ import ServiceDescription from "@/components/atoms/Paragraph";
 import CoreService from "@/components/molecules/SubTitleOrderLine";
 import Card from "@/components/atoms/CardDescription";
 import Bunkering from "@/components/molecules/SubTitleOrderLine2";
-import BunkeringTitle from "@/components/atoms/HeadingSmall"
+import BunkeringTitle from "@/components/atoms/HeadingSmall";
 
 export default function Businesss() {
   // const specificCard = BusinessData.ourservicecard.find(card => card.title === "Ship owners and operators");
@@ -32,9 +32,9 @@ export default function Businesss() {
         <section className="py-4 md:py-8">
           <Heading heading={BusinessData.aboutus.title} className="mb-11" />
           <Image
-            src="/images/business/malaysia.png"
-            width={600}
-            height={400}
+            src="/images/business/malaysia-hd.png"
+            width={800}
+            height={610}
             alt="Malaysia"
             priority
             className="object-cover w-auto mx-auto pb-5"
@@ -43,15 +43,15 @@ export default function Businesss() {
           <Malaysia description={BusinessData.malaysia.description} />
 
           <Image
-            src="/images/business/map.png"
+            src="/images/business/map-hd.png"
             width={800}
             height={610}
             priority
             alt="Malaysia"
-            className="object-contain mx-auto w-auto xl:px-20  my-12  pb-12"
+            className="object-contain mx-100 w-full xl:px-20  my-12  pb-12"
           />
           <Image
-            src="/images/business/singapore.png"
+            src="/images/business/singapore-hd.png"
             width={800}
             height={610}
             priority
@@ -59,35 +59,31 @@ export default function Businesss() {
             className="object-cover w-auto mx-auto pb-5"
           />
 
-                    <div className="pb-5">
-                        <Singapore
-                            description={BusinessData.singapore.description}
-                        />
-                    </div>
+          <div className="pb-5">
+            <Singapore description={BusinessData.singapore.description} />
+          </div>
 
-                    <BunkeringTitle
-                        title={BusinessData.bunkeringtitle.title}
-                    />
+          <BunkeringTitle title={BusinessData.bunkeringtitle.title} />
 
-                    <Bunkering
-                        title={BusinessData.bunkering.title}
-                        description={BusinessData.bunkering.mainDescription}
-                        bulletPoints={BusinessData.bunkering.fuelTypes}
-                        subsidiaryIntro={BusinessData.bunkering.subsidiaryIntro}
-                        subsidiaries={BusinessData.bunkering.subsidiaries}
-                        additionalInfo={BusinessData.bunkering.additionalInfo}
-                    />
+          <Bunkering
+            title={BusinessData.bunkering.title}
+            description={BusinessData.bunkering.mainDescription}
+            bulletPoints={BusinessData.bunkering.fuelTypes}
+            subsidiaryIntro={BusinessData.bunkering.subsidiaryIntro}
+            subsidiaries={BusinessData.bunkering.subsidiaries}
+            additionalInfo={BusinessData.bunkering.additionalInfo}
+          />
 
-                    <Bunkering
-                        title={BusinessData.shipManagement.title}
-                        description={BusinessData.shipManagement.description}
-                    />
+          <Bunkering
+            title={BusinessData.shipManagement.title}
+            description={BusinessData.shipManagement.description}
+          />
 
-                    <Bunkering
-                        title={BusinessData.vesselChartering.title}
-                        description={BusinessData.vesselChartering.description}
-                        additionalInfo={BusinessData.vesselChartering.additionalInfo}
-                    />
+          <Bunkering
+            title={BusinessData.vesselChartering.title}
+            description={BusinessData.vesselChartering.description}
+            additionalInfo={BusinessData.vesselChartering.additionalInfo}
+          />
 
           <Facilities
             title={BusinessData.facilities.title}
@@ -109,7 +105,7 @@ export default function Businesss() {
                 className={`${
                   index === 0 ||
                   index === BusinessData.ourservicecard.length - 1
-                    ? "col-span-4 md:col-span-2"
+                    ? "col-span-1 md:col-span-2"
                     : "col-span-1 "
                 } w-full`}
                 key={index}
@@ -136,12 +132,12 @@ export default function Businesss() {
             description={BusinessData.key.description}
           />
           <Image
-            src="/images/business/key.png"
+            src="/images/business/key-hd.png"
             width={800}
             height={610}
             priority
             alt="Singapore"
-            className="object-contain w-auto xl:px-40  my-12  pb-12"
+            className="object-cover w-auto mx-auto pb-5"
           />
 
           <CoreService
