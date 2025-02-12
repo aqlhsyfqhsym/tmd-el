@@ -4,9 +4,9 @@
       "label": "About Us",
       "href": "/about",
       "links": [
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Vision & Mission", "desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/vision" },
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Corporate Profile", "desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/profile" },
-        { "image": "/images/vector/navbar/navbar.svg", "title": "Corporate Structure","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/structure" },
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Vision & Mission", "desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/#visionmission" },
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Corporate Profile", "desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/#corporateprofile" },
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Corporate Structure","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/#corporatestructure" },
         { "image": "/images/vector/navbar/navbar.svg", "title": "Board of Directors","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/bod" },
         { "image": "/images/vector/navbar/navbar.svg", "title": "Senior Management","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/management" }
         ]

@@ -21,3 +21,8 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+.custom-shadow {
+     box-shadow: 7.969px 6.198px 38.073px 0px rgba(0, 0, 0, 0.25);
+
+}
