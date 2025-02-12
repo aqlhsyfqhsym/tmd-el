@@ -24,7 +24,7 @@ export default function CardBod({ name, position, description, image }: CardBodP
         <div className="md:w-[55%] lg:w-[60%] p-8 md:p-10">
           <div className="max-w-2xl">
             <h2 className="text-[2rem] font-bold text-gray-900 mb-1">{name}</h2>
-            <h3 className="text-lg text-gray-600 mb-6">{position}</h3>
+            <h3 className="text-lg text-black mb-6">{position}</h3>
             <p className="text-gray-700 text-base leading-relaxed max-h-[310px] overflow-hidden transition-all duration-4000 ease-in-out group-hover:max-h-[1000px]">
               {description}
             </p>
