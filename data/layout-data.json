@@ -4,42 +4,47 @@
       "label": "About Us",
       "href": "/about",
       "links": [
-        { "title": "Vision & Mission", "href": "/about/vision" },
-        { "title": "Corporate Profile", "href": "/about/profile" },
-        { "title": "Corporate Structure", "href": "/about/structure" },
-        { "title": "Board of Directors", "href": "/about/board" },
-        { "title": "Senior Management", "href": "/about/management" },
-        { "title": "Milestone", "href": "/about/milestone" },
-        { "title": "Corporate Information", "href": "/about/info" },
-        { "title": "Other Details", "href": "/about/details" }
-      ]
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Vision & Mission", "desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/#visionmission" },
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Corporate Profile", "desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/#corporateprofile" },
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Corporate Structure","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/#corporatestructure" },
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Board of Directors","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", "href": "/about/bod" },
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Senior Management","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/management" }
+        ]
     },
     "business": {
       "label": "Business",
       "href": "/business",
       "links": [
-        { "title": "Business", "href": "/business/apt" } 
-      ] 
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Business", "href": "/business/apt" }
+      ]
     },
     "investor": {
       "label": "Investor Relation",
       "href": "/investor-relation",
       "links": [
-        { "title": "investor123", "href": "/investor/apt" } 
+        { "image": "/images/vector/navbar/navbar.svg",  "title": "Financial Report","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/investor/apt" } ,
+        { "image": "/images/vector/navbar/navbar.svg",  "title": "SEC Filings","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/investor-relation/sec-filings" } ,
+        { "image": "/images/vector/navbar/navbar.svg",  "title": "Stock Information","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/investor/apt" } 
+
+
       ] 
     },
     "media": {
       "label": "Media",
       "href": "/media",
       "links": [
-        { "title": "mediaaa", "href": "/investor/apt" } 
-      ] 
+        { "image": "/images/vector/navbar/navbar.svg", "title": "mediaaa", "href": "/investor/apt" }
+      ]
     },
     "sustainability": {
       "label": "Sustainability",
       "href": "/sustainability",
       "links": [
-        { "title": "sustain", "href": "/investor/apt" } 
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Credit Risk","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/management" },
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Internal Control","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/management" },
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Environmental, Social and Governance","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/management" },
+        { "image": "/images/vector/navbar/navbar.svg", "title": "Compliance and Risk Management","desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",  "href": "/about/management" }
+
       ] 
     },
     "career": {
@@ -67,6 +72,10 @@
       },
       {
         "name": "Important Notice",
+        "href": "#"
+      },
+      {
+        "name": "Financial & Fillings",
         "href": "#"
       },
       {
