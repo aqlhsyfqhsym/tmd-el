@@ -235,7 +235,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
               <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 <div className="row-span-2">
-                  <Link href="/investor-relation/governance-documents">
+                  <Link href="/investor-relation/governance">
                     <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8 cursor-pointer ">
                       <div className="flex">
                         <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
