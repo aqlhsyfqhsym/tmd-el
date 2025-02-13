@@ -37,7 +37,7 @@ export default function Businesss() {
             height={610}
             alt="Malaysia"
             priority
-            className="object-cover w-auto mx-auto pb-5"
+            className="object-cover w-full pb-5"
           />
 
           <Malaysia description={BusinessData.malaysia.description} />
@@ -56,7 +56,7 @@ export default function Businesss() {
             height={610}
             priority
             alt="Singapore"
-            className="object-cover w-auto mx-auto pb-5"
+            className="object-cover w-full pb-5"
           />
 
           <div className="pb-5">

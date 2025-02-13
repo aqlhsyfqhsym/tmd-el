@@ -44,18 +44,18 @@
         "description": "Discover our latest projects, partnerships, and milestones as we drive forward in the energy industry.",
         "slides": [
             {
-                "title": "Slide 1",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "title": "Leading Integrated Marine Fuel Services in Malaysia",
+                "description": "Operating across multiple ports with a comprehensive fleet, we deliver exceptional bunkering services to global shipowners, operators, and oil traders.",
                 "image": "/images/home/slider/slider-1.png"
             },
             {
-                "title": "Slide 2",
-                "description": "Aenean commodo ligula eget dolor.",
+                "title": "Strategic Presence in Key Maritime Routes",
+                "description": "Leveraging our position in the Straits of Malacca and the South China Sea, TMDEL ensures efficient fuel solutions for the maritime industry.",
                 "image": "/images/home/slider/slider-2.png"
             },
             {
-                "title": "Slide 3",
-                "description": "Nulla consequat massa quis enim.",
+                "title": "A Proud Member of Straits Energy Resources Berhad",
+                "description": "As part of a Fortune Southeast Asia 500 company, we uphold excellence in integrated marine fuel bunkering services throughout Malaysia.",
                 "image": "/images/home/slider/slider-3.png"
             }
         ]

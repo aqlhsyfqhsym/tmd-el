@@ -20,7 +20,7 @@
     },
     "investor": {
       "label": "Investor Relation",
-      "href": "/investor-relation",
+      "href": "/investor-relation/governance",
       "links": [
         { "image": "/images/vector/navbar/financial-report.svg",  "title": "Financial Report","desc" : "Key Insights from Our Financial Report",  "href": "/investor/apt" } ,
         { "image": "/images/vector/navbar/stock-info.svg",  "title": "Stock Information","desc" : "Stay updated with the latest stock market trends and insights.",  "href": "/investor/apt" } ,
