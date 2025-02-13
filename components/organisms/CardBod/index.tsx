@@ -33,7 +33,7 @@ export default function CardBod({ name, position, description, image }: CardBodP
       </div>
 
       <Image 
-        src="/images/bod/line.png"
+        src="/images/career/line.png"
         alt="decorative bottom border"
         width={1910}
         height={6}

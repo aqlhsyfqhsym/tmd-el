@@ -7,6 +7,7 @@ import Subheading from "@/components/atoms/Subheading";
 import MissionVisson from "@/components/molecules/SubTitleParagraph";
 import Slider from "@/components/organisms/ImageSlider";
 import AnimationClient from "@/components/molecules/AnimationClient";
+import Link from "next/link"; // Import Link for navigation
 
 import HomeData from "@/data/home.json";
 
@@ -86,14 +87,17 @@ export default function Home() {
             <p className="text-gray-700 text-base">
               Stay Updated on TMD Energy’s Market Performance . (Stock Quote)
             </p>
+    
+            <Link href="https://www.klsescreener.com/v2/stocks/view/0080" target="_blank">
 
             <Image
-              src="/images/home/stock-insight.png"
-              width={400}
-              height={400}
+              src="/images/home/stock-insight.jpg"
+              width={800}
+              height={800}
               alt="Latest Insights stock"
-              className="w-10/12 mx-auto object-cover"
+              className="w-10/12 mx-auto object-cover rounded-lg mt-3"
             />
+            </Link>
             </AnimationClient>
           </section>
         </div>

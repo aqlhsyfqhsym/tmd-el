@@ -79,8 +79,8 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 />
               </svg>
             </Link>
-            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
-              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out">
+            <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 {data.about.links.map((item, index) => (
                   <Link href={item.href} key={index}>
                     <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
@@ -143,11 +143,10 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                           className="w-full h-full object-contain"
                         />
                       </div>
-                      <div className="flex flex-col ml-4">
-                        <h3 className="font-semibold text-sm">
-                          Corporate Information
-                        </h3>
+                      <div className="flex flex-col ml-2">
+                        <h3 className="font-semibold text-sm"> Corporate Information </h3>
                       </div>
+ 
                     </div>
                   </div>
                 </Link>
@@ -175,8 +174,8 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
               </svg>
             </Link>
 
-            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
-              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out">
+            <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 <Link href="/business">
                   <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
                     <div className="flex items-start">
@@ -208,8 +207,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 </Link>
               </div>
             </div>
-          </li>
-          {/* investor */}
+          </li> 
           <li className="group">
             <Link
               href={data.investor.href}
@@ -232,8 +230,8 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
               </svg>
             </Link>
 
-            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
-              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out">
+            <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 <div className="row-span-2">
                   <Link href="/investor-relation/governance">
                     <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8 cursor-pointer ">
@@ -325,8 +323,8 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
               </svg>
             </Link>
 
-            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
-              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out">
+            <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 <Link href="/media/#pressrelease">
                   <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
                     <div className="flex items-start">
@@ -379,8 +377,8 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
               </svg>
             </Link>
 
-            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid">
-              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out">
+            <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 {data.sustainability.links.map((item, index) => (
                   <Link href={item.href} key={index}>
                     <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
