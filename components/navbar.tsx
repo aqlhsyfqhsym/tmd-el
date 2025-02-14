@@ -403,7 +403,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
               </AnimationClient>
             </div>
           </li>
-          <li className="group">
+          {/* <li className="group">
             <Link
               href={data.sustainability.href}
               className="hover:text-blue-600 flex items-center space-x-1"
@@ -465,7 +465,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 </div>
               </AnimationClient>
             </div>
-          </li>
+          </li> */}
           <li>
             <Link href={data.career.href} className="hover:text-blue-600">
               {data.career.label}

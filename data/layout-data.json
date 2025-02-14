@@ -35,18 +35,7 @@
       "links": [
         { "image": "/images/vector/navbar/navbar.svg", "title": "mediaaa", "href": "/investor/apt" }
       ]
-    },
-    "sustainability": {
-      "label": "Sustainability",
-      "href": "/sustainability",
-      "links": [
-        { "image": "/images/vector/navbar/credit-risk.svg", "title": "Credit Risk","desc" : "Assessing potential financial risks to ensure smarter lending decisions.",  "href": "/sustainability/#creditrisk" },
-        { "image": "/images/vector/navbar/internal-control.svg", "title": "Internal Control","desc" : "Manage Your Internal Controls",  "href": "/sustainability/#internalcontrol" },
-        { "image": "/images/vector/navbar/env.svg", "title": "Environmental, Social and Governance","desc" : "Explore our commitment to sustainability, community engagement, and ethical governance.",  "href": "/sustainability/#environmentalsocialandgovernance" },
-        { "image": "/images/vector/navbar/compliance.svg", "title": "Compliance and Risk Management","desc" : "Stay informed and compliant with our comprehensive risk management solutions.",  "href": "/sustainability/#complianceandriskmanagement" }
-
-      ] 
-    },
+    }, 
     "career": {
       "label": "Careers",
       "href": "/career"
