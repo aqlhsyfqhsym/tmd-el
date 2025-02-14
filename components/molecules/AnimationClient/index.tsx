@@ -13,8 +13,11 @@ export default function AnimationClient({
 }) {
   const ref = useRef<HTMLDivElement | null>(null);
   const [, setIsInView] = useState(false);
-  const {  } = useScroll();
+  const { } = useScroll();
+
   useEffect(() => {
+    const currentRef = ref.current; 
+    
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsInView(entry.intersectionRatio > 0.1);
@@ -24,13 +27,13 @@ export default function AnimationClient({
       },
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -40,7 +43,6 @@ export default function AnimationClient({
       ref={ref}
       {...props}
     >
-      
       {children}
     </motion.div>
   );

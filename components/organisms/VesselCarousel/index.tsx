@@ -5,17 +5,17 @@ import Image from 'next/image';
 import VesselInfo from '@/components/atoms/VesselInfo';
 import vesselData from '@/data/vessel.json';
 
-interface VesselData {
+// Remove the unused interface or use it to type your vessels
+const vessels: {
   id: number;
   name: string;
   capacity: string;
   pumpRate: string;
   image: string;
-}
+}[] = vesselData.vessels;
 
 export default function VesselCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const vessels = vesselData.vessels;
   const currentVessel = vessels[currentIndex];
 
   const handlePrevious = () => {
