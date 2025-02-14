@@ -26,12 +26,7 @@ interface NavbarProps {
       label: string;
       href: string;
       links: { image: string; title: string; href: string }[];
-    };
-    sustainability: {
-      label: string;
-      href: string;
-      links: { image: string; title: string; desc: string; href: string }[];
-    };
+    }; 
     career: { label: string; href: string };
     contactus: { label: string; href: string };
   };
@@ -41,15 +36,19 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
   return (
     <nav className="bg-white shadow-sm hidden md:block">
       <div className="container mx-auto py-3 flex flex-col items-center gap-3">
-        <Image
-          src="/images/tmd-logo-colored.png"
-          alt="TMD Energy Logo"
-          width={800}
-          height={610}
-          priority
-          className="w-24"
-        />
-
+        <Link
+          href="/"
+          className="hover:text-blue-600 flex items-center space-x-1"
+        >
+          <Image
+            src="/images/tmd-logo-colored.png"
+            alt="TMD Energy Logo"
+            width={800}
+            height={610}
+            priority
+            className="w-24"
+          />
+        </Link>
         <div className="w-full">
           <hr className="border-t border-gray-300" />
         </div>
@@ -83,10 +82,10 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid transition-all duration-300 ease-in-out">
               <AnimationClient
                 props={{
-                  initial: { opacity: 0 },  
-                  whileInView: { opacity: 1 },  
-                  transition: { duration: 1, ease: "easeOut" },  
-                  viewport: { once: false },  
+                  initial: { opacity: 0 },
+                  whileInView: { opacity: 1 },
+                  transition: { duration: 1, ease: "easeOut" },
+                  viewport: { once: false },
                 }}
               >
                 <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
@@ -190,45 +189,46 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
             </Link>
 
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid transition-all duration-300 ease-in-out">
-            <AnimationClient
+              <AnimationClient
                 props={{
-                  initial: { opacity: 0 },  
-                  whileInView: { opacity: 1 },  
-                  transition: { duration: 1, ease: "easeOut" },  
-                  viewport: { once: false },  
+                  initial: { opacity: 0 },
+                  whileInView: { opacity: 1 },
+                  transition: { duration: 1, ease: "easeOut" },
+                  viewport: { once: false },
                 }}
               >
-              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
-                <Link href="/business">
-                  <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
-                    <div className="flex items-start">
-                      <div className="w-12">
-                        <Image
-                          src="/images/vector/navbar/oil.svg"
-                          width={800}
-                          height={800}
-                          priority
-                          alt="vector"
-                          className="w-full h-full object-contain"
-                        />
+                <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+                  <Link href="/business">
+                    <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
+                      <div className="flex items-start">
+                        <div className="w-12">
+                          <Image
+                            src="/images/vector/navbar/oil.svg"
+                            width={800}
+                            height={800}
+                            priority
+                            alt="vector"
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                        <div className="flex flex-col ml-2">
+                          <h3 className="font-semibold text-sm">
+                            Oil Bunkering, Vessel Management and Vessel
+                            Chartering
+                          </h3>
+                          <ul className="text-gray-600 mt-1 list-disc ml-3">
+                            <li>Service Location</li>
+                            <li>Our Customer</li>
+                            <li>Services Overview</li>
+                          </ul>
+                        </div>
                       </div>
-                      <div className="flex flex-col ml-2">
-                        <h3 className="font-semibold text-sm">
-                          Oil Bunkering, Vessel Management and Vessel Chartering
-                        </h3>
-                        <ul className="text-gray-600 mt-1 list-disc ml-3">
-                          <li>Service Location</li>
-                          <li>Our Customer</li>
-                          <li>Services Overview</li>
-                        </ul>
-                      </div>
+                      <span className="text-xs text-gray-600 text-right">
+                        Learn more
+                      </span>
                     </div>
-                    <span className="text-xs text-gray-600 text-right">
-                      Learn more
-                    </span>
-                  </div>
-                </Link>
-              </div>
+                  </Link>
+                </div>
               </AnimationClient>
             </div>
           </li>
@@ -255,82 +255,82 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
             </Link>
 
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid transition-all duration-300 ease-in-out">
-            <AnimationClient
+              <AnimationClient
                 props={{
-                  initial: { opacity: 0 },  
-                  whileInView: { opacity: 1 },  
-                  transition: { duration: 1, ease: "easeOut" },  
-                  viewport: { once: false },  
+                  initial: { opacity: 0 },
+                  whileInView: { opacity: 1 },
+                  transition: { duration: 1, ease: "easeOut" },
+                  viewport: { once: false },
                 }}
               >
-              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
-                <div className="row-span-2">
-                  <Link href="/investor-relation/governance">
-                    <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8 cursor-pointer ">
-                      <div className="flex">
-                        <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
-                          <Image
-                            src="/images/vector/navbar/gov-doc.svg"
-                            width={800}
-                            height={610}
-                            priority
-                            alt="vector"
-                            className="w-full h-full object-cover"
-                          />
+                <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+                  <div className="row-span-2">
+                    <Link href="/investor-relation/governance">
+                      <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8 cursor-pointer ">
+                        <div className="flex">
+                          <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                            <Image
+                              src="/images/vector/navbar/gov-doc.svg"
+                              width={800}
+                              height={610}
+                              priority
+                              alt="vector"
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <div className="flex flex-col ml-2 ">
+                            <h3 className="font-semibold text-sm">
+                              Governance Documents
+                            </h3>
+                            <ul className="text-gray-600 mt-1 list-disc ml-3">
+                              <li>Code of Business Conduct and Ethics</li>
+                              <li>Corporate Governance Guidelines</li>
+                              <li>Insider Trading Policy</li>
+                              <li>Whistle Blowing Policy</li>
+                              <li>Board Diversity Disclosure</li>
+                              <li>Audit Committee Charter</li>
+                              <li>Compensation Committee Charter</li>
+                              <li>
+                                Nominating and Corporate Governance Committee
+                                Charter
+                              </li>
+                            </ul>
+                          </div>
                         </div>
-                        <div className="flex flex-col ml-2 ">
-                          <h3 className="font-semibold text-sm">
-                            Governance Documents
-                          </h3>
-                          <ul className="text-gray-600 mt-1 list-disc ml-3">
-                            <li>Code of Business Conduct and Ethics</li>
-                            <li>Corporate Governance Guidelines</li>
-                            <li>Insider Trading Policy</li>
-                            <li>Whistle Blowing Policy</li>
-                            <li>Board Diversity Disclosure</li>
-                            <li>Audit Committee Charter</li>
-                            <li>Compensation Committee Charter</li>
-                            <li>
-                              Nominating and Corporate Governance Committee
-                              Charter
-                            </li>
-                          </ul>
-                        </div>
+                        <span className="text-xs text-gray-600 text-right">
+                          Learn more
+                        </span>
                       </div>
-                      <span className="text-xs text-gray-600 text-right">
-                        Learn more
-                      </span>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
+                  {data.investor.links.map((item, index) => (
+                    <Link href={item.href} key={index}>
+                      <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
+                        <div className="flex items-start">
+                          <div className=" w-12">
+                            <Image
+                              src={item.image}
+                              width={800}
+                              height={610}
+                              priority
+                              alt="vector"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                          <div className="flex flex-col ml-2">
+                            <h3 className="font-semibold text-sm">
+                              {item.title}
+                            </h3>
+                            <p className="text-gray-600 mt-1">{item.desc}</p>
+                          </div>
+                        </div>
+                        <span className="text-xs text-gray-600 text-right">
+                          Learn more
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
-                {data.investor.links.map((item, index) => (
-                  <Link href={item.href} key={index}>
-                    <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
-                      <div className="flex items-start">
-                        <div className=" w-12">
-                          <Image
-                            src={item.image}
-                            width={800}
-                            height={610}
-                            priority
-                            alt="vector"
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-                        <div className="flex flex-col ml-2">
-                          <h3 className="font-semibold text-sm">
-                            {item.title}
-                          </h3>
-                          <p className="text-gray-600 mt-1">{item.desc}</p>
-                        </div>
-                      </div>
-                      <span className="text-xs text-gray-600 text-right">
-                        Learn more
-                      </span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
               </AnimationClient>
             </div>
           </li>
@@ -357,46 +357,48 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
             </Link>
 
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid transition-all duration-300 ease-in-out">
-            <AnimationClient
+              <AnimationClient
                 props={{
-                  initial: { opacity: 0 },  
-                  whileInView: { opacity: 1 },  
-                  transition: { duration: 1, ease: "easeOut" },  
-                  viewport: { once: false },  
+                  initial: { opacity: 0 },
+                  whileInView: { opacity: 1 },
+                  transition: { duration: 1, ease: "easeOut" },
+                  viewport: { once: false },
                 }}
               >
-              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
-                <Link href="/media/#pressrelease">
-                  <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
-                    <div className="flex items-start">
-                      <div className="w-12">
-                        {" "}
-                        <Image
-                          src="/images/vector/navbar/press.svg"
-                          width={800}
-                          height={610}
-                          priority
-                          alt="vector"
-                          className="w-full h-full object-contain"
-                        />
+                <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+                  <Link href="/media/#pressrelease">
+                    <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
+                      <div className="flex items-start">
+                        <div className="w-12">
+                          {" "}
+                          <Image
+                            src="/images/vector/navbar/press.svg"
+                            width={800}
+                            height={610}
+                            priority
+                            alt="vector"
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                        <div className="flex flex-col ml-2 ">
+                          <h3 className="font-semibold text-sm">
+                            Press Release
+                          </h3>
+                          <p className="text-gray-600 mt-1">
+                            Latest Updates and Announcements
+                          </p>
+                        </div>
                       </div>
-                      <div className="flex flex-col ml-2 ">
-                        <h3 className="font-semibold text-sm">Press Release</h3>
-                        <p className="text-gray-600 mt-1">
-                        Latest Updates and Announcements
-                        </p>
-                      </div>
+                      <span className="text-xs text-gray-600 text-right">
+                        Learn more
+                      </span>
                     </div>
-                    <span className="text-xs text-gray-600 text-right">
-                      Learn more
-                    </span>
-                  </div>
-                </Link>
-              </div>
+                  </Link>
+                </div>
               </AnimationClient>
             </div>
           </li>
-          <li className="group">
+          {/* <li className="group">
             <Link
               href={data.sustainability.href}
               className="hover:text-blue-600 flex items-center space-x-1"
@@ -419,46 +421,46 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
             </Link>
 
             <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid transition-all duration-300 ease-in-out">
-            <AnimationClient
+              <AnimationClient
                 props={{
-                  initial: { opacity: 0 },  
-                  whileInView: { opacity: 1 },  
-                  transition: { duration: 1, ease: "easeOut" },  
-                  viewport: { once: false },  
+                  initial: { opacity: 0 },
+                  whileInView: { opacity: 1 },
+                  transition: { duration: 1, ease: "easeOut" },
+                  viewport: { once: false },
                 }}
               >
-              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
-                {data.sustainability.links.map((item, index) => (
-                  <Link href={item.href} key={index}>
-                    <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
-                      <div className="flex items-start">
-                        <div className="w-12">
-                          <Image
-                            src={item.image}
-                            width={800}
-                            height={800}
-                            priority
-                            alt="vector"
-                            className="w-full h-full object-contain"
-                          />
+                <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+                  {data.sustainability.links.map((item, index) => (
+                    <Link href={item.href} key={index}>
+                      <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
+                        <div className="flex items-start">
+                          <div className="w-12">
+                            <Image
+                              src={item.image}
+                              width={800}
+                              height={800}
+                              priority
+                              alt="vector"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                          <div className="flex flex-col px-2 w-full">
+                            <h3 className="font-semibold text-sm">
+                              {item.title}
+                            </h3>
+                            <p className="text-gray-600 mt-1">{item.desc}</p>
+                          </div>
                         </div>
-                        <div className="flex flex-col px-2 w-full">
-                          <h3 className="font-semibold text-sm">
-                            {item.title}
-                          </h3>
-                          <p className="text-gray-600 mt-1">{item.desc}</p>
-                        </div>
+                        <span className="text-xs text-gray-600 text-right">
+                          Learn more
+                        </span>
                       </div>
-                      <span className="text-xs text-gray-600 text-right">
-                        Learn more
-                      </span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
+                    </Link>
+                  ))}
+                </div>
               </AnimationClient>
             </div>
-          </li>
+          </li> */}
           <li>
             <Link href={data.career.href} className="hover:text-blue-600">
               {data.career.label}

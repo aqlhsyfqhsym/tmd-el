@@ -15,8 +15,9 @@ export default function CardBod({ name, position, description, image }: CardBodP
           <Image
             src={image}
             alt={name}
-            width={400}
-            height={400}
+            width={800}
+            height={800}
+            priority
             className="w-full h-full object-contain"
           />
         </div>
@@ -35,8 +36,10 @@ export default function CardBod({ name, position, description, image }: CardBodP
       <Image 
         src="/images/career/line.png"
         alt="decorative bottom border"
-        width={1910}
-        height={6}
+        width={800}
+        height={800}
+        priority
+
         className="absolute bottom-0 left-0 w-full"
       />
     </div>

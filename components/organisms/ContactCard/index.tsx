@@ -73,9 +73,10 @@ const ContactCard = () => {
             <div className="">
               <p className="font-bold">TMD Energy Limited</p>
               <p className="mt-1 text-sm">
-                B-10-06, Block B, Plaza Mont Kiara,<br></br> No. 2, Jalan Kiara,
-                Mont Kiara, 50480 Kuala Lumpur, Wilayah Persekutuan, West
-                Malaysia.
+                B-10-06, Block B, Plaza Mont Kiara,<br/> 
+                No. 2, Jalan Kiara,<br/>
+                 Mont Kiara, 50480 Kuala Lumpur,<br/>
+                  Wilayah Persekutuan,<br/> West Malaysia.
               </p>
             </div>
           </div>
@@ -163,10 +164,8 @@ const ContactCard = () => {
                 className="mr-2"
               />
               <label htmlFor="generalInquiry" className="mr-4 text-black">
-               Contact
+                Contact
               </label>
-
-         
             </div>
           </div>
 

@@ -19,7 +19,7 @@ export default function CardImage({ cards }: CardImageProps) {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
-    <div className="flex gap-6 h-[400px]">
+    <div className="flex gap-2  md:gap-6 h-[400px]">
       {cards.map((card) => (
         <motion.div
           key={card.id}
