@@ -62,7 +62,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
                 className="w-full h-56 sm:h-full object-cover"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-r to-transparent z-10 flex flex-col justify-end pl-10 mb-5 lg:mb-10 lg:pl-24 xl:pb-24 text-white lg:w-[37rem]">
+              <div className="absolute inset-0 bg-gradient-to-r to-transparent z-10 flex flex-col justify-end pl-10 mb-5 lg:mb-10 lg:pl-24 pb-5 sm:pb-12 md:pb-14 xl:pb-24 2xl:pb-48 text-white lg:w-[37rem]">
                 <h2
                   className="md:text-2xl font-bold mb-2 px-4"
                   dangerouslySetInnerHTML={{ __html: slide.title }}
