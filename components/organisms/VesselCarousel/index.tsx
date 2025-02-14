@@ -50,6 +50,8 @@ export default function VesselCarousel() {
       <div className="relative">
         {/* Main Image */}
         <div className="relative aspect-[16/9] w-full overflow-hidden">
+
+        
           <Image
             src={currentVessel.image}
             alt={currentVessel.name}
