@@ -1,0 +1,109 @@
+{
+    "vessels": [
+      {
+        "id": 1,
+        "name": "MT. Cavalla",
+        "capacity": "696",
+        "pumpRate": "500",
+        "image": "/images/about/fleet/cavalla.png"
+      },
+      {
+        "id": 2,
+        "name": "MT. Dolphin 1",
+        "capacity": "1198.736",
+        "pumpRate": "300",
+       "image": "/images/about/fleet/dolphin.png"
+      },
+      {
+        "id": 3,
+        "name": "MT. Eden",
+        "capacity": "8223",
+        "pumpRate": "600",
+        "image": "/images/about/fleet/eden.png"
+      },
+      {
+        "id": 4,
+        "name": "MT. Escolar",
+        "capacity": "486",
+        "pumpRate": "100",
+        "image": "/images/about/fleet/eden.png"
+      },
+      {
+        "id": 5,
+        "name": "MT. Katsu Pioneer",
+        "capacity": "1900",
+        "pumpRate": "300",
+        "image": "/images/about/fleet/katsu.png"
+      },
+      {
+        "id": 6,
+        "name": "MT. Omura",
+        "capacity": "1198.736",
+        "pumpRate": "300",
+        "image": "/images/about/fleet/omura.png"
+      },
+      {
+        "id": 7,
+        "name": "MT. Oscar",
+        "capacity": "4189.89",
+        "pumpRate": "500",
+        "image": "/images/about/fleet/oscar.png"
+      },
+      {
+        "id": 8,
+        "name": "MT. Phoenix",
+        "capacity": "1225.302",
+        "pumpRate": "500",
+        "image": "/images/about/fleet/phoenix.png"
+      },
+      {
+        "id": 9,
+        "name": "MT. SMF Begonia",
+        "capacity": "5000",
+        "pumpRate": "600",
+        "image": "/images/about/fleet/begonia.png"
+      },
+      {
+        "id": 10,
+        "name": "MT. SMF Ixora",
+        "capacity": "6000",
+        "pumpRate": "1800",
+        "image": "/images/about/fleet/ixora.png"
+      },
+      {
+        "id": 11,
+        "name": "MT. Sierra Pionner",
+        "capacity": "1900",
+        "pumpRate": "300",
+        "image": "/images/about/fleet/sierra.png"
+      },
+      {
+        "id": 12,
+        "name": "MT. Straits 1",
+        "capacity": "522",
+        "pumpRate": "200",
+        "image": "/images/about/fleet/straits.png"
+      },
+      {
+        "id": 13,
+        "name": "MT. Sturgeon",
+        "capacity": "500",
+        "pumpRate": "70",
+        "image": "/images/about/fleet/sturgeon.png"
+      },
+      {
+        "id": 14,
+        "name": "MT. Straits 3",
+        "capacity": "2155.96",
+        "pumpRate": "750",
+        "image": "/images/about/fleet/straits3.png"
+      },
+      {
+        "id": 15,
+        "name": "Empower",
+        "capacity": "2155.96",
+        "pumpRate": "750",
+        "image": "/images/about/fleet/empower.png"
+      }
+    ]
+  }
