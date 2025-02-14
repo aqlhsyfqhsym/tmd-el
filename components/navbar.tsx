@@ -26,12 +26,7 @@ interface NavbarProps {
       label: string;
       href: string;
       links: { image: string; title: string; href: string }[];
-    };
-    sustainability: {
-      label: string;
-      href: string;
-      links: { image: string; title: string; desc: string; href: string }[];
-    };
+    }; 
     career: { label: string; href: string };
     contactus: { label: string; href: string };
   };
