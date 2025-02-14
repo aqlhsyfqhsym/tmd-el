@@ -14,6 +14,7 @@ import TableDirector from "@/components/organisms/TableComponent";
 import TableComitte from "@/components/organisms/TableComponent/comitte";
 import CardAbout from "@/components/organisms/CardAbout";
 import Link from "next/link"; // Import Link for navigation
+import VesselCarousel from '@/components/organisms/VesselCarousel';
 
 export default function AboutUs() {
   return (
@@ -35,13 +36,22 @@ export default function AboutUs() {
           <Heading heading={About.aboutus.title} className="mb-11" />
           <Subheading subheading={About.aboutus.description} />
 
-          {About.aboutus.features.map((feature, index) => (
-            <CorporateProfileFeature
-              key={index}
-              title={feature.title}
-              description={feature.description}
-            />
-          ))}
+          {About.aboutus.features.map((feature, index) => {
+            const isFleetSection = feature.title === "Our Fleet";
+            return (
+              <div key={index}>
+                <CorporateProfileFeature
+                  title={feature.title}
+                  description={feature.description}
+                />
+                {isFleetSection && (
+                  <div className="mt-8">
+                    <VesselCarousel />
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </section>
       </div>
       <div
@@ -59,33 +69,33 @@ export default function AboutUs() {
               Corporate Structure
             </h2>
             <div className="relative ">
-            <Link
-              href="https://www.straits-energyresources.com/"
-              target="_blank"
-            >
-            <Image
-              src="/images/about/corporate-structure.png"
-              alt="Corporate Structure"
-              width={800}
-              height={800}
-              priority
-              className="w-full h-full object-cover"
-            />
-</Link>
-             <Link href="https://tmd-sb.com/" target="_blank">
-              <div className="absolute md:block hidden top-0 left-1/2 transform -translate-x-1/2 w-full">
+              <Link
+                href="https://www.straits-energyresources.com/"
+                target="_blank"
+              >
                 <Image
-                  src="/images/about/tmd1.png"
-                  alt="TMD1"
+                  src="/images/about/corporate-structure.png"
+                  alt="Corporate Structure"
                   width={800}
                   height={800}
                   priority
-                  className="w-full h-full"
+                  className="w-full h-full object-cover"
                 />
-              </div>
-            </Link>
+              </Link>
+              <Link href="https://tmd-sb.com/" target="_blank">
+                <div className="absolute md:block hidden top-0 left-1/2 transform -translate-x-1/2 w-full">
+                  <Image
+                    src="/images/about/tmd1.png"
+                    alt="TMD1"
+                    width={800}
+                    height={800}
+                    priority
+                    className="w-full h-full"
+                  />
+                </div>
+              </Link>
 
-             {/* <Link
+              {/* <Link
               href="https://www.straits-energyresources.com/"
               target="_blank"
             >
