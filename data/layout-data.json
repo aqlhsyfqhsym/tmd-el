@@ -91,17 +91,17 @@
       {
         "name": "Facebook",
         "href": "#",
-        "icon": "icons/facebook.svg"
+        "icon": "/icons/facebook.svg"
       },
       {
         "name": "Twitter",
         "href": "#",
-        "icon": "icons/twitter.svg"
+        "icon": "/icons/twitter.svg"
       },
       {
         "name": "Youtube",
         "href": "#",
-        "icon": "icons/youtube.svg"
+        "icon": "/icons/youtube.svg"
       }
     ]
   }
