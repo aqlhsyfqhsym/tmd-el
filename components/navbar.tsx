@@ -26,12 +26,7 @@ interface NavbarProps {
       label: string;
       href: string;
       links: { image: string; title: string; href: string }[];
-    };
-    sustainability: {
-      label: string;
-      href: string;
-      links: { image: string; title: string; desc: string; href: string }[];
-    };
+    }; 
     career: { label: string; href: string };
     contactus: { label: string; href: string };
   };
@@ -403,7 +398,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
               </AnimationClient>
             </div>
           </li>
-          <li className="group">
+          {/* <li className="group">
             <Link
               href={data.sustainability.href}
               className="hover:text-blue-600 flex items-center space-x-1"
@@ -465,7 +460,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 </div>
               </AnimationClient>
             </div>
-          </li>
+          </li> */}
           <li>
             <Link href={data.career.href} className="hover:text-blue-600">
               {data.career.label}
