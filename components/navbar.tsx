@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import AnimationClient from "@/components/molecules/AnimationClient";
 
 import Link from "next/link"; // Import Link for navigation
 
@@ -70,7 +71,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="h-4 w-4 transition-transform group-hover:rotate-180"
+                className="h-4 w-4 transition-transform group-hover:rotate-180 duration-500 "
               >
                 <path
                   strokeLinecap="round"
@@ -79,83 +80,97 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 />
               </svg>
             </Link>
-            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out">
-            <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
-                {data.about.links.map((item, index) => (
-                  <Link href={item.href} key={index}>
-                    <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
-                      <div className="flex items-start">
-                        <div className="w-12">
-                          <Image
-                            src={item.image}
-                            width={800}
-                            height={800}
-                            priority
-                            alt="vector"
-                            className="w-full h-full object-contain"
-                          />
+            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid transition-all duration-300 ease-in-out">
+              <AnimationClient
+                props={{
+                  initial: { opacity: 0 },  
+                  whileInView: { opacity: 1 },  
+                  transition: { duration: 1, ease: "easeOut" },  
+                  viewport: { once: false },  
+                }}
+              >
+                <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+                  {data.about.links.map((item, index) => (
+                    <Link href={item.href} key={index}>
+                      <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
+                        <div className="flex items-start">
+                          <div className="w-12">
+                            <Image
+                              src={item.image}
+                              width={800}
+                              height={800}
+                              priority
+                              alt="vector"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                          <div className="flex flex-col px-2 w-full">
+                            <h3 className="font-semibold text-sm">
+                              {item.title}
+                            </h3>
+                            <p className="text-gray-600 mt-1">{item.desc}</p>
+                          </div>
                         </div>
-                        <div className="flex flex-col px-2 w-full">
-                          <h3 className="font-semibold text-sm">
-                            {item.title}
-                          </h3>
-                          <p className="text-gray-600 mt-1">{item.desc}</p>
+                        <span className="text-xs text-gray-600 text-right">
+                          Learn more
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                  <div className="flex flex-col gap-2">
+                    <Link href="/about/#milestone">
+                      <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition ">
+                        <div className="flex items-center justify-start">
+                          <div className="w-10">
+                            <Image
+                              src="/images/vector/navbar/milestone.svg"
+                              width={800}
+                              height={610}
+                              priority
+                              alt="vector"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+
+                          <div className="flex flex-col ml-2">
+                            <h3 className="font-semibold text-sm">
+                              Milestone{" "}
+                            </h3>
+                          </div>
                         </div>
                       </div>
-                      <span className="text-xs text-gray-600 text-right">
-                        Learn more
-                      </span>
-                    </div>
-                  </Link>
-                ))}
-                <div className="flex flex-col gap-2">
-                <Link href="/about/#milestone">
-                  <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition ">
-                    <div className="flex items-center justify-start">
-                      <div className="w-10">
-                        <Image
-                          src="/images/vector/navbar/milestone.svg"
-                          width={800}
-                          height={610}
-                          priority
-                          alt="vector"
-                          className="w-full h-full object-contain"
-                        />
+                    </Link>
+                    <Link href="/about/corporate-information">
+                      <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition">
+                        <div className="flex items-center justify-start">
+                          <div className="w-10 ">
+                            <Image
+                              src="/images/vector/navbar/corp-profile.svg"
+                              width={800}
+                              height={610}
+                              priority
+                              alt="vector"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                          <div className="flex flex-col ml-2">
+                            <h3 className="font-semibold text-sm">
+                              {" "}
+                              Corporate Information{" "}
+                            </h3>
+                          </div>
+                        </div>
                       </div>
-
-                      <div className="flex flex-col ml-2">
-                        <h3 className="font-semibold text-sm">Milestone </h3>
-                      </div>
-                    </div>
+                    </Link>
                   </div>
-                  </Link>
-                <Link href="/about/#corporateinformation">
-
-                  <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition">
-                    <div className="flex items-center justify-start">
-                      <div className="w-10 ">
-                        <Image
-                          src="/images/vector/navbar/corp-profile.svg"
-                          width={800}
-                          height={610}
-                          priority
-                          alt="vector"
-                          className="w-full h-full object-contain"
-                        />
-                      </div>
-                      <div className="flex flex-col ml-2">
-                        <h3 className="font-semibold text-sm"> Corporate Information </h3>
-                      </div>
- 
-                    </div>
-                  </div>
-                </Link>
                 </div>
-              </div>
+              </AnimationClient>
             </div>
           </li>
           <li className="group">
-            <Link   href={data.business.href}  className="hover:text-blue-600 flex items-center space-x-1"
+            <Link
+              href={data.business.href}
+              className="hover:text-blue-600 flex items-center space-x-1"
             >
               <span>{data.business.label}</span>
               <svg
@@ -164,7 +179,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="h-4 w-4 transition-transform group-hover:rotate-180"
+                className="h-4 w-4 transition-transform group-hover:rotate-180 duration-500"
               >
                 <path
                   strokeLinecap="round"
@@ -174,8 +189,16 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
               </svg>
             </Link>
 
-            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out">
-            <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid transition-all duration-300 ease-in-out">
+            <AnimationClient
+                props={{
+                  initial: { opacity: 0 },  
+                  whileInView: { opacity: 1 },  
+                  transition: { duration: 1, ease: "easeOut" },  
+                  viewport: { once: false },  
+                }}
+              >
+              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 <Link href="/business">
                   <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
                     <div className="flex items-start">
@@ -206,8 +229,9 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                   </div>
                 </Link>
               </div>
+              </AnimationClient>
             </div>
-          </li> 
+          </li>
           <li className="group">
             <Link
               href={data.investor.href}
@@ -220,7 +244,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="h-4 w-4 transition-transform group-hover:rotate-180"
+                className="h-4 w-4 transition-transform group-hover:rotate-180 duration-500"
               >
                 <path
                   strokeLinecap="round"
@@ -230,8 +254,16 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
               </svg>
             </Link>
 
-            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out">
-            <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid transition-all duration-300 ease-in-out">
+            <AnimationClient
+                props={{
+                  initial: { opacity: 0 },  
+                  whileInView: { opacity: 1 },  
+                  transition: { duration: 1, ease: "easeOut" },  
+                  viewport: { once: false },  
+                }}
+              >
+              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 <div className="row-span-2">
                   <Link href="/investor-relation/governance">
                     <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-8 cursor-pointer ">
@@ -299,6 +331,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                   </Link>
                 ))}
               </div>
+              </AnimationClient>
             </div>
           </li>
           <li className="group">
@@ -313,7 +346,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="h-4 w-4 transition-transform group-hover:rotate-180"
+                className="h-4 w-4 transition-transform group-hover:rotate-180 duration-500"
               >
                 <path
                   strokeLinecap="round"
@@ -323,8 +356,16 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
               </svg>
             </Link>
 
-            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out">
-            <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid transition-all duration-300 ease-in-out">
+            <AnimationClient
+                props={{
+                  initial: { opacity: 0 },  
+                  whileInView: { opacity: 1 },  
+                  transition: { duration: 1, ease: "easeOut" },  
+                  viewport: { once: false },  
+                }}
+              >
+              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 <Link href="/media/#pressrelease">
                   <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
                     <div className="flex items-start">
@@ -342,8 +383,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                       <div className="flex flex-col ml-2 ">
                         <h3 className="font-semibold text-sm">Press Release</h3>
                         <p className="text-gray-600 mt-1">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry.
+                        Latest Updates and Announcements
                         </p>
                       </div>
                     </div>
@@ -353,6 +393,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                   </div>
                 </Link>
               </div>
+              </AnimationClient>
             </div>
           </li>
           <li className="group">
@@ -367,7 +408,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="h-4 w-4 transition-transform group-hover:rotate-180"
+                className="h-4 w-4 transition-transform group-hover:rotate-180 duration-500"
               >
                 <path
                   strokeLinecap="round"
@@ -377,8 +418,16 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
               </svg>
             </Link>
 
-            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out">
-            <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
+            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid transition-all duration-300 ease-in-out">
+            <AnimationClient
+                props={{
+                  initial: { opacity: 0 },  
+                  whileInView: { opacity: 1 },  
+                  transition: { duration: 1, ease: "easeOut" },  
+                  viewport: { once: false },  
+                }}
+              >
+              <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
                 {data.sustainability.links.map((item, index) => (
                   <Link href={item.href} key={index}>
                     <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
@@ -407,6 +456,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                   </Link>
                 ))}
               </div>
+              </AnimationClient>
             </div>
           </li>
           <li>
