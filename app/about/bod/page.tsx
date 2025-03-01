@@ -1,9 +1,7 @@
 import Heading from "@/components/atoms/Heading";
 import CardBod from "@/components/organisms/CardBod";
-import ManagementTeam from "@/components/organisms/Management";
-import boardMembers from "@/data/bod.json";
-import managementMembers from "@/data/management.json";
-
+ import boardMembers from "@/data/bod.json";
+ 
 export default function BoardOfDirectors() {
     return (
         <div className="max-w-none bg-[#FBFBFB]">
@@ -21,10 +19,7 @@ export default function BoardOfDirectors() {
                             />
                         ))}
                     </div>
-                </section>
-                <section className="py-10 md:py-8">
-                    <ManagementTeam members={managementMembers} />
-                </section>
+                </section> 
             </div>
         </div>
     );
