@@ -6,8 +6,8 @@
       "links": [
         { "image": "/images/vector/navbar/corp-profile.svg", "title": "Corporate Profile", "desc" : "Discover the essence of TMDEL's corporate identity.", "href": "/about/#corporateprofile" },
         { "image": "/images/vector/navbar/corp-struct.svg", "title": "Corporate Structure","desc" : "Understanding the Corporate Structure of TMDEL: A Comprehensive Overview",  "href": "/about/corporate-structure" },
-        { "image": "/images/vector/navbar/senior-mgt.svg", "title": "Senior Management","desc" : "Leading the way to strategic success.",  "href": "/about/bod/seniormanagement" },
-        { "image": "/images/vector/navbar/bod.svg", "title": "Board of Directors","desc" : "Navigate the Board of Directors section, where visionary strategies and groundbreaking ideas converge.", "href": "/about/bod" }
+        { "image": "/images/vector/navbar/bod.svg", "title": "Board of Directors","desc" : "Navigate the Board of Directors section, where visionary strategies and groundbreaking ideas converge.", "href": "/about/bod" },
+        { "image": "/images/vector/navbar/senior-mgt.svg", "title": "Senior Management","desc" : "Leading the way to strategic success.",  "href": "/about/bod/seniormanagement" }
         ]
     },
     "business": {
