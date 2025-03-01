@@ -62,7 +62,6 @@ const MobileNavbar = () => {
                 name: "About Us",
                 link: "/about",
                 items: [
-                  { name: "Vision & Mission", link: "/about/#visionmission" },
                   { name: "Corporate Profile", link: "/about/#corporateprofile" },
                   { name: "Corporate Structure", link: "/about/corporate-structure" },
                   { name: "Board of Directors", link: "/about/#bod" },
