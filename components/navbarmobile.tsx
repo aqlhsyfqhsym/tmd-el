@@ -64,11 +64,11 @@ const MobileNavbar = () => {
                 items: [
                   { name: "Vision & Mission", link: "/about/#visionmission" },
                   { name: "Corporate Profile", link: "/about/#corporateprofile" },
-                  { name: "Corporate Structure", link: "/about/#corporatestructure" },
+                  { name: "Corporate Structure", link: "/about/corporate-structure" },
                   { name: "Board of Directors", link: "/about/#bod" },
-                  { name: "Senior Management", link: "/about/bod/#seniormanagement" },
-                  { name: "Milestone", link: "/about/#milestone" },
-                  { name: "Corporate Information", link: "/about/#corporateinformation" },
+                  { name: "Senior Management", link: "/about/bod/seniormanagement" },
+                  { name: "Milestone", link: "/about/milestone" },
+                  { name: "Corporate Information", link: "/about/corporate-information" },
                 ],
               },
               {

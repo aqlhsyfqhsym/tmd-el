@@ -21,10 +21,7 @@ export default function BoardOfDirectors() {
                             />
                         ))}
                     </div>
-                </section>
-                <section className="py-10 md:py-8">
-                    <ManagementTeam members={managementMembers} />
-                </section>
+                </section> 
             </div>
         </div>
     );

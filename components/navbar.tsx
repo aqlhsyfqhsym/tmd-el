@@ -117,7 +117,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                     </Link>
                   ))}
                   <div className="flex flex-col gap-2">
-                    <Link href="/about/#milestone">
+                    <Link href="/about/milestone">
                       <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition ">
                         <div className="flex items-center justify-start">
                           <div className="w-10">
