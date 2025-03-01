@@ -54,66 +54,7 @@ export default function AboutUs() {
           })}
         </section>
       </div>
-      <div
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(0, 169, 157, 0.12) 1.66%, rgba(17, 114, 186, 0.12) 98.86%)",
-        }}
-      >
-        <div
-          className="container mx-auto p-10 lg:px-48"
-          id="corporatestructure"
-        >
-          <section className="py-4 md:py-8 bg-white rounded-3xl p-10 custom-shadow">
-            <h2 className="text-xl md:text-3xl text-center font-extrabold text-[#272361] mb-4">
-              Corporate Structure
-            </h2>
-            <div className="relative ">
-              <Link
-                href="https://www.straits-energyresources.com/"
-                target="_blank"
-              >
-                <Image
-                  src="/images/about/corporate-structure.png"
-                  alt="Corporate Structure"
-                  width={800}
-                  height={800}
-                  priority
-                  className="w-full h-full object-cover"
-                />
-              </Link>
-              <Link href="https://tmd-sb.com/" target="_blank">
-                <div className="absolute md:block hidden top-0 left-1/2 transform -translate-x-1/2 w-full">
-                  <Image
-                    src="/images/about/tmd1.png"
-                    alt="TMD1"
-                    width={800}
-                    height={800}
-                    priority
-                    className="w-full h-full"
-                  />
-                </div>
-              </Link>
-
-              {/* <Link
-              href="https://www.straits-energyresources.com/"
-              target="_blank"
-            >
-              <div className="relative lg:block hidden top-10 lg:top-12 xl:top-16 left-1/2 transform -translate-x-1/2 w-full">
-              <Image
-                  src="/images/about/tmd2.png"
-                  alt="TMD2"
-                  width={800} 
-                  height={800}
-                  priority
-                  className="w-full h-full"
-                />
-              </div>
-            </Link> */}
-            </div>
-          </section>
-        </div>
-      </div>
+     
       <div className="container mx-auto p-10 lg:px-48" id="bod">
         <Heading heading={About.directors.title} className="mb-11" />
         <div className="flex flex-col items-center">

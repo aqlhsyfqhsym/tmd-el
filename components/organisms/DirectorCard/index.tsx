@@ -59,7 +59,7 @@ const DirectorCard: React.FC<DirectorCardProps> = ({
       </div>
       {/* modal section */}
       {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 py-10">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 py-8">
           <div className="bg-white rounded-2xl shadow-lg h-full w-2/3 m-20 relative animate-fadeIn overflow-auto ">
             <button
               className="absolute top-2 right-2 p-2 text-gray-600 hover:text-black"
@@ -100,7 +100,7 @@ const DirectorCard: React.FC<DirectorCardProps> = ({
             </div>
 
             <div className="relative">
-              <svg
+              {/* <svg
                 width="1000"
                 height="10"
                 viewBox="0 0 1000 10"
@@ -130,7 +130,7 @@ const DirectorCard: React.FC<DirectorCardProps> = ({
                     <stop offset="1" stop-color="#1172BA" />
                   </linearGradient>
                 </defs>
-              </svg>
+              </svg> */}
             </div>
           </div>
         </div>
