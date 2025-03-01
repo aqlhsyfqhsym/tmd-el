@@ -88,7 +88,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                   viewport: { once: false },
                 }}
               >
-                <div className="flex">
+                <div className=" grid grid-cols-2">
                   <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 gap-4">
                     {data.about.links.map((item, index) => (
                       <Link href={item.href} key={index}>
@@ -118,7 +118,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                       </Link>
                     ))}
                   </div>
-                  <div className="flex flex-col gap-2  w-full" >
+                  <div className="flex gap-4 flex-col px-4 py-6">
                     <Link href="/about/milestone">
                       <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition ">
                         <div className="flex items-center justify-start">
