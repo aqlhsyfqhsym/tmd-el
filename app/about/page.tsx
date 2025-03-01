@@ -1,5 +1,4 @@
-import Image from "next/image";
-import About from "@/data/about.json";
+ import About from "@/data/about.json";
 import Vector from "@/components/atoms/Vector";
 import Heading from "@/components/atoms/Heading";
 import Milestone from "@/components/atoms/Paragraph";
@@ -13,8 +12,7 @@ import DirectorCard from "@/components/organisms/DirectorCard";
 import TableDirector from "@/components/organisms/TableComponent";
 import TableComitte from "@/components/organisms/TableComponent/comitte";
 import CardAbout from "@/components/organisms/CardAbout";
-import Link from "next/link"; // Import Link for navigation
-import VesselCarousel from '@/components/organisms/VesselCarousel';
+ import VesselCarousel from '@/components/organisms/VesselCarousel';
 
 export default function AboutUs() {
   return (
