@@ -26,7 +26,7 @@ interface NavbarProps {
       label: string;
       href: string;
       links: { image: string; title: string; href: string }[];
-    }; 
+    };
     career: { label: string; href: string };
     contactus: { label: string; href: string };
   };
@@ -88,14 +88,15 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                   viewport: { once: false },
                 }}
               >
-                <div className="max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-3 gap-4">
-                  {data.about.links.map((item, index) => (
-                    <Link href={item.href} key={index}>
-                      <div className="h-full bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition flex flex-col gap-2 cursor-pointer">
+                <div className="flex">
+                  <div className="mx-auto py-4 px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 gap-4">
+                    {/* Corporate Profile Card */}
+                    <Link href="/about/corporate-profile">
+                      <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition">
                         <div className="flex items-start">
                           <div className="w-12">
                             <Image
-                              src={item.image}
+                              src="/images/vector/navbar/corp-profile.svg"
                               width={800}
                               height={800}
                               priority
@@ -103,24 +104,108 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                               className="w-full h-full object-contain"
                             />
                           </div>
-                          <div className="flex flex-col px-2 w-full">
-                            <h3 className="font-semibold text-sm">
-                              {item.title}
-                            </h3>
-                            <p className="text-gray-600 mt-1">{item.desc}</p>
+                          <div className="flex flex-col px-2">
+                            <h3 className="font-semibold text-sm">Corporate Profile</h3>
+                            <p className="text-gray-600 mt-1">
+                              Discover the essence of TMDEL&apos;s corporate identity.
+                            </p>
                           </div>
                         </div>
-                        <span className="text-xs text-gray-600 text-right">
+                        <span className="text-xs text-gray-600 text-right block mt-2">
                           Learn more
                         </span>
                       </div>
                     </Link>
-                  ))}
-                  <div className="flex flex-col gap-2">
-                    <Link href="/about/#milestone">
-                      <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition ">
-                        <div className="flex items-center justify-start">
-                          <div className="w-10">
+
+                    {/* Corporate Structure Card */}
+                    <Link href="/about/corporate-structure">
+                      <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition">
+                        <div className="flex items-start">
+                          <div className="w-12">
+                            <Image
+                              src="/images/vector/navbar/corp-struct.svg"
+                              width={800}
+                              height={800}
+                              priority
+                              alt="vector"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                          <div className="flex flex-col px-2">
+                            <h3 className="font-semibold text-sm">Corporate Structure</h3>
+                            <p className="text-gray-600 mt-1">
+                              Understanding the Corporate Structure of TMDEL: A Comprehensive Overview
+                            </p>
+                          </div>
+                        </div>
+                        <span className="text-xs text-gray-600 text-right block mt-2">
+                          Learn more
+                        </span>
+                      </div>
+                    </Link>
+
+                      {/* Board of Directors Card */}
+                      <Link href="/about/bod">
+                      <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition">
+                        <div className="flex items-start">
+                          <div className="w-12">
+                            <Image
+                              src="/images/vector/navbar/bod.svg"
+                              width={800}
+                              height={800}
+                              priority
+                              alt="vector"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                          <div className="flex flex-col px-2">
+                            <h3 className="font-semibold text-sm">Board of Directors</h3>
+                            <p className="text-gray-600 mt-1">
+                              Navigate the Board of Directors section, where visionary strategies and groundbreaking ideas converge.
+                            </p>
+                          </div>
+                        </div>
+                        <span className="text-xs text-gray-600 text-right block mt-2">
+                          Learn more
+                        </span>
+                      </div>
+                    </Link>
+
+                    {/* Senior Management Card */}
+                    <Link href="/about/senior-management">
+                      <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition">
+                        <div className="flex items-start">
+                          <div className="w-12">
+                            <Image
+                              src="/images/vector/navbar/senior-mgt.svg"
+                              width={800}
+                              height={800}
+                              priority
+                              alt="vector"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                          <div className="flex flex-col px-2">
+                            <h3 className="font-semibold text-sm">Senior Management</h3>
+                            <p className="text-gray-600 mt-1">
+                              Leading the way to strategic success.
+                            </p>
+                          </div>
+                        </div>
+                        <span className="text-xs text-gray-600 text-right block mt-2">
+                          Learn more
+                        </span>
+                      </div>
+                    </Link>
+
+                  </div>
+
+                  {/* Right side links */}
+                  <div className="flex flex-col gap-4 py-6 pr-8 w-[700px]">
+                    <Link href="/about/milestone">
+                      <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition">
+                        <div className="flex items-center">
+                          <div className="w-8">
                             <Image
                               src="/images/vector/navbar/milestone.svg"
                               width={800}
@@ -130,19 +215,14 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                               className="w-full h-full object-contain"
                             />
                           </div>
-
-                          <div className="flex flex-col ml-2">
-                            <h3 className="font-semibold text-sm">
-                              Milestone{" "}
-                            </h3>
-                          </div>
+                          <h3 className="font-semibold text-sm ml-2">Milestone</h3>
                         </div>
                       </div>
                     </Link>
                     <Link href="/about/corporate-information">
                       <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition">
-                        <div className="flex items-center justify-start">
-                          <div className="w-10 ">
+                        <div className="flex items-center">
+                          <div className="w-8">
                             <Image
                               src="/images/vector/navbar/corp-profile.svg"
                               width={800}
@@ -152,12 +232,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                               className="w-full h-full object-contain"
                             />
                           </div>
-                          <div className="flex flex-col ml-2">
-                            <h3 className="font-semibold text-sm">
-                              {" "}
-                              Corporate Information{" "}
-                            </h3>
-                          </div>
+                          <h3 className="font-semibold text-sm ml-2">Corporate Information</h3>
                         </div>
                       </div>
                     </Link>
