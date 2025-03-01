@@ -124,6 +124,8 @@ export default function AboutUs() {
                 name={upperdirector.name}
                 title={upperdirector.title}
                 imageSrc={upperdirector.imageSrc}
+                imageSrcFull={upperdirector.imageSrcFull}
+                description={upperdirector.description}
               />
             ))}
           </div>
@@ -134,6 +136,10 @@ export default function AboutUs() {
                 name={lowerdirector.name}
                 title={lowerdirector.title}
                 imageSrc={lowerdirector.imageSrc}
+                imageSrcFull={lowerdirector.imageSrcFull}
+                description={lowerdirector.description}
+
+
               />
             ))}
           </div>
