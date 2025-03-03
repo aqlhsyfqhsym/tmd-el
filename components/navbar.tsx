@@ -91,7 +91,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 <div className="flex">
                   <div className="mx-auto py-4 px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 gap-4">
                     {/* Corporate Profile Card */}
-                    <Link href="/about/corporate-profile">
+                    <Link href="/about">
                       <div className="bg-white p-4 border rounded-lg shadow-sm hover:shadow-md transition">
                         <div className="flex items-start">
                           <div className="w-12">

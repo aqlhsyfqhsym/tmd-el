@@ -40,12 +40,12 @@ const Accordion = ({ items }: AccordionProps) => {
                         />
                     </button>
                     <div
-                        className={`transition-all duration-200 overflow-hidden ${openIndex === index ? 'max-h-96' : 'max-h-0'
+                        className={`transition-all duration-200 overflow-hidden  rounded-xl ${openIndex === index ? 'max-h-96' : 'max-h-0'
                             }`}
                     >
-                        <div className="pb-4 space-y-2">
+                        <div className="pb-4 space-y-2 ">
                             {item.events.map((event, eventIndex) => (
-                                <p key={eventIndex} className="text-gray-600">
+                                <p key={eventIndex} className="text-black">
                                     • {event}
                                 </p>
                             ))}

@@ -16,7 +16,7 @@ interface ManagementTeamProps {
 export default function ManagementTeam({ members }: ManagementTeamProps) {
   return (
     <section className="py-4 md:py-8">
-      <Heading heading="Management Team" className="mb-11 text-black text-4xl" />
+      <Heading heading="Senior Management Team" className="mb-11 text-black text-4xl" />
       <div className="space-y-8">
         {members.map((member, index) => (
           <CardManagement
