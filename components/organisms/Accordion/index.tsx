@@ -45,7 +45,7 @@ const Accordion = ({ items }: AccordionProps) => {
                     >
                         <div className="pb-4 space-y-2 ">
                             {item.events.map((event, eventIndex) => (
-                                <p key={eventIndex} className="text-gray-600 ">
+                                <p key={eventIndex} className="text-black">
                                     • {event}
                                 </p>
                             ))}
