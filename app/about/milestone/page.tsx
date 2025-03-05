@@ -13,10 +13,10 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 export default function AboutUs() {
-  const [isAccordionOpen, setIsAccordionOpen] = useState(false);
+  const [openYear, setOpenYear] = useState<string | null>(null);
 
-  const handleAccordionToggle = (isOpen: boolean) => {
-    setIsAccordionOpen(isOpen);
+  const handleAccordionToggle = (isOpen: boolean, year?: string) => {
+    setOpenYear(isOpen && year ? year : null);
   };
 
   return (
@@ -41,7 +41,7 @@ export default function AboutUs() {
           <Accordion items={About.timeline} onToggle={handleAccordionToggle} />
         </div>
 
-        {isAccordionOpen && (
+        {openYear === "2024" && (
           <div className="w-full my-8">
             <Image
               src="/images/career/line.png"

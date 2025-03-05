@@ -10,7 +10,7 @@ interface TimelineItem {
 
 interface AccordionProps {
     items: TimelineItem[];
-    onToggle?: (isOpen: boolean) => void;
+    onToggle?: (isOpen: boolean, year?: string) => void;
 }
 
 const Accordion = ({ items, onToggle }: AccordionProps) => {
@@ -19,7 +19,7 @@ const Accordion = ({ items, onToggle }: AccordionProps) => {
     const toggleAccordion = (index: number) => {
         const newOpenIndex = openIndex === index ? null : index;
         setOpenIndex(newOpenIndex);
-        onToggle?.(newOpenIndex !== null);
+        onToggle?.(newOpenIndex !== null, items[index]?.year);
     };
 
     return (
