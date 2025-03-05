@@ -70,7 +70,7 @@ const FilingsTable = ({ filings, filingTypes, years }: FilingsTableProps) => {
 
             <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
-                    <thead className="bg-gradient-to-r from-teal-400 to-blue-500">
+                    <thead className="bg-gradient-to-r from-[#00A99D] to-[#1172BA] text-white">
                         <tr>
                             <th className="p-4 text-left text-white font-medium">Filing Date</th>
                             <th className="p-4 text-left text-white font-medium">Filing Type</th>
