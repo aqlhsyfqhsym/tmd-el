@@ -50,11 +50,18 @@ export default function TableComitte({ data }: TableCommitteProps) {
 
   return (
     <div className="overflow-x-auto">
-      <table className="table-auto w-full overflow-hidden border border-gray-300 rounded-xl">
+      <table className="table-auto w-full overflow-hidden rounded-t-xl border border-[#000000]" style={{ borderCollapse: 'separate', borderSpacing: 0, borderWidth: '0.5px' }}>
         <thead>
-          <tr className="bg-gradient-to-r from-teal-400 to-blue-500 text-white border-b border-gray-300">
+          <tr className="bg-gradient-to-r from-[#00A99D] to-[#1172BA] text-white">
             {headers.map((header, index) => (
-              <th key={index} className="px-4 py-3 text-center">
+              <th 
+                key={index} 
+                className="px-4 py-3 text-center"
+                style={{ 
+                  borderBottom: '0.5px solid #000000',
+                  borderRight: index !== headers.length - 1 ? 'none' : undefined
+                }}
+              >
                 {header}
               </th>
             ))}
@@ -62,11 +69,11 @@ export default function TableComitte({ data }: TableCommitteProps) {
         </thead>
         <tbody className="bg-white">
           {members.map((member, index) => (
-            <tr key={index} className="border-b border-gray-300 last:border-b-0">
-              <td className="px-4 py-4 font-medium text-black">{member.name}</td>
-              <td className="px-4 py-4">{renderIcons(member.auditCommittee)}</td>
-              <td className="px-4 py-4">{renderIcons(member.compensationCommittee)}</td>
-              <td className="px-4 py-4">{renderIcons(member.nominatingCommittee)}</td>
+            <tr key={index}>
+              <td className="px-4 py-4 font-medium text-black" style={{ borderBottom: index !== members.length - 1 ? '0.5px solid #000000' : 'none' }}>{member.name}</td>
+              <td className="px-4 py-4" style={{ borderBottom: index !== members.length - 1 ? '0.5px solid #000000' : 'none' }}>{renderIcons(member.auditCommittee)}</td>
+              <td className="px-4 py-4" style={{ borderBottom: index !== members.length - 1 ? '0.5px solid #000000' : 'none' }}>{renderIcons(member.compensationCommittee)}</td>
+              <td className="px-4 py-4" style={{ borderBottom: index !== members.length - 1 ? '0.5px solid #000000' : 'none' }}>{renderIcons(member.nominatingCommittee)}</td>
             </tr>
           ))}
         </tbody>
