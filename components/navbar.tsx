@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import AnimationClient from "@/components/molecules/AnimationClient";
 
-import Link from "next/link"; // Import Link for navigation
+import Link from "next/link";
 
 interface NavbarProps {
   data: {
@@ -21,12 +21,7 @@ interface NavbarProps {
       label: string;
       href: string;
       links: { image: string; title: string; desc: string; href: string }[];
-    };
-    media: {
-      label: string;
-      href: string;
-      links: { image: string; title: string; href: string }[];
-    };
+    }; 
     career: { label: string; href: string };
     contactus: { label: string; href: string };
   };
@@ -309,11 +304,12 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
           </li>
           <li className="group">
             <Link
-              href={data.investor.href}
+              href="https://2009714.ir365connect.com/?cikNumber=2009714"
+              target="_blank"
               className="hover:text-blue-600 flex items-center space-x-1"
             >
               <span>{data.investor.label}</span>
-              <svg
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -326,10 +322,10 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                   strokeLinejoin="round"
                   d="M6 9l6 6 6-6"
                 />
-              </svg>
+              </svg> */}
             </Link>
 
-            <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid transition-all duration-300 ease-in-out">
+            {/* <div className="absolute left-0 w-full bg-gray-50 shadow-lg z-50 hidden group-hover:grid transition-all duration-300 ease-in-out">
               <AnimationClient
                 props={{
                   initial: { opacity: 0 },
@@ -407,9 +403,9 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                   ))}
                 </div>
               </AnimationClient>
-            </div>
+            </div> */}
           </li>
-          <li className="group">
+          {/* <li className="group">
             <Link
               href={data.media.href}
               className="hover:text-blue-600 flex items-center space-x-1"
@@ -472,7 +468,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 </div>
               </AnimationClient>
             </div>
-          </li>
+          </li> */}
           {/* <li className="group">
             <Link
               href={data.sustainability.href}
