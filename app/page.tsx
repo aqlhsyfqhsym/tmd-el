@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Hero from "@/components/organisms/Hero";
 import Expertise from "@/components/organisms/CardImage";
 import Vector from "@/components/atoms/Vector";
@@ -7,7 +7,7 @@ import Subheading from "@/components/atoms/Subheading";
 import MissionVisson from "@/components/molecules/SubTitleParagraph";
 import Slider from "@/components/organisms/ImageSlider";
 import AnimationClient from "@/components/molecules/AnimationClient";
-import Link from "next/link"; // Import Link for navigation
+// import Link from "next/link"; // Import Link for navigation
 
 import HomeData from "@/data/home.json";
 
@@ -71,7 +71,7 @@ export default function Home() {
             "linear-gradient(180deg, rgba(0, 169, 157, 0.12) 1.66%, rgba(17, 114, 186, 0.12) 98.86%)",
         }}
       >
-        <div className="container mx-auto p-10 lg:px-48">
+        {/* <div className="container mx-auto p-10 lg:px-48">
           <section className="py-4 md:py-8">
           <AnimationClient
             props={{
@@ -100,7 +100,7 @@ export default function Home() {
             </Link>
             </AnimationClient>
           </section>
-        </div>
+        </div> */}
       </div>
 
       <div className="container mx-auto p-10 lg:px-48">
