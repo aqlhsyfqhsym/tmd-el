@@ -84,8 +84,8 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                 }}
               >
                 <div className="flex justify-center w-full">
-                  <div className="py-4 px-4 sm:px-6 lg:px-8 py-6 w-full max-w-7xl">
-                    <div className="grid grid-cols-3 gap-4">
+                  <div className="py-4 px-4 sm:px-6 lg:px-8 py-6 w-full max-w-5xl">
+                    <div className="grid grid-cols-2 gap-4">
                       {/* Corporate Profile Card */}
                       <Link href="/about">
                         <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition">
@@ -149,8 +149,8 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                         </div>
                       </Link>
 
-                      {/* Board of Directors Card */}
-                      <Link href="/about/bod">
+                      {/* Board of Directors Card - Commented Out */}
+                      {/* <Link href="/about/bod">
                         <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition">
                           <div className="flex items-center">
                             <div className="w-12">
@@ -168,10 +168,10 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                             </div>
                           </div>
                         </div>
-                      </Link>
+                      </Link> */}
 
-                      {/* Senior Management Card */}
-                      <Link href="/about/senior-management">
+                      {/* Senior Management Card - Commented Out */}
+                      {/* <Link href="/about/senior-management">
                         <div className="bg-white px-4 py-2 border rounded-lg shadow-sm hover:shadow-md transition">
                           <div className="flex items-center">
                             <div className="w-12">
@@ -189,7 +189,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
                             </div>
                           </div>
                         </div>
-                      </Link>
+                      </Link> */}
 
                       {/* Corporate Information Card */}
                       <Link href="/about/corporate-information">
