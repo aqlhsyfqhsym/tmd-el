@@ -67,7 +67,7 @@ const Footer = ({ data: { pathlink, sociallinks } }: { data: FooterData }) => {
             </Link>
           ))}
         </div>
-        <div className="flex flex-row gap-5">
+        {/* <div className="flex flex-row gap-5">
           {sociallinks.map((link) => (
             <Link
               key={link.name}
@@ -86,7 +86,7 @@ const Footer = ({ data: { pathlink, sociallinks } }: { data: FooterData }) => {
               />
             </Link>
           ))}
-        </div>
+        </div> */}
         <h6 className="font-normal text-xs">© Copyright 2024 TMD EL</h6>
       </div>
     </footer>
