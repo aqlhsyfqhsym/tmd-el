@@ -3,10 +3,10 @@ import Image from "next/image";
 
 interface FooterData {
   pathlink: Array<{ name: string; href: string }>;
-  sociallinks: Array<{ name: string; href: string; icon: string }>;
+  // sociallinks: Array<{ name: string; href: string; icon: string }>;
 }
 
-const Footer = ({ data: { pathlink, sociallinks } }: { data: FooterData }) => {
+const Footer = ({ data: { pathlink } }: { data: FooterData }) => {
   return (
     <footer>
       <div className="bg-[#3d3b3c] flex flex-col md:flex-row items-center justify-center py-5 md:py-12">
