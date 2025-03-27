@@ -5,7 +5,7 @@ const ContactCard = () => {
     <div className="flex bg-white shadow-2xl rounded-sm overflow-hidden">
       <div className="bg-[#272361] text-white pl-12 pr-8 py-12  w-2/5">
         <h2 className="text-3xl font-bold pb-4">Contact Information</h2>
-        <p className="pb-4 text-[#C9C9C9]">Say something to start a live chat!</p>
+        {/* <p className="pb-4 text-[#C9C9C9]">Say something to start a live chat!</p> */}
         <div className="mt-4 space-y-2">
           <div className="flex gap-2 items-start pb-2">
             <span className="text-xl">
