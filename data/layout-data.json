@@ -46,29 +46,18 @@
   },
   "footer": {
     "pathlink": [
-      {
-        "name": "Whistleblower",
-        "href": "#"
-      },
-      {
-        "name": "Disclaimer",
-        "href": "#"
-      },
+   
       {
         "name": "Privacy Statement",
-        "href": "#"
+        "href": "javascript:void(0)"
       },
       {
         "name": "Important Notice",
-        "href": "#"
-      },
-      {
-        "name": "Financial & Fillings",
-        "href": "#"
+        "href": "javascript:void(0)"
       },
       {
         "name": "Contact Us",
-        "href": "#"
+        "href": "/contact"
       }
     ],
     "sociallinks": [
