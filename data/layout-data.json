@@ -24,8 +24,6 @@
         { "image": "/images/vector/navbar/financial-report.svg",  "title": "Financial Report","desc" : "Key Insights from Our Financial Report",  "href": "/investor/apt" } ,
         { "image": "/images/vector/navbar/stock-info.svg",  "title": "Stock Information","desc" : "Stay updated with the latest stock market trends and insights.",  "href": "/investor/apt" } ,
         { "image": "/images/vector/navbar/sec.svg",  "title": "SEC Filings","desc" : "Essential information for SEC filings at your fingertips.",  "href": "/investor-relation/sec-fillings" } 
-
-
       ] 
     },
     "media": {
@@ -46,18 +44,29 @@
   },
   "footer": {
     "pathlink": [
-   
+      {
+        "name": "Whistleblower",
+        "href": "#"
+      },
+      {
+        "name": "Disclaimer",
+        "href": "#"
+      },
       {
         "name": "Privacy Statement",
-        "href": "javascript:void(0)"
+        "href": "#"
       },
       {
         "name": "Important Notice",
-        "href": "javascript:void(0)"
+        "href": "#"
+      },
+      {
+        "name": "Financial & Fillings",
+        "href": "#"
       },
       {
         "name": "Contact Us",
-        "href": "/contact"
+        "href": "#"
       }
     ],
     "sociallinks": [
