@@ -19,13 +19,11 @@
     },
     "investor": {
       "label": "Investor Relations",
-      "href": "/investor-relation/governance",
+      "href": "https://www.tmdel-ir.com/",
       "links": [
         { "image": "/images/vector/navbar/financial-report.svg",  "title": "Financial Report","desc" : "Key Insights from Our Financial Report",  "href": "/investor/apt" } ,
         { "image": "/images/vector/navbar/stock-info.svg",  "title": "Stock Information","desc" : "Stay updated with the latest stock market trends and insights.",  "href": "/investor/apt" } ,
         { "image": "/images/vector/navbar/sec.svg",  "title": "SEC Filings","desc" : "Essential information for SEC filings at your fingertips.",  "href": "/investor-relation/sec-fillings" } 
-
-
       ] 
     },
     "media": {
