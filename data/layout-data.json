@@ -43,11 +43,7 @@
     }
   },
   "footer": {
-    "pathlink": [
-      {
-        "name": "Whistleblower",
-        "href": "#"
-      },
+    "pathlink": [ 
       {
         "name": "Disclaimer",
         "href": "#"
@@ -58,10 +54,6 @@
       },
       {
         "name": "Important Notice",
-        "href": "#"
-      },
-      {
-        "name": "Financial & Fillings",
         "href": "#"
       },
       {

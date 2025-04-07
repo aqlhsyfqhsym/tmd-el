@@ -64,8 +64,8 @@ const MobileNavbar = () => {
                 items: [
                   { name: "Corporate Profile", link: "/about/#corporateprofile" },
                   { name: "Corporate Structure", link: "/about/corporate-structure" },
-                  { name: "Board of Directors", link: "/about/#bod" },
-                  { name: "Senior Management", link: "/about/bod/seniormanagement" },
+                  // { name: "Board of Directors", link: "/about/#bod" },
+                  // { name: "Senior Management", link: "/about/bod/seniormanagement" },
                   { name: "Milestone", link: "/about/milestone" },
                   { name: "Corporate Information", link: "/about/corporate-information" },
                 ],
@@ -76,34 +76,7 @@ const MobileNavbar = () => {
                 items: [
                   { name: " Oil Bunkering, Vessel Management and Vessel Chartering", link: "/business" }
                  ],
-              },
-              {
-                name: "Investor Relations",
-                link: "/investor-relation",
-                items: [
-                  { name: "Governance Documents", link: "/investor-relation/governance-documents"},
-                  { name: "Financial Report", link: "/investor/shareholders" },
-                  { name: "SEC Filings", link: "/investor-relation/sec-filings"  },
-                  { name: "Stock Information", link: "/investor-relation/stock-information"  }
-                ],
-              },
-              {
-                name: "Media",
-                link: "/media",
-                items: [
-                  { name: "Press Release", link:"/media/#pressrelease" },
-                 ],
-              },
-              {
-                name: "Sustainability",
-                link: "/sustainability",
-                items: [
-                  { name: "Credit Risk", link:  "/sustainability/#creditrisk"},
-                  { name: "Internal Control", link:  "/sustainability/#internalcontrol"},
-                  { name: "Environmental, Social and Governance", link:  "/sustainability/#environmentalsocialandgovernance"},
-                  { name: "Compliance and Risk Management", link:  "/sustainability/#complianceandriskmanagement"}
-                 ],
-              },
+              } 
             ].map((menu) => (
               <li key={menu.name} className="border-b border-gray-200">
             
@@ -151,11 +124,10 @@ const MobileNavbar = () => {
                   </ul>
                 )}
               </li>
-            ))}
-
-            <li className="border-b border-gray-200">
-              <Link href="/career" className="block px-4 py-2 hover:bg-blue-50">
-                Careers
+            ))} 
+             <li className="border-b border-gray-200">
+              <Link href="https://www.tmdel-ir.com/" className="block px-4 py-2 hover:bg-blue-50">
+                Investor Relations
               </Link>
             </li>
             <li className="border-b border-gray-200">

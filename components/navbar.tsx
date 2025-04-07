@@ -285,7 +285,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
           </li>
           <li className="group">
             <Link
-              href="https://2009714.ir365connect.com/?cikNumber=2009714"
+              href="https://www.tmdel-ir.com/"
               target="_blank"
               className="hover:text-blue-600 flex items-center space-x-1"
             >
