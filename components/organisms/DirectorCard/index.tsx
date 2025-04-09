@@ -60,7 +60,7 @@ const DirectorCard: React.FC<DirectorCardProps> = ({
       {/* modal section */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 py-8">
-          <div className="bg-white rounded-2xl shadow-lg h-full w-2/3 m-20 relative animate-fadeIn overflow-auto ">
+          <div className="bg-white rounded-2xl shadow-lg h-full w-100 m-4 md:m-20 relative animate-fadeIn overflow-auto ">
             <button
               className="absolute top-2 right-2 p-2 text-gray-600 hover:text-black"
               onClick={() => setModalOpen(false)}
@@ -75,7 +75,7 @@ const DirectorCard: React.FC<DirectorCardProps> = ({
               </svg>
             </button>
 
-            <div className="flex flex-col lg:flex-row pr-10 gap-2">
+            <div className="flex flex-col lg:flex-row md:pr-10 gap-2">
               <Image
                 src={imageSrcFull}
                 width={800}
@@ -84,7 +84,7 @@ const DirectorCard: React.FC<DirectorCardProps> = ({
                 priority
                 className=" w-100 h-auto object-contain"
               />
-              <div className="flex flex-col w-full py-20">
+              <div className="flex flex-col w-full md:py-20 p-4 ">
                 <h2 className="text-xl font-bold bg-gradient-to-b from-[#00A99D] to-[#1172BA] bg-clip-text text-transparent">
                   {name}
                 </h2>

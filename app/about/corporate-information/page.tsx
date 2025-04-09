@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CorporateInformation() {
   return (
-    <div className="container mx-auto p-36 lg:px-48">
+    <div className="container mx-auto p-4 md:p-36 lg:px-48">
       <h1 className="text-5xl font-bold mb-12 text-black">
         Corporate Information
       </h1>
