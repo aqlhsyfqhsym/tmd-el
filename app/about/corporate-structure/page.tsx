@@ -110,7 +110,7 @@ export default function AboutUs() {
           </div>
         </section>
       </div>
-      <Vector />
+      {/* <Vector /> */}
     </div>
   );
 }

@@ -2,8 +2,8 @@ import React from "react";
 
 const ContactCard = () => {
   return (
-    <div className="flex bg-white shadow-2xl rounded-sm overflow-hidden">
-      <div className="bg-[#272361] text-white pl-12 pr-8 py-12  w-2/5">
+    <div className="flex md:flex-row flex-col bg-white shadow-2xl rounded-sm overflow-hidden">
+      <div className="bg-[#272361] text-white pl-12 pr-8 py-12 w-100 md:w-2/5">
         <h2 className="text-3xl font-bold pb-4">Contact Information</h2>
         {/* <p className="pb-4 text-[#C9C9C9]">Say something to start a live chat!</p> */}
         <div className="mt-4 space-y-2">
@@ -83,7 +83,7 @@ const ContactCard = () => {
         </div>
       </div>
 
-      <div className="p-6 w-3/5 mx-6 mt-6 mb-12">
+      <div className="p-6 md:w-3/5 mx-6 mt-6 mb-12">
         <form className="mt-6 grid grid-cols-2 gap-4">
           <div className="col-span-1">
             <label
@@ -184,7 +184,7 @@ const ContactCard = () => {
             ></textarea>
           </div>
 
-          <div className="col-span-2 flex justify-end">
+          <div className="col-span-2 flex justify-center md:justify-end">
             <button
               type="submit"
               className="bg-gradient-to-r from-[#00A99D] to-[#1172BA] text-white rounded py-3 px-8 font-inter font-semibold"
