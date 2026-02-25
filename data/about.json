@@ -186,11 +186,11 @@
 
         },
         {
-            "name": "Mr. Yick Fabian Shin",
-            "title": "Independent Director & Chairman of Nominating and Corporate Governance Committee",
-            "imageSrc": "/images/bod/image-4.png",
-            "imageSrcFull": "/images/bod/modal/fabian.png",
-            "description": "Mr. Yick Fabian Shin is our Independent Director. He is the Chairman of Nominating and Corporate Governance Committee, and a member of  the Audit Committee and Compensation Committee. Mr. Shin has over 26 years of experience in investment banking and financial management. Prior to joining our Group, he worked in the audit department of Deloitte Touche Tohmatsu from August 1991 to February 1994. From November 1999 to July 2015, he worked in various investment banks including as the Deputy Chief Executive Officer of CMB International Capital Corporation Limited. He was an independent non-executive director of China Tianrui Automotive Interiors Co., Ltd. from December 2018 to September 2020 and a non-executive director of Pak Tak International Limited (stock code: 6162) from February 2017 to February 2023 (stock code: 2668), all of which are listed on The Stock Exchange of Hong Kong Limited (the “Hong Kong Stock Exchange”). He also served as an independent director of Bio Key International, Inc., a company listed on Nasdaq Capital Market (symbol: BKYI) from November 2017 to September 2020. Mr. Shin has also been an independent non-executive directors of Lisi Group Holdings Limited (stock code: 526) since January 2013, Newton Resources Ltd (stock code: 1231) since August 2015 and Zhengye International Holdings Company Limited (stock code: 3363) since May 2019, all of which are listed on the Hong Kong Stock Exchange.Mr. Shin graduated from the University of Birmingham in England with a bachelor’s degree in commerce in July 1990. He was admitted as a fellow of The Association of Chartered Certified Accountants in March 2000. "
+            "name": "Mr. Kwok On Tse",
+            "title": "Independent Director",
+            "imageSrc": "/images/bod/image-7.png",
+            "imageSrcFull": "/images/bod/modal/image-7.png",
+            "description": "Mr. Kwok On Tse is our Independent Director. Mr. Tse, aged 59, has over 20 years of experience in investment banking and capital markets. He is currently the deputy chief executive officer of SBI China Capital Financial Services Limited, a position he has held since March 2023. Prior to this, he served as head of global capital markets at Eddid Securities and Futures Limited from March 2020 to July 2022. From May 2017 to March 2020, Mr. Tse was managing director and co-head of global capital markets at Southwest Securities (HK) Capital Limited. Earlier in his career, Mr. Tse served as associate director, equity capital markets, at Goldbond Securities Ltd. (currently known as Piper Jaffray Asia Securities) from August 2006 to May 2007. He previously worked at CLSA Limited from 2001 to 2006 as assistant manager, syndicate, and from 1996 to 2001 as assistant manager, settlement and operations. Mr. Tse is a licensed person with the Hong Kong Securities and Futures Commission, holding Type 1 (Dealing in Securities) and Type 6 (Advising on Corporate Finance) licenses. He obtained a Master of Business Administration degree from The University of Northern Virginia. "
 
         }
     ],
@@ -215,8 +215,12 @@
                 "position": "Independent Director & Chairman of Compensation Committee"
             },
             {
-                "name": "Mr. Yick Fabian Shin",
-                "position": "Independent Director & Chairman of Nominating and Corporate Governance"
+                "name": "Mr. Kwok On, Tse",
+                "position": "Independent Director"
+            },
+            {
+                "name": "Mr. Chee Mun, Hoh",
+                "position": "Chief Financial Officer"
             }
         ]
     },
@@ -259,7 +263,7 @@
                 }
             },
             {
-                "name": "Mr. Yick Fabian Shin",
+                "name": "Mr. Kwok On Tse",
                 "auditCommittee": {
                     "isChairman": false,
                     "isMember": true
