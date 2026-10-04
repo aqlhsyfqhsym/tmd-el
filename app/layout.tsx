@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import NavbarMobile from "@/components/navbarmobile";
+import AgmPopup from "@/components/organisms/AgmPopup";
 import layoutData from "@/data/layout-data.json";
 
 import "./globals.css";
@@ -37,6 +38,7 @@ export default function RootLayout({
         {children}
         </main>
         <Footer data={layoutData.footer} />
+        <AgmPopup />
       </body>
     </html>
   );
