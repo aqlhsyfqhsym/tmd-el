@@ -38,7 +38,7 @@ export default function RootLayout({
         {children}
         </main>
         <Footer data={layoutData.footer} />
-        <AgmPopup />
+        {/* <AgmPopup /> */}
       </body>
     </html>
   );
