@@ -25,7 +25,7 @@ export default function AboutUs() {
           </h2>
           <div className="relative ">
             <Image
-              src="/images/about/corporate-structure.png"
+              src="/images/about/corporate-structure-2.png"
               alt="Corporate Structure"
               width={800}
               height={800}
